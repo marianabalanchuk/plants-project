@@ -22,6 +22,8 @@ header {
     background-color: $main-color;
     display: flex;
     justify-content: space-between;
+    height: 55px;
+    align-items: center;
 
     .contact-us {
       display: flex;
@@ -45,9 +47,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 70px;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.15);
 
     .navbar,
-    .call-button p {
+    .call-button span {
       display: none;
     }
 
@@ -84,6 +88,7 @@ header {
 
   header {
     .top-header {
+      height: 60px;
       .contact-us {
         .email-us,
         .call-us,
@@ -120,9 +125,25 @@ header {
     }
 
     .bottom-header {
+      height: 80px;
       .navbar,
-      .call-button p {
+      .call-button span {
         display: block;
+      }
+      .menu-button {
+        display: none;
+      }
+
+      .call-button button {
+        width: 120px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 700;
+        color: white;
+        gap: 5px;
       }
       ul {
         padding: 0;

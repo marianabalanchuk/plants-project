@@ -20,6 +20,8 @@ header .top-header {
   background-color: #0c4b35;
   display: flex;
   justify-content: space-between;
+  height: 55px;
+  align-items: center;
 }
 header .top-header .contact-us {
   display: flex;
@@ -39,9 +41,11 @@ header .bottom-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 70px;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.15);
 }
 header .bottom-header .navbar,
-header .bottom-header .call-button p {
+header .bottom-header .call-button span {
   display: none;
 }
 header .bottom-header .call-button button {
@@ -67,6 +71,9 @@ header .bottom-header .call-menu {
 @media (min-width: 1024px) {
   .container {
     max-width: 970px;
+  }
+  header .top-header {
+    height: 60px;
   }
   header .top-header .contact-us .email-us,
 header .top-header .contact-us .call-us,
@@ -95,9 +102,26 @@ header .top-header .contact-us a:visited {
     font-size: 14px;
     font-weight: 400;
   }
+  header .bottom-header {
+    height: 80px;
+  }
   header .bottom-header .navbar,
-header .bottom-header .call-button p {
+header .bottom-header .call-button span {
     display: block;
+  }
+  header .bottom-header .menu-button {
+    display: none;
+  }
+  header .bottom-header .call-button button {
+    width: 120px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    gap: 5px;
   }
   header .bottom-header ul {
     padding: 0;
