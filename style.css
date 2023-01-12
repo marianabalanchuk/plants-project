@@ -33,9 +33,10 @@ header .top-header .contact-us .call-us p,
 header .top-header .contact-us .find-us p {
   display: none;
 }
-header .top-header .language {
+header .top-header .language p {
   color: white;
   font-size: 12px;
+  margin: 0;
 }
 header .bottom-header {
   display: flex;
@@ -54,13 +55,76 @@ header .bottom-header .call-button button {
   border-radius: 10px;
   width: 40px;
   height: 34px;
-  padding: 7px 0;
 }
 header .bottom-header .call-menu {
   display: flex;
   justify-content: end;
   gap: 20px;
   align-items: center;
+}
+
+main .main-section {
+  padding: 0;
+  background: linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
+}
+main .main-section .main-content {
+  padding: 50px 15px 30px;
+  position: relative;
+}
+main .main-section .main-content h3 {
+  font-size: 14px;
+  font-weight: 700;
+}
+main .main-section .main-content h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+main .main-section .main-content p {
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+main .main-section .main-content .grey-btn {
+  background: linear-gradient(180deg, #fff8f1 0%, #cbe5ce 100%);
+  border-radius: 32px;
+  border: none;
+  font-size: 10px;
+  font-weight: 400;
+  width: 130px;
+  height: 32px;
+  padding: 10px 8px;
+  text-align: center;
+}
+main .main-section .main-content .green-btn {
+  width: 75%;
+  height: 45px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #00730c;
+  border: none;
+  display: block;
+  margin: 0 auto;
+}
+main .main-section .main-content .main-link {
+  text-align: center;
+  margin: 25px auto;
+}
+main .main-section .main-content .main-link a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+main .main-section .main-content .main-btns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+main .main-section .main-content .background-flower {
+  position: absolute;
+  left: 0;
+  top: 310px;
 }
 
 @media (min-width: 768px) {
