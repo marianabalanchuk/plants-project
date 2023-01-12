@@ -1,0 +1,145 @@
+@import "./variables";
+
+// mobile xs
+* {
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  width: 100%;
+  padding: 15px;
+  margin: auto;
+}
+
+.active {
+  color: $secondary-color;
+}
+
+header {
+  margin: -7px;
+  .top-header {
+    background-color: $main-color;
+    display: flex;
+    justify-content: space-between;
+
+    .contact-us {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+
+      .email-us p,
+      .call-us p,
+      .find-us p {
+        display: none;
+      }
+    }
+
+    .language {
+      color: white;
+      font-size: 12px;
+    }
+  }
+
+  .bottom-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .navbar,
+    .call-button p {
+      display: none;
+    }
+
+    .call-button button {
+      background-color: $secondary-color;
+      border: none;
+      border-radius: 10px;
+      width: 40px;
+      height: 34px;
+      padding: 7px 0;
+    }
+
+    .call-menu {
+      display: flex;
+      justify-content: end;
+      gap: 20px;
+      align-items: center;
+    }
+  }
+}
+
+// tablet sm
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+// laptop md
+@media (min-width: 1024px) {
+  .container {
+    max-width: 970px;
+  }
+
+  header {
+    .top-header {
+      .contact-us {
+        .email-us,
+        .call-us,
+        .find-us {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          color: white;
+        }
+
+        .email-us p,
+        .call-us p,
+        .find-us p {
+          display: block;
+        }
+
+        a,
+        a:visited {
+          color: white;
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: $secondary-color;
+          text-decoration: none;
+        }
+      }
+
+      .language {
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+
+    .bottom-header {
+      .navbar,
+      .call-button p {
+        display: block;
+      }
+      ul {
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        font-size: 16px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+// laptop xl
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1410px;
+  }
+}

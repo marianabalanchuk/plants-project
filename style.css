@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  width: 100%;
+  padding: 15px;
+  margin: auto;
+}
+
+.active {
+  color: #00730c;
+}
+
+header {
+  margin: -7px;
+}
+header .top-header {
+  background-color: #0c4b35;
+  display: flex;
+  justify-content: space-between;
+}
+header .top-header .contact-us {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+header .top-header .contact-us .email-us p,
+header .top-header .contact-us .call-us p,
+header .top-header .contact-us .find-us p {
+  display: none;
+}
+header .top-header .language {
+  color: white;
+  font-size: 12px;
+}
+header .bottom-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .bottom-header .navbar,
+header .bottom-header .call-button p {
+  display: none;
+}
+header .bottom-header .call-button button {
+  background-color: #00730c;
+  border: none;
+  border-radius: 10px;
+  width: 40px;
+  height: 34px;
+  padding: 7px 0;
+}
+header .bottom-header .call-menu {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 970px;
+  }
+  header .top-header .contact-us .email-us,
+header .top-header .contact-us .call-us,
+header .top-header .contact-us .find-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+  }
+  header .top-header .contact-us .email-us p,
+header .top-header .contact-us .call-us p,
+header .top-header .contact-us .find-us p {
+    display: block;
+  }
+  header .top-header .contact-us a,
+header .top-header .contact-us a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  header .top-header .contact-us a:hover {
+    color: #00730c;
+    text-decoration: none;
+  }
+  header .top-header .language {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  header .bottom-header .navbar,
+header .bottom-header .call-button p {
+    display: block;
+  }
+  header .bottom-header ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1410px;
+  }
+}/*# sourceMappingURL=style.css.map */
