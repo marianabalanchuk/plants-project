@@ -13,6 +13,25 @@
   color: #00730c;
 }
 
+.green-btn {
+  width: 75%;
+  height: 45px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #00730c;
+  border: none;
+  display: block;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0 !important;
+}
+
 header {
   margin: -7px;
 }
@@ -59,7 +78,7 @@ header .bottom-header .call-button button {
 }
 header .bottom-header .call-menu {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   gap: 20px;
   align-items: center;
 }
@@ -96,19 +115,6 @@ main .main-section .main-content .grey-btn {
   padding: 10px 8px;
   text-align: center;
 }
-main .main-section .main-content .green-btn {
-  width: 75%;
-  height: 45px;
-  color: white;
-  font-size: 16px;
-  font-weight: 700;
-  text-align: center;
-  border-radius: 5px;
-  background-color: #00730c;
-  border: none;
-  display: block;
-  margin: 0 auto;
-}
 main .main-section .main-content .main-link {
   text-align: center;
   margin: 25px auto;
@@ -141,10 +147,6 @@ main .services p {
   text-align: center;
   font-size: 14px;
 }
-main .services .services-list {
-  list-style-type: none;
-  padding: 0;
-}
 main .services .services-list li {
   background: linear-gradient(172.29deg, #ffffff -10.79%, #ffffff 94.04%);
   box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
@@ -152,7 +154,7 @@ main .services .services-list li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 15px auto;
+  margin: 10px auto;
   gap: 15px;
 }
 main .services .services-list li img {
@@ -237,7 +239,6 @@ header .bottom-header .call-button span {
     gap: 25px;
     font-size: 16px;
     font-weight: 700;
-    list-style-type: none;
     margin: 0;
   }
   main .main-section {

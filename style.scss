@@ -16,6 +16,25 @@
   color: $secondary-color;
 }
 
+.green-btn {
+  width: 75%;
+  height: 45px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 5px;
+  background-color: $secondary-color;
+  border: none;
+  display: block;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0 !important;
+}
+
 header {
   margin: -7px;
   .top-header {
@@ -67,7 +86,7 @@ header {
 
     .call-menu {
       display: flex;
-      justify-content: end;
+      justify-content: flex-end;
       gap: 20px;
       align-items: center;
     }
@@ -104,19 +123,6 @@ main {
         height: 32px;
         padding: 10px 8px;
         text-align: center;
-      }
-      .green-btn {
-        width: 75%;
-        height: 45px;
-        color: white;
-        font-size: 16px;
-        font-weight: 700;
-        text-align: center;
-        border-radius: 5px;
-        background-color: $secondary-color;
-        border: none;
-        display: block;
-        margin: 0 auto;
       }
 
       .main-link {
@@ -159,9 +165,6 @@ main {
     }
 
     .services-list {
-      list-style-type: none;
-      padding: 0;
-
       li {
         background: linear-gradient(172.29deg, #ffffff -10.79%, #ffffff 94.04%);
         box-shadow: $shadow;
@@ -169,7 +172,7 @@ main {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 15px auto;
+        margin: 10px auto;
         gap: 15px;
 
         img {
@@ -271,7 +274,6 @@ main {
         gap: 25px;
         font-size: 16px;
         font-weight: 700;
-        list-style-type: none;
         margin: 0;
       }
     }
