@@ -145,7 +145,7 @@ main {
   }
 
   .services {
-    margin: 40px 0;
+    margin: 40px auto;
     h1 {
       text-align: center;
       font-size: 28px;
@@ -168,9 +168,9 @@ main {
         border-radius: 10px;
         display: flex;
         justify-content: space-between;
-        gap: 10px;
         align-items: center;
-        margin: 20px auto;
+        margin: 15px auto;
+        gap: 15px;
 
         img {
           margin: 10px;
@@ -200,7 +200,7 @@ main {
 // laptop md
 @media (min-width: 1024px) {
   .container {
-    max-width: 970px;
+    max-width: 960px;
   }
 
   header {

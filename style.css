@@ -129,7 +129,7 @@ main .main-section .main-content .background-flower {
   top: 310px;
 }
 main .services {
-  margin: 40px 0;
+  margin: 40px auto;
 }
 main .services h1 {
   text-align: center;
@@ -151,9 +151,9 @@ main .services .services-list li {
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
-  gap: 10px;
   align-items: center;
-  margin: 20px auto;
+  margin: 15px auto;
+  gap: 15px;
 }
 main .services .services-list li img {
   margin: 10px;
@@ -175,7 +175,7 @@ main .services .services-list li p {
 }
 @media (min-width: 1024px) {
   .container {
-    max-width: 970px;
+    max-width: 960px;
   }
   header .top-header {
     height: 60px;
