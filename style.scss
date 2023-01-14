@@ -221,6 +221,7 @@ main {
         .call-us p,
         .find-us p {
           display: block;
+          margin: 0;
         }
 
         a,
@@ -272,6 +273,55 @@ main {
         font-weight: 700;
         list-style-type: none;
         margin: 0;
+      }
+    }
+  }
+
+  main {
+    .main-section {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: row-reverse;
+      align-items: flex-end;
+
+      .img-fluid {
+        width: 55%;
+      }
+
+      .main-content {
+        width: 35%;
+
+        h2 {
+          font-size: 30px;
+          font-weight: 800;
+        }
+
+        h3 {
+          font-size: 14px;
+          margin: 20px 0;
+        }
+
+        p {
+          font-size: 16px;
+        }
+
+        .background-flower {
+          position: absolute;
+          left: -100px;
+          top: 275px;
+          width: 125px;
+        }
+
+        .main-btns {
+          justify-content: center;
+          gap: 15px;
+
+          .grey-btn {
+            font-size: 12px;
+            width: 150px;
+            height: 40px;
+          }
+        }
       }
     }
   }

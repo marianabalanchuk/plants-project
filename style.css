@@ -193,6 +193,7 @@ header .top-header .contact-us .find-us {
 header .top-header .contact-us .call-us p,
 header .top-header .contact-us .find-us p {
     display: block;
+    margin: 0;
   }
   header .top-header .contact-us a,
 header .top-header .contact-us a:visited {
@@ -238,6 +239,44 @@ header .bottom-header .call-button span {
     font-weight: 700;
     list-style-type: none;
     margin: 0;
+  }
+  main .main-section {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+  }
+  main .main-section .img-fluid {
+    width: 55%;
+  }
+  main .main-section .main-content {
+    width: 35%;
+  }
+  main .main-section .main-content h2 {
+    font-size: 30px;
+    font-weight: 800;
+  }
+  main .main-section .main-content h3 {
+    font-size: 14px;
+    margin: 20px 0;
+  }
+  main .main-section .main-content p {
+    font-size: 16px;
+  }
+  main .main-section .main-content .background-flower {
+    position: absolute;
+    left: -100px;
+    top: 275px;
+    width: 125px;
+  }
+  main .main-section .main-content .main-btns {
+    justify-content: center;
+    gap: 15px;
+  }
+  main .main-section .main-content .main-btns .grey-btn {
+    font-size: 12px;
+    width: 150px;
+    height: 40px;
   }
 }
 @media (min-width: 1600px) {
