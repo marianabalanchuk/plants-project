@@ -234,6 +234,7 @@ main .why-choose-us .reasons-choose-us li {
   max-width: 45%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 main .why-choose-us .reasons-choose-us li p {
   margin: 0;
@@ -306,8 +307,31 @@ main .staff img {
 }
 
 @media (min-width: 768px) {
-  body {
-    margin: 0 auto;
+  .green-btn {
+    width: 50%;
+  }
+  main .main-section {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+  main .about-us .our-values li {
+    max-width: 35%;
+  }
+  main .why-choose-us .img-fluid {
+    width: 75%;
+  }
+  main .working-process .processes li {
+    width: 45%;
+  }
+  main .reach-out .img-fluid {
+    width: 75%;
+  }
+  main .reach-out .img-text {
+    width: 65%;
+    font-size: 25px;
+    left: 17%;
   }
 }
 @media (min-width: 1024px) {

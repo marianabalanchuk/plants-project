@@ -269,7 +269,7 @@ main {
         max-width: 45%;
         display: flex;
         align-items: center;
-
+        justify-content: center;
         p {
           margin: 0;
         }
@@ -361,10 +361,51 @@ main {
 }
 
 // __________________________________________________________________________________________________________________________________________________________________
-// tablet sm
+// tablet md
 @media (min-width: 768px) {
-  body {
-    margin: 0 auto;
+  .green-btn {
+    width: 50%;
+  }
+
+  main {
+    .main-section {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: row-reverse;
+      align-items: flex-start;
+    }
+
+    .about-us {
+      .our-values {
+        li {
+          max-width: 35%;
+        }
+      }
+    }
+
+    .why-choose-us {
+      .img-fluid {
+        width: 75%;
+      }
+    }
+
+    .working-process {
+      .processes li {
+        width: 45%;
+      }
+    }
+
+    .reach-out {
+      .img-fluid {
+        width: 75%;
+      }
+
+      .img-text {
+        width: 65%;
+        font-size: 25px;
+        left: 17%;
+      }
+    }
   }
 }
 
