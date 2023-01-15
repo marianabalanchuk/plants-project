@@ -5,7 +5,7 @@
 
 .container {
   width: 100%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .services,
@@ -220,6 +220,9 @@ main .why-choose-us {
   text-align: center;
   padding: 40px 15px;
 }
+main .why-choose-us .img-fluid {
+  width: 100%;
+}
 main .why-choose-us .reasons-choose-us {
   justify-content: center;
 }
@@ -262,26 +265,26 @@ main .reach-out {
   position: relative;
   color: white;
 }
-main .reach-out img {
+main .reach-out .img-fluid {
   border-radius: 5px;
   display: block;
   margin: 0 auto;
-}
-main .reach-out div {
-  position: absolute;
-  font-size: 20px;
-  font-weight: 700;
-  top: 0;
-  left: 0;
-  text-align: center;
   width: 100%;
-  padding: 50px;
 }
-main .reach-out div .call-button {
-  top: 75px;
-  left: 75px;
+main .reach-out .img-text {
+  position: absolute;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  top: 25%;
+  left: 5%;
+  width: 90%;
 }
-main .reach-out div .call-button button {
+main .reach-out .img-text .call-button button {
   width: 120px;
   height: 40px;
   display: flex;
@@ -291,7 +294,7 @@ main .reach-out div .call-button button {
   color: white;
   border-radius: 5px;
 }
-main .reach-out div .call-button button img {
+main .reach-out .img-text .call-button button img {
   margin: 0;
 }
 main .staff {
@@ -303,8 +306,8 @@ main .staff img {
 }
 
 @media (min-width: 768px) {
-  .container {
-    max-width: 720px;
+  body {
+    margin: 0 auto;
   }
 }
 @media (min-width: 1024px) {
@@ -380,7 +383,7 @@ main .staff img {
     align-items: flex-end;
   }
   .container main .main-section .img-fluid {
-    width: 55%;
+    width: 60%;
   }
   .container main .main-section .main-content {
     width: 35%;

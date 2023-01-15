@@ -8,7 +8,7 @@
 
 .container {
   width: 100%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .services,
@@ -254,6 +254,11 @@ main {
     font-size: 14px;
     text-align: center;
     padding: 40px 15px;
+
+    .img-fluid {
+      width: 100%;
+    }
+
     .reasons-choose-us {
       justify-content: center;
       li {
@@ -306,26 +311,27 @@ main {
     position: relative;
     color: white;
 
-    img {
+    .img-fluid {
       border-radius: 5px;
       display: block;
       margin: 0 auto;
+      width: 100%;
     }
 
-    div {
+    .img-text {
       position: absolute;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 700;
-      top: 0;
-      left: 0;
       text-align: center;
-      width: 100%;
-      padding: 50px;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      top: 25%;
+      left: 5%;
+      width: 90%;
 
       .call-button {
-        top: 75px;
-        left: 75px;
-
         button {
           width: 120px;
           height: 40px;
@@ -357,8 +363,8 @@ main {
 // __________________________________________________________________________________________________________________________________________________________________
 // tablet sm
 @media (min-width: 768px) {
-  .container {
-    max-width: 720px;
+  body {
+    margin: 0 auto;
   }
 }
 
@@ -448,7 +454,7 @@ main {
         align-items: flex-end;
 
         .img-fluid {
-          width: 55%;
+          width: 60%;
         }
 
         .main-content {
