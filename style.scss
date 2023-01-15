@@ -116,6 +116,10 @@ main {
     .main-content {
       padding: 50px 15px 30px;
       position: relative;
+
+      background-image: url("images/icons/background-flower.svg");
+      background-position: left bottom;
+      background-repeat: no-repeat;
       h3 {
         font-size: 14px;
         font-weight: 700;
@@ -159,12 +163,6 @@ main {
         display: flex;
         justify-content: flex-end;
         gap: 10px;
-      }
-
-      .background-flower {
-        position: absolute;
-        left: 0;
-        top: 310px;
       }
     }
   }
@@ -429,6 +427,9 @@ main {
 
       .main-content {
         width: 35%;
+        background-image: url("images/icons/background-flower.svg");
+        background-position: left bottom;
+        background-repeat: no-repeat;
 
         h1 {
           font-size: 30px;
@@ -444,13 +445,6 @@ main {
 
         p {
           font-size: 16px;
-        }
-
-        .background-flower {
-          position: absolute;
-          left: -100px;
-          top: 275px;
-          width: 125px;
         }
 
         .main-btns {

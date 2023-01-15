@@ -107,6 +107,9 @@ main .main-section {
 main .main-section .main-content {
   padding: 50px 15px 30px;
   position: relative;
+  background-image: url("images/icons/background-flower.svg");
+  background-position: left bottom;
+  background-repeat: no-repeat;
 }
 main .main-section .main-content h3 {
   font-size: 14px;
@@ -146,11 +149,6 @@ main .main-section .main-content .main-btns {
   display: flex;
   justify-content: flex-end;
   gap: 10px;
-}
-main .main-section .main-content .background-flower {
-  position: absolute;
-  left: 0;
-  top: 310px;
 }
 main .services p {
   text-align: center;
@@ -364,6 +362,9 @@ header .bottom-header .call-button span {
   }
   main .main-section .main-content {
     width: 35%;
+    background-image: url("images/icons/background-flower.svg");
+    background-position: left bottom;
+    background-repeat: no-repeat;
   }
   main .main-section .main-content h1 {
     font-size: 30px;
@@ -377,12 +378,6 @@ header .bottom-header .call-button span {
   }
   main .main-section .main-content p {
     font-size: 16px;
-  }
-  main .main-section .main-content .background-flower {
-    position: absolute;
-    left: -100px;
-    top: 275px;
-    width: 125px;
   }
   main .main-section .main-content .main-btns {
     justify-content: center;
