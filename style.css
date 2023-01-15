@@ -177,6 +177,24 @@ main .services .services-list li h4 {
 main .services .services-list li p {
   text-align: left;
 }
+main .about-us .value-img-container {
+  width: 100%;
+  background-image: url("images/icons/green-background-image.svg");
+  background-position: top left;
+  background-repeat: no-repeat;
+  position: relative;
+}
+main .about-us .value-img-container .value-img {
+  margin: 15px;
+}
+main .about-us .value-img-container .small-value-img {
+  position: absolute;
+  top: 75%;
+  left: 30%;
+}
+main .about-us h2 {
+  margin-top: 70px;
+}
 main .about-us .our-values li {
   box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
   border-radius: 5px;
@@ -289,48 +307,48 @@ main .staff img {
   .container {
     max-width: 960px;
   }
-  header .top-header {
+  .container header .top-header {
     height: 60px;
   }
-  header .top-header .contact-us .email-us,
-header .top-header .contact-us .call-us,
-header .top-header .contact-us .find-us {
+  .container header .top-header .contact-us .email-us,
+.container header .top-header .contact-us .call-us,
+.container header .top-header .contact-us .find-us {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     color: white;
   }
-  header .top-header .contact-us .email-us p,
-header .top-header .contact-us .call-us p,
-header .top-header .contact-us .find-us p {
+  .container header .top-header .contact-us .email-us p,
+.container header .top-header .contact-us .call-us p,
+.container header .top-header .contact-us .find-us p {
     display: block;
     margin: 0;
   }
-  header .top-header .contact-us a,
-header .top-header .contact-us a:visited {
+  .container header .top-header .contact-us a,
+.container header .top-header .contact-us a:visited {
     color: white;
     text-decoration: none;
   }
-  header .top-header .contact-us a:hover {
+  .container header .top-header .contact-us a:hover {
     color: #00730c;
     text-decoration: none;
   }
-  header .top-header .language {
+  .container header .top-header .language {
     font-size: 14px;
     font-weight: 400;
   }
-  header .bottom-header {
+  .container header .bottom-header {
     height: 80px;
   }
-  header .bottom-header .navbar,
-header .bottom-header .call-button span {
+  .container header .bottom-header .navbar,
+.container header .bottom-header .call-button span {
     display: block;
   }
-  header .bottom-header .menu-button {
+  .container header .bottom-header .menu-button {
     display: none;
   }
-  header .bottom-header .call-button button {
+  .container header .bottom-header .call-button button {
     width: 120px;
     height: 50px;
     display: flex;
@@ -341,7 +359,7 @@ header .bottom-header .call-button span {
     color: white;
     gap: 5px;
   }
-  header .bottom-header .drop-down {
+  .container header .bottom-header .drop-down {
     padding: 0;
     display: flex;
     justify-content: center;
@@ -351,39 +369,39 @@ header .bottom-header .call-button span {
     font-weight: 700;
     margin: 0;
   }
-  main .main-section {
+  .container main .main-section {
     display: flex;
     justify-content: flex-start;
     flex-direction: row-reverse;
     align-items: flex-end;
   }
-  main .main-section .img-fluid {
+  .container main .main-section .img-fluid {
     width: 55%;
   }
-  main .main-section .main-content {
+  .container main .main-section .main-content {
     width: 35%;
     background-image: url("images/icons/background-flower.svg");
     background-position: left bottom;
     background-repeat: no-repeat;
   }
-  main .main-section .main-content h1 {
+  .container main .main-section .main-content h1 {
     font-size: 30px;
     font-weight: 800;
     text-align: left;
     margin: 20px 0;
   }
-  main .main-section .main-content h3 {
+  .container main .main-section .main-content h3 {
     font-size: 14px;
     margin: 20px 0;
   }
-  main .main-section .main-content p {
+  .container main .main-section .main-content p {
     font-size: 16px;
   }
-  main .main-section .main-content .main-btns {
+  .container main .main-section .main-content .main-btns {
     justify-content: center;
     gap: 15px;
   }
-  main .main-section .main-content .main-btns .grey-btn {
+  .container main .main-section .main-content .main-btns .grey-btn {
     font-size: 12px;
     width: 150px;
     height: 40px;

@@ -203,6 +203,28 @@ main {
   }
 
   .about-us {
+    .value-img-container {
+      width: 100%;
+      background-image: url("images/icons/green-background-image.svg");
+      background-position: top left;
+      background-repeat: no-repeat;
+      position: relative;
+
+      .value-img {
+        margin: 15px;
+      }
+
+      .small-value-img {
+        position: absolute;
+        top: 75%;
+        left: 30%;
+      }
+    }
+
+    h2 {
+      margin-top: 70px;
+    }
+
     .our-values {
       li {
         box-shadow: $shadow;
@@ -339,122 +361,122 @@ main {
 @media (min-width: 1024px) {
   .container {
     max-width: 960px;
-  }
 
-  header {
-    .top-header {
-      height: 60px;
-      .contact-us {
-        .email-us,
-        .call-us,
-        .find-us {
+    header {
+      .top-header {
+        height: 60px;
+        .contact-us {
+          .email-us,
+          .call-us,
+          .find-us {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            color: white;
+          }
+
+          .email-us p,
+          .call-us p,
+          .find-us p {
+            display: block;
+            margin: 0;
+          }
+
+          a,
+          a:visited {
+            color: white;
+            text-decoration: none;
+          }
+
+          a:hover {
+            color: $secondary-color;
+            text-decoration: none;
+          }
+        }
+
+        .language {
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+
+      .bottom-header {
+        height: 80px;
+        .navbar,
+        .call-button span {
+          display: block;
+        }
+        .menu-button {
+          display: none;
+        }
+
+        .call-button button {
+          width: 120px;
+          height: 50px;
           display: flex;
           justify-content: center;
           align-items: center;
-          gap: 10px;
+          font-size: 18px;
+          font-weight: 700;
           color: white;
+          gap: 5px;
         }
-
-        .email-us p,
-        .call-us p,
-        .find-us p {
-          display: block;
+        .drop-down {
+          padding: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 25px;
+          font-size: 16px;
+          font-weight: 700;
           margin: 0;
         }
-
-        a,
-        a:visited {
-          color: white;
-          text-decoration: none;
-        }
-
-        a:hover {
-          color: $secondary-color;
-          text-decoration: none;
-        }
-      }
-
-      .language {
-        font-size: 14px;
-        font-weight: 400;
       }
     }
 
-    .bottom-header {
-      height: 80px;
-      .navbar,
-      .call-button span {
-        display: block;
-      }
-      .menu-button {
-        display: none;
-      }
-
-      .call-button button {
-        width: 120px;
-        height: 50px;
+    main {
+      .main-section {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 18px;
-        font-weight: 700;
-        color: white;
-        gap: 5px;
-      }
-      .drop-down {
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 25px;
-        font-size: 16px;
-        font-weight: 700;
-        margin: 0;
-      }
-    }
-  }
+        justify-content: flex-start;
+        flex-direction: row-reverse;
+        align-items: flex-end;
 
-  main {
-    .main-section {
-      display: flex;
-      justify-content: flex-start;
-      flex-direction: row-reverse;
-      align-items: flex-end;
-
-      .img-fluid {
-        width: 55%;
-      }
-
-      .main-content {
-        width: 35%;
-        background-image: url("images/icons/background-flower.svg");
-        background-position: left bottom;
-        background-repeat: no-repeat;
-
-        h1 {
-          font-size: 30px;
-          font-weight: 800;
-          text-align: left;
-          margin: 20px 0;
+        .img-fluid {
+          width: 55%;
         }
 
-        h3 {
-          font-size: 14px;
-          margin: 20px 0;
-        }
+        .main-content {
+          width: 35%;
+          background-image: url("images/icons/background-flower.svg");
+          background-position: left bottom;
+          background-repeat: no-repeat;
 
-        p {
-          font-size: 16px;
-        }
+          h1 {
+            font-size: 30px;
+            font-weight: 800;
+            text-align: left;
+            margin: 20px 0;
+          }
 
-        .main-btns {
-          justify-content: center;
-          gap: 15px;
+          h3 {
+            font-size: 14px;
+            margin: 20px 0;
+          }
 
-          .grey-btn {
-            font-size: 12px;
-            width: 150px;
-            height: 40px;
+          p {
+            font-size: 16px;
+          }
+
+          .main-btns {
+            justify-content: center;
+            gap: 15px;
+
+            .grey-btn {
+              font-size: 12px;
+              width: 150px;
+              height: 40px;
+            }
           }
         }
       }
