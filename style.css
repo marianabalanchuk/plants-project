@@ -264,6 +264,8 @@ main .reach-out {
 }
 main .reach-out img {
   border-radius: 5px;
+  display: block;
+  margin: 0 auto;
 }
 main .reach-out div {
   position: absolute;
@@ -283,12 +285,14 @@ main .reach-out div .call-button button {
   width: 120px;
   height: 40px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   font-size: 14px;
   color: white;
-  gap: 5px;
   border-radius: 5px;
+}
+main .reach-out div .call-button button img {
+  margin: 0;
 }
 main .staff {
   text-align: center;
