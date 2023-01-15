@@ -5,8 +5,16 @@
 
 .container {
   width: 100%;
-  padding: 15px;
   margin: auto;
+}
+
+.services,
+.about-us,
+.why-choose-us,
+.working-process,
+.reach-out,
+.staff {
+  margin: 40px auto;
 }
 
 .active {
@@ -30,6 +38,21 @@
 ul {
   list-style-type: none;
   padding: 0 !important;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.call-button button {
+  background-color: #00730c;
+  border: none;
+  border-radius: 10px;
+  width: 40px;
+  height: 34px;
 }
 
 header {
@@ -69,13 +92,6 @@ header .bottom-header .navbar,
 header .bottom-header .call-button span {
   display: none;
 }
-header .bottom-header .call-button button {
-  background-color: #00730c;
-  border: none;
-  border-radius: 10px;
-  width: 40px;
-  height: 34px;
-}
 header .bottom-header .call-menu {
   display: flex;
   justify-content: flex-end;
@@ -96,9 +112,11 @@ main .main-section .main-content h3 {
   font-size: 14px;
   font-weight: 700;
 }
-main .main-section .main-content h2 {
-  font-size: 28px;
-  font-weight: 700;
+main .main-section .main-content h1 {
+  font-size: 30px;
+  font-weight: 800;
+  text-align: left;
+  margin: 20px 0;
 }
 main .main-section .main-content p {
   font-size: 14px;
@@ -134,15 +152,6 @@ main .main-section .main-content .background-flower {
   left: 0;
   top: 310px;
 }
-main .services {
-  margin: 40px auto;
-}
-main .services h1 {
-  text-align: center;
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
 main .services p {
   text-align: center;
   font-size: 14px;
@@ -155,7 +164,8 @@ main .services .services-list li {
   justify-content: space-between;
   align-items: center;
   margin: 10px auto;
-  gap: 15px;
+  padding: 20px;
+  gap: 5px;
 }
 main .services .services-list li img {
   margin: 10px;
@@ -168,6 +178,108 @@ main .services .services-list li h4 {
 }
 main .services .services-list li p {
   text-align: left;
+}
+main .about-us .our-values li {
+  box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+  border-radius: 5px;
+  margin: 10px auto;
+  max-width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  gap: 5px;
+}
+main .about-us .our-values li p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+main .why-choose-us {
+  background-color: #0c4b35;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  padding: 40px 15px;
+}
+main .why-choose-us .reasons-choose-us {
+  justify-content: center;
+}
+main .why-choose-us .reasons-choose-us li {
+  box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+  border-radius: 5px;
+  font-weight: 700;
+  padding: 0;
+  max-width: 45%;
+  display: flex;
+  align-items: center;
+}
+main .why-choose-us .reasons-choose-us li p {
+  margin: 0;
+}
+main .working-process .processes li {
+  box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+  background: linear-gradient(172.29deg, #ffffff -10.79%, #ffffff 94.04%);
+  box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 10px auto;
+  padding: 20px;
+  gap: 5px;
+}
+main .working-process .processes li img {
+  margin: 10px;
+}
+main .working-process .processes li h4 {
+  font-size: 16px;
+  font-weight: 700;
+}
+main .working-process .processes li p {
+  font-size: 14px;
+}
+main .reach-out {
+  position: relative;
+  color: white;
+}
+main .reach-out img {
+  border-radius: 5px;
+}
+main .reach-out div {
+  position: absolute;
+  font-size: 20px;
+  font-weight: 700;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  padding: 50px;
+}
+main .reach-out div .call-button {
+  top: 75px;
+  left: 75px;
+}
+main .reach-out div .call-button button {
+  width: 120px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: white;
+  gap: 5px;
+  border-radius: 5px;
+}
+main .staff {
+  text-align: center;
+}
+main .staff img {
+  border-radius: 5px;
+  margin: 40px auto;
 }
 
 @media (min-width: 768px) {
@@ -253,9 +365,11 @@ header .bottom-header .call-button span {
   main .main-section .main-content {
     width: 35%;
   }
-  main .main-section .main-content h2 {
+  main .main-section .main-content h1 {
     font-size: 30px;
     font-weight: 800;
+    text-align: left;
+    margin: 20px 0;
   }
   main .main-section .main-content h3 {
     font-size: 14px;
@@ -278,10 +392,5 @@ header .bottom-header .call-button span {
     font-size: 12px;
     width: 150px;
     height: 40px;
-  }
-}
-@media (min-width: 1600px) {
-  .container {
-    max-width: 1410px;
   }
 }/*# sourceMappingURL=style.css.map */

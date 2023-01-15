@@ -8,8 +8,16 @@
 
 .container {
   width: 100%;
-  padding: 15px;
   margin: auto;
+}
+
+.services,
+.about-us,
+.why-choose-us,
+.working-process,
+.reach-out,
+.staff {
+  margin: 40px auto;
 }
 
 .active {
@@ -33,6 +41,21 @@
 ul {
   list-style-type: none;
   padding: 0 !important;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.call-button button {
+  background-color: $secondary-color;
+  border: none;
+  border-radius: 10px;
+  width: 40px;
+  height: 34px;
 }
 
 header {
@@ -76,14 +99,6 @@ header {
       display: none;
     }
 
-    .call-button button {
-      background-color: $secondary-color;
-      border: none;
-      border-radius: 10px;
-      width: 40px;
-      height: 34px;
-    }
-
     .call-menu {
       display: flex;
       justify-content: flex-end;
@@ -105,10 +120,14 @@ main {
         font-size: 14px;
         font-weight: 700;
       }
-      h2 {
-        font-size: 28px;
-        font-weight: 700;
+
+      h1 {
+        font-size: 30px;
+        font-weight: 800;
+        text-align: left;
+        margin: 20px 0;
       }
+
       p {
         font-size: 14px;
         margin-bottom: 40px;
@@ -151,14 +170,6 @@ main {
   }
 
   .services {
-    margin: 40px auto;
-    h1 {
-      text-align: center;
-      font-size: 28px;
-      font-weight: 700;
-      margin-bottom: 20px;
-    }
-
     p {
       text-align: center;
       font-size: 14px;
@@ -173,7 +184,8 @@ main {
         justify-content: space-between;
         align-items: center;
         margin: 10px auto;
-        gap: 15px;
+        padding: 20px;
+        gap: 5px;
 
         img {
           margin: 10px;
@@ -191,8 +203,133 @@ main {
       }
     }
   }
+
+  .about-us {
+    .our-values {
+      li {
+        box-shadow: $shadow;
+        border-radius: 5px;
+        margin: 10px auto;
+        max-width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        gap: 5px;
+
+        p {
+          margin: 0;
+          font-size: 14px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .why-choose-us {
+    background-color: $main-color;
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    padding: 40px 15px;
+    .reasons-choose-us {
+      justify-content: center;
+      li {
+        box-shadow: $shadow;
+        border-radius: 5px;
+        font-weight: 700;
+        padding: 0;
+        max-width: 45%;
+        display: flex;
+        align-items: center;
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .working-process {
+    .processes {
+      li {
+        box-shadow: $shadow;
+        background: linear-gradient(172.29deg, #ffffff -10.79%, #ffffff 94.04%);
+        box-shadow: $shadow;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 10px auto;
+        padding: 20px;
+        gap: 5px;
+
+        img {
+          margin: 10px;
+        }
+        h4 {
+          font-size: 16px;
+          font-weight: 700;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .reach-out {
+    position: relative;
+    color: white;
+
+    img {
+      border-radius: 5px;
+    }
+
+    div {
+      position: absolute;
+      font-size: 20px;
+      font-weight: 700;
+      top: 0;
+      left: 0;
+      text-align: center;
+      width: 100%;
+      padding: 50px;
+
+      .call-button {
+        top: 75px;
+        left: 75px;
+
+        button {
+          width: 120px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 14px;
+          color: white;
+          gap: 5px;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+  .staff {
+    text-align: center;
+
+    img {
+      border-radius: 5px;
+      margin: 40px auto;
+    }
+  }
 }
 
+// __________________________________________________________________________________________________________________________________________________________________
 // tablet sm
 @media (min-width: 768px) {
   .container {
@@ -293,9 +430,11 @@ main {
       .main-content {
         width: 35%;
 
-        h2 {
+        h1 {
           font-size: 30px;
           font-weight: 800;
+          text-align: left;
+          margin: 20px 0;
         }
 
         h3 {
@@ -329,9 +468,9 @@ main {
   }
 }
 
-// laptop xl
-@media (min-width: 1600px) {
-  .container {
-    max-width: 1410px;
-  }
-}
+// // laptop xl
+// @media (min-width: 1600px) {
+//   .container {
+//     max-width: 1410px;
+//   }
+// }
