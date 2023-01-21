@@ -105,27 +105,29 @@ main .main-section {
   margin: 7px auto;
 }
 main .main-section .main-content {
-  padding: 50px 15px 30px;
-  position: relative;
   background-image: url("images/icons/background-flower.svg");
   background-position: left bottom;
   background-repeat: no-repeat;
 }
-main .main-section .main-content h3 {
+main .main-section .main-content .bg-div {
+  padding: 50px 15px 30px;
+  position: relative;
+}
+main .main-section .main-content .bg-div h3 {
   font-size: 14px;
   font-weight: 700;
 }
-main .main-section .main-content h1 {
+main .main-section .main-content .bg-div h1 {
   font-size: 30px;
   font-weight: 800;
   text-align: left;
   margin: 20px 0;
 }
-main .main-section .main-content p {
+main .main-section .main-content .bg-div p {
   font-size: 14px;
   margin-bottom: 40px;
 }
-main .main-section .main-content .grey-btn {
+main .main-section .main-content .bg-div .grey-btn {
   background: linear-gradient(180deg, #fff8f1 0%, #cbe5ce 100%);
   border-radius: 32px;
   border: none;
@@ -136,16 +138,16 @@ main .main-section .main-content .grey-btn {
   padding: 10px 8px;
   text-align: center;
 }
-main .main-section .main-content .main-link {
+main .main-section .main-content .bg-div .main-link {
   text-align: center;
   margin: 25px auto;
 }
-main .main-section .main-content .main-link a {
+main .main-section .main-content .bg-div .main-link a {
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
 }
-main .main-section .main-content .main-btns {
+main .main-section .main-content .bg-div .main-btns {
   display: flex;
   justify-content: flex-end;
   gap: 10px;
@@ -177,25 +179,29 @@ main .services .services-list li h4 {
 main .services .services-list li p {
   text-align: left;
 }
-main .about-us .value-img-container {
-  width: 100%;
+main .about-us .row {
+  justify-content: center;
+  align-items: center;
+}
+main .about-us .row .value-img-container {
   background-image: url("images/icons/green-background-image.svg");
   background-position: top left;
   background-repeat: no-repeat;
   position: relative;
+  padding: 0;
 }
-main .about-us .value-img-container .value-img {
+main .about-us .row .value-img-container .value-img {
   margin: 15px;
 }
-main .about-us .value-img-container .small-value-img {
+main .about-us .row .value-img-container .small-value-img {
   position: absolute;
   top: 75%;
   left: 30%;
 }
-main .about-us h2 {
+main .about-us .row h2 {
   margin-top: 70px;
 }
-main .about-us .our-values li {
+main .about-us .row .our-values li {
   box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
   border-radius: 5px;
   margin: 10px auto;
@@ -207,7 +213,7 @@ main .about-us .our-values li {
   padding: 20px;
   gap: 5px;
 }
-main .about-us .our-values li p {
+main .about-us .row .our-values li p {
   margin: 0;
   font-size: 14px;
   font-weight: 700;
@@ -239,6 +245,9 @@ main .why-choose-us .reasons-choose-us li {
 main .why-choose-us .reasons-choose-us li p {
   margin: 0;
 }
+main .working-process p {
+  text-align: center;
+}
 main .working-process .processes li {
   box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
   background: linear-gradient(172.29deg, #ffffff -10.79%, #ffffff 94.04%);
@@ -261,29 +270,25 @@ main .working-process .processes li h4 {
 }
 main .working-process .processes li p {
   font-size: 14px;
+  text-align: left;
 }
 main .reach-out {
-  position: relative;
   color: white;
-}
-main .reach-out .img-fluid {
-  border-radius: 5px;
-  display: block;
-  margin: 0 auto;
-  width: 100%;
+  background-image: url("images/photos/hand-holding-small-tree-planting.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
 }
 main .reach-out .img-text {
-  position: absolute;
   font-size: 18px;
   font-weight: 700;
   text-align: center;
   align-items: center;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  top: 25%;
-  left: 5%;
-  width: 90%;
+  margin: 0 auto;
+  padding: 40px 0;
+  width: 75%;
 }
 main .reach-out .img-text .call-button button {
   width: 120px;
@@ -312,11 +317,14 @@ main .staff img {
   }
   main .main-section {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     flex-direction: row-reverse;
     align-items: flex-start;
   }
-  main .about-us .our-values li {
+  main .about-us .row .value-img-container .value-img {
+    width: 50%;
+  }
+  main .about-us .row .our-values li {
     max-width: 35%;
   }
   main .why-choose-us .img-fluid {
@@ -325,61 +333,50 @@ main .staff img {
   main .working-process .processes li {
     width: 45%;
   }
-  main .reach-out .img-fluid {
-    width: 75%;
-  }
   main .reach-out .img-text {
-    width: 65%;
     font-size: 25px;
-    left: 17%;
   }
 }
-@media (min-width: 1024px) {
-  .container {
-    max-width: 960px;
+@media (min-width: 992px) {
+  .section-title {
+    font-size: 40px;
   }
-  .container header .top-header {
-    height: 60px;
-  }
-  .container header .top-header .contact-us .email-us,
-.container header .top-header .contact-us .call-us,
-.container header .top-header .contact-us .find-us {
+  header .top-header .contact-us .email-us,
+header .top-header .contact-us .call-us,
+header .top-header .contact-us .find-us {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    color: white;
   }
-  .container header .top-header .contact-us .email-us p,
-.container header .top-header .contact-us .call-us p,
-.container header .top-header .contact-us .find-us p {
+  header .top-header .contact-us .email-us p,
+header .top-header .contact-us .call-us p,
+header .top-header .contact-us .find-us p {
     display: block;
-    margin: 0;
-  }
-  .container header .top-header .contact-us a,
-.container header .top-header .contact-us a:visited {
+    margin-bottom: 0;
+    font-weight: 700;
     color: white;
-    text-decoration: none;
   }
-  .container header .top-header .contact-us a:hover {
-    color: #00730c;
+  header .top-header .contact-us .email-us a,
+header .top-header .contact-us .call-us a,
+header .top-header .contact-us .find-us a {
     text-decoration: none;
+    color: white;
   }
-  .container header .top-header .language {
+  header .top-header .language {
     font-size: 14px;
-    font-weight: 400;
   }
-  .container header .bottom-header {
+  header .bottom-header {
     height: 80px;
   }
-  .container header .bottom-header .navbar,
-.container header .bottom-header .call-button span {
+  header .bottom-header .navbar,
+header .bottom-header .call-button span {
     display: block;
   }
-  .container header .bottom-header .menu-button {
+  header .bottom-header .menu-button {
     display: none;
   }
-  .container header .bottom-header .call-button button {
+  header .bottom-header .call-button button {
     width: 120px;
     height: 50px;
     display: flex;
@@ -390,7 +387,7 @@ main .staff img {
     color: white;
     gap: 5px;
   }
-  .container header .bottom-header .drop-down {
+  header .bottom-header .drop-down {
     padding: 0;
     display: flex;
     justify-content: center;
@@ -400,41 +397,93 @@ main .staff img {
     font-weight: 700;
     margin: 0;
   }
-  .container main .main-section {
+  main .main-section .img-fluid {
+    width: 100%;
+    align-self: end;
+  }
+  main .main-section .main-content {
     display: flex;
-    justify-content: flex-start;
-    flex-direction: row-reverse;
-    align-items: flex-end;
+    justify-content: flex-end;
   }
-  .container main .main-section .img-fluid {
-    width: 60%;
+  main .main-section .main-content .bg-div {
+    width: 95%;
   }
-  .container main .main-section .main-content {
-    width: 35%;
-    background-image: url("images/icons/background-flower.svg");
-    background-position: left bottom;
-    background-repeat: no-repeat;
+  main .main-section .main-content .bg-div h1 {
+    font-size: 42px;
   }
-  .container main .main-section .main-content h1 {
-    font-size: 30px;
-    font-weight: 800;
-    text-align: left;
-    margin: 20px 0;
-  }
-  .container main .main-section .main-content h3 {
-    font-size: 14px;
-    margin: 20px 0;
-  }
-  .container main .main-section .main-content p {
-    font-size: 16px;
-  }
-  .container main .main-section .main-content .main-btns {
+  main .main-section .main-content .bg-div .main-btns {
     justify-content: center;
     gap: 15px;
   }
-  .container main .main-section .main-content .main-btns .grey-btn {
-    font-size: 12px;
-    width: 150px;
-    height: 40px;
+  main .services p {
+    font-size: 16px;
+  }
+  main .services .services-list li {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 27%;
+  }
+  main .services .services-list li .services-text {
+    text-align: center;
+    font-size: 14px;
+  }
+  main .services .services-list li .services-text p {
+    text-align: center;
+  }
+  main .about-us .row .value-img-container {
+    width: 40%;
+  }
+  main .about-us .row .value-img-container .value-img {
+    width: 85%;
+  }
+  main .about-us .row .value-img-container .small-value-img {
+    left: 37%;
+  }
+  main .about-us .row .our-values li {
+    flex-direction: row;
+    max-width: none;
+    justify-content: space-around;
+  }
+  main .about-us .row .our-values li p {
+    font-size: 20px;
+  }
+  main .about-us .row .green-btn {
+    margin: 0;
+  }
+  main .why-choose-us {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 100px;
+    text-align: left;
+  }
+  main .why-choose-us div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  main .why-choose-us div .reasons-choose-us {
+    justify-content: flex-start;
+  }
+  main .why-choose-us div .green-btn {
+    margin: 0;
+  }
+  main .working-process p {
+    font-size: 18px;
+  }
+  main .working-process .processes li {
+    width: 22%;
+  }
+  main .reach-out .img-text {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 15px;
+  }
+  main .reach-out .img-text p {
+    width: 50%;
+    text-align: end;
+    margin: 0;
   }
 }/*# sourceMappingURL=style.css.map */

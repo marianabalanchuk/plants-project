@@ -114,55 +114,57 @@ main {
     background: $background-gradient;
     margin: 7px auto;
     .main-content {
-      padding: 50px 15px 30px;
-      position: relative;
-
       background-image: url("images/icons/background-flower.svg");
       background-position: left bottom;
       background-repeat: no-repeat;
-      h3 {
-        font-size: 14px;
-        font-weight: 700;
-      }
+      .bg-div {
+        padding: 50px 15px 30px;
+        position: relative;
 
-      h1 {
-        font-size: 30px;
-        font-weight: 800;
-        text-align: left;
-        margin: 20px 0;
-      }
+        h3 {
+          font-size: 14px;
+          font-weight: 700;
+        }
 
-      p {
-        font-size: 14px;
-        margin-bottom: 40px;
-      }
-      .grey-btn {
-        background: linear-gradient(180deg, #fff8f1 0%, #cbe5ce 100%);
-        border-radius: 32px;
-        border: none;
-        font-size: 10px;
-        font-weight: 400;
-        width: 130px;
-        height: 32px;
-        padding: 10px 8px;
-        text-align: center;
-      }
+        h1 {
+          font-size: 30px;
+          font-weight: 800;
+          text-align: left;
+          margin: 20px 0;
+        }
 
-      .main-link {
-        text-align: center;
-        margin: 25px auto;
-      }
+        p {
+          font-size: 14px;
+          margin-bottom: 40px;
+        }
+        .grey-btn {
+          background: linear-gradient(180deg, #fff8f1 0%, #cbe5ce 100%);
+          border-radius: 32px;
+          border: none;
+          font-size: 10px;
+          font-weight: 400;
+          width: 130px;
+          height: 32px;
+          padding: 10px 8px;
+          text-align: center;
+        }
 
-      .main-link a {
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: 600;
-      }
+        .main-link {
+          text-align: center;
+          margin: 25px auto;
+        }
 
-      .main-btns {
-        display: flex;
-        justify-content: flex-end;
-        gap: 10px;
+        .main-link a {
+          text-decoration: none;
+          font-size: 16px;
+          font-weight: 600;
+        }
+
+        .main-btns {
+          display: flex;
+          justify-content: flex-end;
+          gap: 10px;
+        }
       }
     }
   }
@@ -203,45 +205,50 @@ main {
   }
 
   .about-us {
-    .value-img-container {
-      width: 100%;
-      background-image: url("images/icons/green-background-image.svg");
-      background-position: top left;
-      background-repeat: no-repeat;
-      position: relative;
+    .row {
+      justify-content: center;
+      align-items: center;
 
-      .value-img {
-        margin: 15px;
+      .value-img-container {
+        background-image: url("images/icons/green-background-image.svg");
+        background-position: top left;
+        background-repeat: no-repeat;
+        position: relative;
+        padding: 0;
+
+        .value-img {
+          margin: 15px;
+        }
+
+        .small-value-img {
+          position: absolute;
+          top: 75%;
+          left: 30%;
+        }
       }
 
-      .small-value-img {
-        position: absolute;
-        top: 75%;
-        left: 30%;
+      h2 {
+        margin-top: 70px;
       }
-    }
 
-    h2 {
-      margin-top: 70px;
-    }
+      .our-values {
+        li {
+          box-shadow: $shadow;
+          border-radius: 5px;
+          margin: 10px auto;
+          max-width: 45%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          padding: 20px;
+          gap: 5px;
 
-    .our-values {
-      li {
-        box-shadow: $shadow;
-        border-radius: 5px;
-        margin: 10px auto;
-        max-width: 45%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding: 20px;
-        gap: 5px;
-
-        p {
-          margin: 0;
-          font-size: 14px;
-          font-weight: 700;
+          p {
+            margin: 0;
+            font-size: 14px;
+            font-weight: 700;
+          }
         }
       }
     }
@@ -278,6 +285,9 @@ main {
   }
 
   .working-process {
+    p {
+      text-align: center;
+    }
     .processes {
       li {
         box-shadow: $shadow;
@@ -302,34 +312,28 @@ main {
 
         p {
           font-size: 14px;
+          text-align: left;
         }
       }
     }
   }
 
   .reach-out {
-    position: relative;
     color: white;
-
-    .img-fluid {
-      border-radius: 5px;
-      display: block;
-      margin: 0 auto;
-      width: 100%;
-    }
-
+    background-image: url("images/photos/hand-holding-small-tree-planting.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
     .img-text {
-      position: absolute;
       font-size: 18px;
       font-weight: 700;
       text-align: center;
       align-items: center;
       display: flex;
       flex-direction: column;
-      gap: 10px;
-      top: 25%;
-      left: 5%;
-      width: 90%;
+      margin: 0 auto;
+      padding: 40px 0;
+      width: 75%;
 
       .call-button {
         button {
@@ -370,15 +374,22 @@ main {
   main {
     .main-section {
       display: flex;
-      justify-content: flex-start;
+      justify-content: flex-end;
       flex-direction: row-reverse;
       align-items: flex-start;
     }
 
     .about-us {
-      .our-values {
-        li {
-          max-width: 35%;
+      .row {
+        .value-img-container {
+          .value-img {
+            width: 50%;
+          }
+        }
+        .our-values {
+          li {
+            max-width: 35%;
+          }
         }
       }
     }
@@ -396,140 +407,196 @@ main {
     }
 
     .reach-out {
-      .img-fluid {
-        width: 75%;
-      }
-
       .img-text {
-        width: 65%;
         font-size: 25px;
-        left: 17%;
       }
     }
   }
 }
+// laptop lg
+@media (min-width: 992px) {
+  .section-title {
+    font-size: 40px;
+  }
 
-// laptop md
-@media (min-width: 1024px) {
-  .container {
-    max-width: 960px;
+  header {
+    .top-header {
+      .contact-us {
+        .email-us,
+        .call-us,
+        .find-us {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
 
-    header {
-      .top-header {
-        height: 60px;
-        .contact-us {
-          .email-us,
-          .call-us,
-          .find-us {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            color: white;
-          }
-
-          .email-us p,
-          .call-us p,
-          .find-us p {
+          p {
             display: block;
-            margin: 0;
-          }
-
-          a,
-          a:visited {
+            margin-bottom: 0;
+            font-weight: 700;
             color: white;
-            text-decoration: none;
           }
-
-          a:hover {
-            color: $secondary-color;
+          a {
             text-decoration: none;
+            color: white;
           }
-        }
-
-        .language {
-          font-size: 14px;
-          font-weight: 400;
         }
       }
-
-      .bottom-header {
-        height: 80px;
-        .navbar,
-        .call-button span {
-          display: block;
-        }
-        .menu-button {
-          display: none;
-        }
-
-        .call-button button {
-          width: 120px;
-          height: 50px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          font-size: 18px;
-          font-weight: 700;
-          color: white;
-          gap: 5px;
-        }
-        .drop-down {
-          padding: 0;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          gap: 25px;
-          font-size: 16px;
-          font-weight: 700;
-          margin: 0;
-        }
+      .language {
+        font-size: 14px;
       }
     }
 
-    main {
-      .main-section {
+    .bottom-header {
+      height: 80px;
+      .navbar,
+      .call-button span {
+        display: block;
+      }
+      .menu-button {
+        display: none;
+      }
+
+      .call-button button {
+        width: 120px;
+        height: 50px;
         display: flex;
-        justify-content: flex-start;
-        flex-direction: row-reverse;
-        align-items: flex-end;
-
-        .img-fluid {
-          width: 60%;
-        }
-
-        .main-content {
-          width: 35%;
-          background-image: url("images/icons/background-flower.svg");
-          background-position: left bottom;
-          background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 700;
+        color: white;
+        gap: 5px;
+      }
+      .drop-down {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0;
+      }
+    }
+  }
+  main {
+    .main-section {
+      .img-fluid {
+        width: 100%;
+        align-self: end;
+      }
+      .main-content {
+        display: flex;
+        justify-content: flex-end;
+        .bg-div {
+          width: 95%;
 
           h1 {
-            font-size: 30px;
-            font-weight: 800;
-            text-align: left;
-            margin: 20px 0;
-          }
-
-          h3 {
-            font-size: 14px;
-            margin: 20px 0;
-          }
-
-          p {
-            font-size: 16px;
+            font-size: 42px;
           }
 
           .main-btns {
             justify-content: center;
             gap: 15px;
+          }
+        }
+      }
+    }
 
-            .grey-btn {
-              font-size: 12px;
-              width: 150px;
-              height: 40px;
+    .services {
+      p {
+        font-size: 16px;
+      }
+      .services-list {
+        li {
+          flex-direction: column;
+          align-items: center;
+          padding: 10px;
+          width: 27%;
+
+          .services-text {
+            text-align: center;
+            font-size: 14px;
+            p {
+              text-align: center;
             }
           }
+        }
+      }
+    }
+
+    .about-us {
+      .row {
+        .value-img-container {
+          width: 40%;
+          .value-img {
+            width: 85%;
+          }
+          .small-value-img {
+            left: 37%;
+          }
+        }
+
+        .our-values {
+          li {
+            flex-direction: row;
+            max-width: none;
+            justify-content: space-around;
+
+            p {
+              font-size: 20px;
+            }
+          }
+        }
+        .green-btn {
+          margin: 0;
+        }
+      }
+    }
+
+    .why-choose-us {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px 100px;
+      text-align: left;
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .reasons-choose-us {
+          justify-content: flex-start;
+        }
+
+        .green-btn {
+          margin: 0;
+        }
+      }
+    }
+
+    .working-process {
+      p {
+        font-size: 18px;
+      }
+      .processes {
+        li {
+          width: 22%;
+        }
+      }
+    }
+
+    .reach-out {
+      .img-text {
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 15px;
+        p {
+          width: 50%;
+          text-align: end;
+          margin: 0;
         }
       }
     }
