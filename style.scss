@@ -88,7 +88,6 @@ li {
 }
 
 header {
-  margin: -7px;
   .top-header {
     background-color: $main-color;
     display: flex;
@@ -129,6 +128,42 @@ header {
     .navbar,
     .call-button span {
       display: none;
+    }
+    .navbar {
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .navigation {
+        .drop-down {
+          display: inline-block;
+          position: relative;
+          .dropdown-items {
+            display: none;
+            position: absolute;
+            width: 200px;
+            top: 65px;
+            li {
+              background-color: $main-color;
+              border-radius: 0;
+              margin: 0;
+              display: block;
+              padding: 20px;
+              a {
+                color: white;
+              }
+            }
+          }
+        }
+
+        li:hover,
+        .dropdown-items li:hover {
+          background-color: white;
+          a {
+            color: $main-color;
+          }
+        }
+      }
     }
 
     .call-menu {
@@ -414,7 +449,7 @@ main {
       }
 
       .navbar {
-        .drop-down {
+        .navigation {
           padding: 0;
           display: flex;
           justify-content: center;
@@ -423,8 +458,11 @@ main {
           font-weight: 700;
           li {
             box-shadow: none;
-            gap: 10px;
-            padding: 0;
+            padding: 20px 10px;
+          }
+
+          .drop-down:hover .dropdown-items {
+            display: block;
           }
         }
       }
@@ -585,10 +623,9 @@ main {
       .main-content {
         .bg-div {
           padding: 40px 8vw;
-          .main-link {
-            a {
-              font-size: 20px;
-            }
+          h3,
+          .main-link a {
+            font-size: 20px;
           }
 
           .main-btns {

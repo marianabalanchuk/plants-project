@@ -84,9 +84,6 @@ li {
   margin: 0;
 }
 
-header {
-  margin: -7px;
-}
 header .top-header {
   background-color: #0c4b35;
   display: flex;
@@ -123,6 +120,38 @@ header .bottom-header {
 header .bottom-header .navbar,
 header .bottom-header .call-button span {
   display: none;
+}
+header .bottom-header .navbar a {
+  text-decoration: none;
+  color: black;
+}
+header .bottom-header .navbar .navigation .drop-down {
+  display: inline-block;
+  position: relative;
+}
+header .bottom-header .navbar .navigation .drop-down .dropdown-items {
+  display: none;
+  position: absolute;
+  width: 200px;
+  top: 65px;
+}
+header .bottom-header .navbar .navigation .drop-down .dropdown-items li {
+  background-color: #0c4b35;
+  border-radius: 0;
+  margin: 0;
+  display: block;
+  padding: 20px;
+}
+header .bottom-header .navbar .navigation .drop-down .dropdown-items li a {
+  color: white;
+}
+header .bottom-header .navbar .navigation li:hover,
+header .bottom-header .navbar .navigation .dropdown-items li:hover {
+  background-color: white;
+}
+header .bottom-header .navbar .navigation li:hover a,
+header .bottom-header .navbar .navigation .dropdown-items li:hover a {
+  color: #0c4b35;
 }
 header .bottom-header .call-menu {
   display: flex;
@@ -349,7 +378,7 @@ header .top-header .contact-us .find-us a {
 header .bottom-header .call-button span {
     display: block;
   }
-  header .bottom-header .navbar .drop-down {
+  header .bottom-header .navbar .navigation {
     padding: 0;
     display: flex;
     justify-content: center;
@@ -357,10 +386,12 @@ header .bottom-header .call-button span {
     margin: 0;
     font-weight: 700;
   }
-  header .bottom-header .navbar .drop-down li {
+  header .bottom-header .navbar .navigation li {
     box-shadow: none;
-    gap: 10px;
-    padding: 0;
+    padding: 20px 10px;
+  }
+  header .bottom-header .navbar .navigation .drop-down:hover .dropdown-items {
+    display: block;
   }
   header .bottom-header .menu-button {
     display: none;
@@ -474,7 +505,8 @@ header .bottom-header .call-button span {
   main .main-section .main-content .bg-div {
     padding: 40px 8vw;
   }
-  main .main-section .main-content .bg-div .main-link a {
+  main .main-section .main-content .bg-div h3,
+main .main-section .main-content .bg-div .main-link a {
     font-size: 20px;
   }
   main .main-section .main-content .bg-div .main-btns {
