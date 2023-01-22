@@ -6,11 +6,16 @@
   font-family: "Nunito", sans-serif;
 }
 
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
 .active {
   color: $secondary-color;
 }
 
-.call-button,
+.call-button-small,
 .call-button-big,
 .green-btn {
   background-color: $secondary-color;
@@ -19,7 +24,7 @@
   color: white;
 }
 
-.call-button {
+.call-button-small {
   width: 40px;
   height: 34px;
 }
@@ -31,7 +36,7 @@
 }
 
 .call-button-big {
-  padding: 15px;
+  padding: 12px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -125,10 +130,10 @@ header {
     margin: 0 auto;
     padding: 0 8vw;
 
-    .navbar,
-    .call-button span {
+    .navbar {
       display: none;
     }
+
     .navbar {
       a {
         text-decoration: none;
@@ -171,6 +176,9 @@ header {
       justify-content: flex-end;
       gap: 20px;
       align-items: center;
+      .call-button-big {
+        display: none;
+      }
     }
   }
 }
@@ -450,8 +458,7 @@ main {
 
     .bottom-header {
       height: 80px;
-      .navbar,
-      .call-button span {
+      .navbar {
         display: block;
       }
 
@@ -473,8 +480,15 @@ main {
           }
         }
       }
-      .menu-button {
+      .menu-button,
+      .call-button-small {
         display: none;
+      }
+
+      .call-menu {
+        .call-button-big {
+          display: block;
+        }
       }
     }
   }

@@ -3,11 +3,16 @@
   font-family: "Nunito", sans-serif;
 }
 
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
 .active {
   color: #00730c;
 }
 
-.call-button,
+.call-button-small,
 .call-button-big,
 .green-btn {
   background-color: #00730c;
@@ -16,7 +21,7 @@
   color: white;
 }
 
-.call-button {
+.call-button-small {
   width: 40px;
   height: 34px;
 }
@@ -28,7 +33,7 @@
 }
 
 .call-button-big {
-  padding: 15px;
+  padding: 12px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -117,8 +122,7 @@ header .bottom-header {
   margin: 0 auto;
   padding: 0 8vw;
 }
-header .bottom-header .navbar,
-header .bottom-header .call-button span {
+header .bottom-header .navbar {
   display: none;
 }
 header .bottom-header .navbar a {
@@ -158,6 +162,9 @@ header .bottom-header .call-menu {
   justify-content: flex-end;
   gap: 20px;
   align-items: center;
+}
+header .bottom-header .call-menu .call-button-big {
+  display: none;
 }
 
 main .main-section {
@@ -376,8 +383,7 @@ header .top-header .contact-us .find-us a {
   header .bottom-header {
     height: 80px;
   }
-  header .bottom-header .navbar,
-header .bottom-header .call-button span {
+  header .bottom-header .navbar {
     display: block;
   }
   header .bottom-header .navbar .navigation {
@@ -395,8 +401,12 @@ header .bottom-header .call-button span {
   header .bottom-header .navbar .navigation .drop-down:hover .dropdown-items {
     display: block;
   }
-  header .bottom-header .menu-button {
+  header .bottom-header .menu-button,
+header .bottom-header .call-button-small {
     display: none;
+  }
+  header .bottom-header .call-menu .call-button-big {
+    display: block;
   }
   main .main-section .img-fluid {
     width: 125%;
