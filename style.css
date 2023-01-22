@@ -4,8 +4,7 @@
 }
 
 .swiper {
-  width: 600px;
-  height: 300px;
+  padding: 40px 0;
 }
 
 .active {
@@ -298,7 +297,7 @@ main .working-process .processes li img {
 }
 main .reach-out {
   color: white;
-  background-image: url("images/photos/hand-holding-small-tree-planting.svg");
+  background-image: url("images/photos/hand-holding-small-tree-planting.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
