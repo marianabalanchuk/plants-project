@@ -218,7 +218,6 @@ main .services .services-list li {
   box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
   justify-content: space-between;
   align-items: center;
-  max-width: 48%;
 }
 main .services .services-list li img {
   margin: 10px;
@@ -321,6 +320,9 @@ main .staff {
     justify-content: flex-end;
     flex-direction: row-reverse;
     align-items: flex-start;
+  }
+  main .services .services-list li {
+    width: 48%;
   }
   main .about-us .row .value-img-container .value-img {
     width: 50%;
@@ -451,6 +453,9 @@ header .bottom-header .call-button span {
     justify-content: center;
     gap: 20px;
     padding: 20px 100px;
+  }
+  main .why-choose-us .img-fluid {
+    width: 175%;
   }
   main .why-choose-us .section-p {
     text-align: left;

@@ -240,7 +240,6 @@ main {
         box-shadow: $shadow;
         justify-content: space-between;
         align-items: center;
-        max-width: 48%;
 
         img {
           margin: 10px;
@@ -366,6 +365,14 @@ main {
       justify-content: flex-end;
       flex-direction: row-reverse;
       align-items: flex-start;
+    }
+
+    .services {
+      .services-list {
+        li {
+          width: 48%;
+        }
+      }
     }
 
     .about-us {
@@ -545,6 +552,10 @@ main {
       justify-content: center;
       gap: 20px;
       padding: 20px 100px;
+
+      .img-fluid {
+        width: 175%;
+      }
       .section-p {
         text-align: left;
       }
