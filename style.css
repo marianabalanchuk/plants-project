@@ -189,6 +189,7 @@ main .services .services-list li {
   box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
   justify-content: space-between;
   align-items: center;
+  max-width: 48%;
 }
 main .services .services-list li img {
   margin: 10px;
@@ -244,13 +245,12 @@ main .why-choose-us .reasons-choose-us li {
 }
 main .why-choose-us .reasons-choose-us li .li-head {
   margin: 0;
-  font-size: 14px;
 }
 main .working-process {
   padding: 40px 8vw;
 }
 main .working-process .processes {
-  justify-content: center;
+  justify-content: space-evenly;
 }
 main .working-process .processes li {
   background: linear-gradient(172.29deg, #ffffff -10.79%, #ffffff 94.04%);
@@ -287,13 +287,6 @@ main .staff {
   .section-title {
     font-size: 32px;
   }
-  .section-p,
-.li-p {
-    font-size: 14px;
-  }
-  .li-head {
-    font-size: 16px;
-  }
   main .main-section {
     display: flex;
     justify-content: flex-end;
@@ -313,11 +306,8 @@ main .staff {
   main .why-choose-us .img-fluid {
     width: 75%;
   }
-  main .working-process .processes {
-    gap: 20px;
-  }
   main .working-process .processes li {
-    width: 45%;
+    width: 48%;
   }
   main .reach-out .img-text {
     font-size: 25px;
@@ -395,7 +385,7 @@ header .bottom-header .call-button span {
   }
   main .services .services-list li {
     flex-direction: column;
-    width: 27%;
+    max-width: 32%;
   }
   main .services .services-list li .services-text {
     text-align: center;
@@ -442,14 +432,12 @@ header .bottom-header .call-button span {
   main .why-choose-us div .reasons-choose-us li {
     justify-content: flex-start;
   }
-  main .why-choose-us div .reasons-choose-us li .li-head {
-    font-size: 16px;
-  }
   main .why-choose-us div .green-btn {
     margin: 0;
   }
   main .working-process .processes li {
-    width: 200px;
+    margin: 0;
+    width: 23%;
   }
   main .reach-out .img-text {
     flex-direction: row;
@@ -503,7 +491,7 @@ header .bottom-header .call-button span {
     padding: 40px 10vw;
   }
   main .services .services-list li {
-    width: 22%;
+    width: 23%;
   }
   main .about-us .row .value-img-container .small-value-img {
     top: 80%;
@@ -514,9 +502,6 @@ header .bottom-header .call-button span {
   }
   main .working-process {
     padding: 40px 10vw;
-  }
-  main .working-process .processes li {
-    width: 300px;
   }
   main .reach-out {
     padding: 40px 10vw;

@@ -205,6 +205,7 @@ main {
         box-shadow: $shadow;
         justify-content: space-between;
         align-items: center;
+        max-width: 48%;
 
         img {
           margin: 10px;
@@ -271,7 +272,6 @@ main {
         justify-content: center;
         .li-head {
           margin: 0;
-          font-size: 14px;
         }
       }
     }
@@ -280,7 +280,7 @@ main {
   .working-process {
     padding: 40px 8vw;
     .processes {
-      justify-content: center;
+      justify-content: space-evenly;
       li {
         background: linear-gradient(172.29deg, #ffffff -10.79%, #ffffff 94.04%);
         flex-direction: column;
@@ -325,15 +325,6 @@ main {
     font-size: 32px;
   }
 
-  .section-p,
-  .li-p {
-    font-size: 14px;
-  }
-
-  .li-head {
-    font-size: 16px;
-  }
-
   main {
     .main-section {
       display: flex;
@@ -367,9 +358,8 @@ main {
 
     .working-process {
       .processes {
-        gap: 20px;
         li {
-          width: 45%;
+          width: 48%;
         }
       }
     }
@@ -471,7 +461,7 @@ main {
       .services-list {
         li {
           flex-direction: column;
-          width: 27%;
+          max-width: 32%;
           .services-text {
             text-align: center;
             p {
@@ -528,9 +518,6 @@ main {
         .reasons-choose-us {
           li {
             justify-content: flex-start;
-            .li-head {
-              font-size: 16px;
-            }
           }
         }
 
@@ -543,7 +530,8 @@ main {
     .working-process {
       .processes {
         li {
-          width: 200px;
+          margin: 0;
+          width: 23%;
         }
       }
     }
@@ -618,7 +606,7 @@ main {
       padding: 40px 10vw;
       .services-list {
         li {
-          width: 22%;
+          width: 23%;
         }
       }
     }
@@ -640,11 +628,6 @@ main {
 
     .working-process {
       padding: 40px 10vw;
-      .processes {
-        li {
-          width: 300px;
-        }
-      }
     }
 
     .reach-out {
