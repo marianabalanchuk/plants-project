@@ -205,6 +205,7 @@ main {
       background-image: url("images/icons/background-flower.svg");
       background-position: left bottom;
       background-repeat: no-repeat;
+      background-size: 15%;
       .bg-div {
         padding: 40px 8vw;
         h3 {
@@ -451,7 +452,7 @@ main {
       .row {
         .value-img-container {
           .value-img {
-            width: 50%;
+            width: 45%;
           }
         }
         .our-values {
@@ -600,7 +601,7 @@ main {
         .value-img-container {
           width: 40%;
           .value-img {
-            width: 85%;
+            width: auto;
           }
           .small-value-img {
             left: 37%;
@@ -755,6 +756,9 @@ main {
     .about-us {
       .row {
         .value-img-container {
+          .value-img {
+            width: 75%;
+          }
           .small-value-img {
             top: 85%;
             left: 60%;

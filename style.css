@@ -189,6 +189,7 @@ main .main-section .main-content {
   background-image: url("images/icons/background-flower.svg");
   background-position: left bottom;
   background-repeat: no-repeat;
+  background-size: 15%;
 }
 main .main-section .main-content .bg-div {
   padding: 40px 8vw;
@@ -385,7 +386,7 @@ main .clients-saying {
     width: 48%;
   }
   main .about-us .row .value-img-container .value-img {
-    width: 50%;
+    width: 45%;
   }
   main .about-us .row .our-values {
     justify-content: center;
@@ -493,7 +494,7 @@ header .bottom-header .call-button-small {
     width: 40%;
   }
   main .about-us .row .value-img-container .value-img {
-    width: 85%;
+    width: auto;
   }
   main .about-us .row .value-img-container .small-value-img {
     left: 37%;
@@ -605,6 +606,9 @@ main .main-section .main-content .bg-div .main-link a {
   }
   main .services .services-list li {
     width: 23%;
+  }
+  main .about-us .row .value-img-container .value-img {
+    width: 75%;
   }
   main .about-us .row .value-img-container .small-value-img {
     top: 85%;
