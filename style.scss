@@ -371,6 +371,7 @@ main {
 
   .staff {
     padding: 40px 8vw;
+
     .staff-data {
       background: linear-gradient(
         6.68deg,
@@ -383,7 +384,43 @@ main {
       align-items: center;
       padding: 10px;
       border-radius: 0 0 5px 5px;
+      p {
+        margin: 0;
+      }
+
+      .social-media {
+        display: none;
+      }
     }
+
+    .staff-data:hover {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: calc(100% + 65px);
+      border-radius: 5px;
+      padding: 20px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+      .social-media {
+        display: flex;
+        justify-content: space-around;
+        gap: 10px;
+      }
+
+      .staff-card {
+        position: relative;
+      }
+    }
+  }
+
+  .clients-saying {
+    padding: 40px 8vw;
+    background-color: #e3f2e7;
   }
 }
 
@@ -522,7 +559,7 @@ main {
   main {
     .main-section {
       .img-fluid {
-        width: 125%;
+        width: 100%;
         align-self: end;
       }
 
@@ -638,6 +675,21 @@ main {
         }
       }
     }
+    .staff {
+      .staff-text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        div {
+          width: 65%;
+          padding: 20px;
+          .section-p,
+          .section-title {
+            text-align: left;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -704,8 +756,8 @@ main {
       .row {
         .value-img-container {
           .small-value-img {
-            top: 80%;
-            left: 50%;
+            top: 85%;
+            left: 60%;
           }
         }
       }

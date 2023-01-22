@@ -340,6 +340,36 @@ main .staff .staff-data {
   padding: 10px;
   border-radius: 0 0 5px 5px;
 }
+main .staff .staff-data p {
+  margin: 0;
+}
+main .staff .staff-data .social-media {
+  display: none;
+}
+main .staff .staff-data:hover {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: calc(100% + 65px);
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+main .staff .staff-data:hover .social-media {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+main .staff .staff-data:hover .staff-card {
+  position: relative;
+}
+main .clients-saying {
+  padding: 40px 8vw;
+  background-color: #e3f2e7;
+}
 
 @media (min-width: 768px) {
   .section-title {
@@ -432,7 +462,7 @@ header .bottom-header .call-button-small {
     display: block;
   }
   main .main-section .img-fluid {
-    width: 125%;
+    width: 100%;
     align-self: end;
   }
   main .main-section .main-content {
@@ -518,6 +548,19 @@ header .bottom-header .call-button-small {
     text-align: end;
     margin: 0;
   }
+  main .staff .staff-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main .staff .staff-text div {
+    width: 65%;
+    padding: 20px;
+  }
+  main .staff .staff-text div .section-p,
+main .staff .staff-text div .section-title {
+    text-align: left;
+  }
 }
 @media (min-width: 1440px) {
   .section-title {
@@ -564,8 +607,8 @@ main .main-section .main-content .bg-div .main-link a {
     width: 23%;
   }
   main .about-us .row .value-img-container .small-value-img {
-    top: 80%;
-    left: 50%;
+    top: 85%;
+    left: 60%;
   }
   main .why-choose-us {
     padding: 40px 10vw;
