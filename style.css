@@ -248,6 +248,9 @@ main .why-choose-us .reasons-choose-us li p {
 main .working-process p {
   text-align: center;
 }
+main .working-process .processes {
+  justify-content: center;
+}
 main .working-process .processes li {
   box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
   background: linear-gradient(172.29deg, #ffffff -10.79%, #ffffff 94.04%);
@@ -464,7 +467,7 @@ header .bottom-header .call-button span {
     flex-direction: column;
     align-items: flex-start;
   }
-  main .why-choose-us div .reasons-choose-us {
+  main .why-choose-us div .reasons-choose-us li {
     justify-content: flex-start;
   }
   main .why-choose-us div .green-btn {
@@ -474,7 +477,8 @@ header .bottom-header .call-button span {
     font-size: 18px;
   }
   main .working-process .processes li {
-    width: 22%;
+    width: 200px;
+    margin: 15px;
   }
   main .reach-out .img-text {
     flex-direction: row;
@@ -485,5 +489,33 @@ header .bottom-header .call-button span {
     width: 50%;
     text-align: end;
     margin: 0;
+  }
+}
+@media (min-width: 1440px) {
+  main .main-section .main-content .bg-div {
+    width: 82%;
+  }
+  main .main-section .main-content .bg-div .main-link a {
+    font-size: 18px;
+  }
+  main .main-section .main-content .bg-div .main-btns {
+    gap: 20px;
+  }
+  main .main-section .main-content .bg-div .main-btns .grey-btn {
+    font-size: 14px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: auto;
+  }
+  main .services .services-list li {
+    width: 21%;
+  }
+  main .about-us .row .value-img-container .small-value-img {
+    top: 80%;
+    left: 50%;
+  }
+  main .working-process .processes li {
+    width: 250px;
   }
 }/*# sourceMappingURL=style.css.map */

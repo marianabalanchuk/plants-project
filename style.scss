@@ -289,6 +289,7 @@ main {
       text-align: center;
     }
     .processes {
+      justify-content: center;
       li {
         box-shadow: $shadow;
         background: linear-gradient(172.29deg, #ffffff -10.79%, #ffffff 94.04%);
@@ -514,7 +515,6 @@ main {
           align-items: center;
           padding: 10px;
           width: 27%;
-
           .services-text {
             text-align: center;
             font-size: 14px;
@@ -568,7 +568,9 @@ main {
         align-items: flex-start;
 
         .reasons-choose-us {
-          justify-content: flex-start;
+          li {
+            justify-content: flex-start;
+          }
         }
 
         .green-btn {
@@ -583,7 +585,8 @@ main {
       }
       .processes {
         li {
-          width: 22%;
+          width: 200px;
+          margin: 15px;
         }
       }
     }
@@ -603,9 +606,56 @@ main {
   }
 }
 
-// // laptop xl
-// @media (min-width: 1600px) {
-//   .container {
-//     max-width: 1410px;
-//   }
-// }
+// laptop xxl
+@media (min-width: 1440px) {
+  main {
+    .main-section {
+      .main-content {
+        .bg-div {
+          width: 82%;
+
+          .main-link {
+            a {
+              font-size: 18px;
+            }
+          }
+
+          .main-btns {
+            gap: 20px;
+            .grey-btn {
+              font-size: 14px;
+              width: fit-content;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+    .services {
+      .services-list {
+        li {
+          width: 21%;
+        }
+      }
+    }
+
+    .about-us {
+      .row {
+        .value-img-container {
+          .small-value-img {
+            top: 80%;
+            left: 50%;
+          }
+        }
+      }
+    }
+
+    .working-process {
+      .processes {
+        li {
+          width: 250px;
+        }
+      }
+    }
+  }
+}
