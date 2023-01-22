@@ -6,12 +6,6 @@
   font-family: "Nunito", sans-serif;
 }
 
-.container {
-  width: 100%;
-  margin: 40px auto;
-  padding: 0 25px;
-}
-
 .active {
   color: $secondary-color;
 }
@@ -34,11 +28,10 @@
 .green-btn {
   font-size: 16px;
   font-weight: 700;
-  height: 45px;
 }
 
 .call-button-big {
-  width: 120px;
+  padding: 15px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -49,10 +42,11 @@
 }
 
 .green-btn {
-  width: 75%;
+  width: 275px;
   text-align: center;
   display: block;
   margin: 0 auto;
+  padding: 15px;
 }
 
 ul {
@@ -102,6 +96,7 @@ header {
     height: 55px;
     align-items: center;
     margin: 0 auto;
+    padding: 0 8vw;
 
     .contact-us {
       display: flex;
@@ -129,6 +124,7 @@ header {
     height: 70px;
     box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.15);
     margin: 0 auto;
+    padding: 0 8vw;
 
     .navbar,
     .call-button span {
@@ -148,15 +144,12 @@ main {
   .main-section {
     padding: 0;
     background: $background-gradient;
-    margin: 0px auto;
     .main-content {
       background-image: url("images/icons/background-flower.svg");
       background-position: left bottom;
       background-repeat: no-repeat;
       .bg-div {
-        padding: 40px 25px;
-        position: relative;
-
+        padding: 40px 8vw;
         h3 {
           font-size: 14px;
           font-weight: 700;
@@ -205,6 +198,7 @@ main {
   }
 
   .services {
+    padding: 40px 8vw;
     .services-list {
       li {
         background: linear-gradient(172.29deg, #ffffff -10.79%, #ffffff 94.04%);
@@ -243,21 +237,20 @@ main {
           left: 30%;
         }
       }
+      div {
+        padding: 60px 8vw 40px;
 
-      .section-title {
-        margin-top: 70px;
-      }
-
-      .our-values {
-        li {
-          box-shadow: $shadow;
-          max-width: 45%;
-          justify-content: center;
-          align-items: center;
-          flex-direction: column;
-        }
-        .li-head {
-          margin: 0;
+        .our-values {
+          li {
+            box-shadow: $shadow;
+            max-width: 45%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+          }
+          .li-head {
+            margin: 0;
+          }
         }
       }
     }
@@ -267,7 +260,7 @@ main {
     background-color: $main-color;
     color: white;
     text-align: center;
-    padding: 40px 15px;
+    padding: 40px 8vw;
 
     .reasons-choose-us {
       justify-content: center;
@@ -278,12 +271,14 @@ main {
         justify-content: center;
         .li-head {
           margin: 0;
+          font-size: 14px;
         }
       }
     }
   }
 
   .working-process {
+    padding: 40px 8vw;
     .processes {
       justify-content: center;
       li {
@@ -319,34 +314,24 @@ main {
   }
 
   .staff {
-    img {
-      border-radius: 5px;
-      margin: 40px auto;
-    }
+    padding: 40px 8vw;
   }
 }
 
 // __________________________________________________________________________________________________________________________________________________________________
 // tablet md
 @media (min-width: 768px) {
-  .container {
-    padding: 0 50px;
-  }
-  .section-p,
-  .li-p {
-    font-size: 16px;
+  .section-title {
+    font-size: 32px;
   }
 
-  .section-title {
-    font-size: 36px;
+  .section-p,
+  .li-p {
+    font-size: 14px;
   }
 
   .li-head {
-    font-size: 18px;
-  }
-
-  .green-btn {
-    width: 50%;
+    font-size: 16px;
   }
 
   main {
@@ -399,21 +384,8 @@ main {
 
 // laptop lg
 @media (min-width: 992px) {
-  .container {
-    padding: 0 100px;
-  }
-
   .section-title {
-    font-size: 40px;
-  }
-
-  .section-p,
-  .li-p {
-    font-size: 18px;
-  }
-
-  .li-head {
-    font-size: 20px;
+    font-size: 34px;
   }
 
   header {
@@ -477,10 +449,12 @@ main {
         width: 125%;
         align-self: end;
       }
+
       .main-content {
         display: flex;
         justify-content: flex-end;
         .bg-div {
+          padding: 40px 4vw;
           .section-title {
             font-size: 40px;
           }
@@ -519,15 +493,20 @@ main {
             left: 37%;
           }
         }
-        .our-values {
-          li {
-            flex-direction: row;
-            justify-content: space-around;
-            max-width: 45%;
+
+        div {
+          padding: 0px 4vw 40px;
+          margin-top: 0;
+          .our-values {
+            li {
+              flex-direction: row;
+              justify-content: space-around;
+              max-width: 45%;
+            }
           }
-        }
-        .green-btn {
-          margin: 0;
+          .green-btn {
+            margin: 0;
+          }
         }
       }
     }
@@ -587,7 +566,7 @@ main {
 // laptop xxl
 @media (min-width: 1440px) {
   .section-title {
-    font-size: 42px;
+    font-size: 40px;
   }
 
   .section-p,
@@ -598,12 +577,26 @@ main {
   .li-head {
     font-size: 22px;
   }
+
+  .green-btn,
+  .call-button-big {
+    font-size: 20px;
+  }
+
+  header {
+    .top-header {
+      padding: 0 10vw;
+    }
+    .bottom-header {
+      padding: 0 10vw;
+    }
+  }
+
   main {
     .main-section {
       .main-content {
         .bg-div {
-          width: 82%;
-
+          padding: 40px 8vw;
           .main-link {
             a {
               font-size: 20px;
@@ -622,6 +615,7 @@ main {
       }
     }
     .services {
+      padding: 40px 10vw;
       .services-list {
         li {
           width: 22%;
@@ -640,12 +634,25 @@ main {
       }
     }
 
+    .why-choose-us {
+      padding: 40px 10vw;
+    }
+
     .working-process {
+      padding: 40px 10vw;
       .processes {
         li {
           width: 300px;
         }
       }
+    }
+
+    .reach-out {
+      padding: 40px 10vw;
+    }
+
+    .staff {
+      padding: 40px 10vw;
     }
   }
 }

@@ -3,12 +3,6 @@
   font-family: "Nunito", sans-serif;
 }
 
-.container {
-  width: 100%;
-  margin: 40px auto;
-  padding: 0 25px;
-}
-
 .active {
   color: #00730c;
 }
@@ -31,11 +25,10 @@
 .green-btn {
   font-size: 16px;
   font-weight: 700;
-  height: 45px;
 }
 
 .call-button-big {
-  width: 120px;
+  padding: 15px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -46,10 +39,11 @@
 }
 
 .green-btn {
-  width: 75%;
+  width: 275px;
   text-align: center;
   display: block;
   margin: 0 auto;
+  padding: 15px;
 }
 
 ul {
@@ -100,6 +94,7 @@ header .top-header {
   height: 55px;
   align-items: center;
   margin: 0 auto;
+  padding: 0 8vw;
 }
 header .top-header .contact-us {
   display: flex;
@@ -123,6 +118,7 @@ header .bottom-header {
   height: 70px;
   box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.15);
   margin: 0 auto;
+  padding: 0 8vw;
 }
 header .bottom-header .navbar,
 header .bottom-header .call-button span {
@@ -138,7 +134,6 @@ header .bottom-header .call-menu {
 main .main-section {
   padding: 0;
   background: linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
-  margin: 0px auto;
 }
 main .main-section .main-content {
   background-image: url("images/icons/background-flower.svg");
@@ -146,8 +141,7 @@ main .main-section .main-content {
   background-repeat: no-repeat;
 }
 main .main-section .main-content .bg-div {
-  padding: 40px 25px;
-  position: relative;
+  padding: 40px 8vw;
 }
 main .main-section .main-content .bg-div h3 {
   font-size: 14px;
@@ -187,6 +181,9 @@ main .main-section .main-content .bg-div .main-btns {
   justify-content: flex-end;
   gap: 10px;
 }
+main .services {
+  padding: 40px 8vw;
+}
 main .services .services-list li {
   background: linear-gradient(172.29deg, #ffffff -10.79%, #ffffff 94.04%);
   box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
@@ -217,24 +214,24 @@ main .about-us .row .value-img-container .small-value-img {
   top: 75%;
   left: 30%;
 }
-main .about-us .row .section-title {
-  margin-top: 70px;
+main .about-us .row div {
+  padding: 60px 8vw 40px;
 }
-main .about-us .row .our-values li {
+main .about-us .row div .our-values li {
   box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
   max-width: 45%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-main .about-us .row .our-values .li-head {
+main .about-us .row div .our-values .li-head {
   margin: 0;
 }
 main .why-choose-us {
   background-color: #0c4b35;
   color: white;
   text-align: center;
-  padding: 40px 15px;
+  padding: 40px 8vw;
 }
 main .why-choose-us .reasons-choose-us {
   justify-content: center;
@@ -247,6 +244,10 @@ main .why-choose-us .reasons-choose-us li {
 }
 main .why-choose-us .reasons-choose-us li .li-head {
   margin: 0;
+  font-size: 14px;
+}
+main .working-process {
+  padding: 40px 8vw;
 }
 main .working-process .processes {
   justify-content: center;
@@ -278,27 +279,20 @@ main .reach-out .img-text {
   padding: 40px 0;
   width: 75%;
 }
-main .staff img {
-  border-radius: 5px;
-  margin: 40px auto;
+main .staff {
+  padding: 40px 8vw;
 }
 
 @media (min-width: 768px) {
-  .container {
-    padding: 0 50px;
+  .section-title {
+    font-size: 32px;
   }
   .section-p,
 .li-p {
-    font-size: 16px;
-  }
-  .section-title {
-    font-size: 36px;
+    font-size: 14px;
   }
   .li-head {
-    font-size: 18px;
-  }
-  .green-btn {
-    width: 50%;
+    font-size: 16px;
   }
   main .main-section {
     display: flex;
@@ -330,18 +324,8 @@ main .staff img {
   }
 }
 @media (min-width: 992px) {
-  .container {
-    padding: 0 100px;
-  }
   .section-title {
-    font-size: 40px;
-  }
-  .section-p,
-.li-p {
-    font-size: 18px;
-  }
-  .li-head {
-    font-size: 20px;
+    font-size: 34px;
   }
   header .top-header .contact-us .email-us,
 header .top-header .contact-us .call-us,
@@ -399,6 +383,9 @@ header .bottom-header .call-button span {
     display: flex;
     justify-content: flex-end;
   }
+  main .main-section .main-content .bg-div {
+    padding: 40px 4vw;
+  }
   main .main-section .main-content .bg-div .section-title {
     font-size: 40px;
   }
@@ -425,12 +412,16 @@ header .bottom-header .call-button span {
   main .about-us .row .value-img-container .small-value-img {
     left: 37%;
   }
-  main .about-us .row .our-values li {
+  main .about-us .row div {
+    padding: 0px 4vw 40px;
+    margin-top: 0;
+  }
+  main .about-us .row div .our-values li {
     flex-direction: row;
     justify-content: space-around;
     max-width: 45%;
   }
-  main .about-us .row .green-btn {
+  main .about-us .row div .green-btn {
     margin: 0;
   }
   main .why-choose-us {
@@ -473,7 +464,7 @@ header .bottom-header .call-button span {
 }
 @media (min-width: 1440px) {
   .section-title {
-    font-size: 42px;
+    font-size: 40px;
   }
   .section-p,
 .li-p {
@@ -482,8 +473,18 @@ header .bottom-header .call-button span {
   .li-head {
     font-size: 22px;
   }
+  .green-btn,
+.call-button-big {
+    font-size: 20px;
+  }
+  header .top-header {
+    padding: 0 10vw;
+  }
+  header .bottom-header {
+    padding: 0 10vw;
+  }
   main .main-section .main-content .bg-div {
-    width: 82%;
+    padding: 40px 8vw;
   }
   main .main-section .main-content .bg-div .main-link a {
     font-size: 20px;
@@ -498,6 +499,9 @@ header .bottom-header .call-button span {
     width: fit-content;
     height: auto;
   }
+  main .services {
+    padding: 40px 10vw;
+  }
   main .services .services-list li {
     width: 22%;
   }
@@ -505,7 +509,19 @@ header .bottom-header .call-button span {
     top: 80%;
     left: 50%;
   }
+  main .why-choose-us {
+    padding: 40px 10vw;
+  }
+  main .working-process {
+    padding: 40px 10vw;
+  }
   main .working-process .processes li {
     width: 300px;
+  }
+  main .reach-out {
+    padding: 40px 10vw;
+  }
+  main .staff {
+    padding: 40px 10vw;
   }
 }/*# sourceMappingURL=style.css.map */
