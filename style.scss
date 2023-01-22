@@ -8,32 +8,49 @@
 
 .container {
   width: 100%;
-  margin: 0 auto;
-}
-
-.services,
-.about-us,
-.why-choose-us,
-.working-process,
-.reach-out,
-.staff {
   margin: 40px auto;
+  padding: 0 25px;
 }
 
 .active {
   color: $secondary-color;
 }
 
+.call-button,
+.call-button-big,
 .green-btn {
-  width: 75%;
-  height: 45px;
-  color: white;
-  font-size: 16px;
-  font-weight: 700;
-  text-align: center;
-  border-radius: 5px;
   background-color: $secondary-color;
   border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+.call-button {
+  width: 40px;
+  height: 34px;
+}
+
+.call-button-big,
+.green-btn {
+  font-size: 16px;
+  font-weight: 700;
+  height: 45px;
+}
+
+.call-button-big {
+  width: 120px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5px;
+  img {
+    margin: 0;
+  }
+}
+
+.green-btn {
+  width: 75%;
+  text-align: center;
   display: block;
   margin: 0 auto;
 }
@@ -43,6 +60,16 @@ ul {
   padding: 0 !important;
 }
 
+li {
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: $shadow;
+  align-items: center;
+}
+
 .section-title {
   font-size: 28px;
   font-weight: 700;
@@ -50,12 +77,20 @@ ul {
   margin: 20px 0;
 }
 
-.call-button button {
-  background-color: $secondary-color;
-  border: none;
-  border-radius: 10px;
-  width: 40px;
-  height: 34px;
+.section-p {
+  font-size: 14px;
+  text-align: center;
+}
+
+.li-head {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.li-p {
+  font-size: 14px;
+  text-align: left;
+  margin: 0;
 }
 
 header {
@@ -66,7 +101,7 @@ header {
     justify-content: space-between;
     height: 55px;
     align-items: center;
-    padding: 0 20px;
+    margin: 0 auto;
 
     .contact-us {
       display: flex;
@@ -93,6 +128,7 @@ header {
     align-items: center;
     height: 70px;
     box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
 
     .navbar,
     .call-button span {
@@ -112,13 +148,13 @@ main {
   .main-section {
     padding: 0;
     background: $background-gradient;
-    margin: 7px auto;
+    margin: 0px auto;
     .main-content {
       background-image: url("images/icons/background-flower.svg");
       background-position: left bottom;
       background-repeat: no-repeat;
       .bg-div {
-        padding: 50px 15px 30px;
+        padding: 40px 25px;
         position: relative;
 
         h3 {
@@ -126,16 +162,15 @@ main {
           font-weight: 700;
         }
 
-        h1 {
+        .section-title {
           font-size: 30px;
           font-weight: 800;
           text-align: left;
-          margin: 20px 0;
         }
 
-        p {
-          font-size: 14px;
+        .section-p {
           margin-bottom: 40px;
+          text-align: left;
         }
         .grey-btn {
           background: linear-gradient(180deg, #fff8f1 0%, #cbe5ce 100%);
@@ -152,12 +187,12 @@ main {
         .main-link {
           text-align: center;
           margin: 25px auto;
-        }
 
-        .main-link a {
-          text-decoration: none;
-          font-size: 16px;
-          font-weight: 600;
+          a {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+          }
         }
 
         .main-btns {
@@ -170,35 +205,17 @@ main {
   }
 
   .services {
-    p {
-      text-align: center;
-      font-size: 14px;
-    }
-
     .services-list {
       li {
         background: linear-gradient(172.29deg, #ffffff -10.79%, #ffffff 94.04%);
         box-shadow: $shadow;
-        border-radius: 10px;
-        display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 10px auto;
-        padding: 20px;
-        gap: 5px;
 
         img {
           margin: 10px;
           height: 50px;
           width: 50px;
-        }
-        h4 {
-          font-size: 16px;
-          font-weight: 700;
-        }
-
-        p {
-          text-align: left;
         }
       }
     }
@@ -227,28 +244,20 @@ main {
         }
       }
 
-      h2 {
+      .section-title {
         margin-top: 70px;
       }
 
       .our-values {
         li {
           box-shadow: $shadow;
-          border-radius: 5px;
-          margin: 10px auto;
           max-width: 45%;
-          display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: column;
-          padding: 20px;
-          gap: 5px;
-
-          p {
-            margin: 0;
-            font-size: 14px;
-            font-weight: 700;
-          }
+        }
+        .li-head {
+          margin: 0;
         }
       }
     }
@@ -257,27 +266,17 @@ main {
   .why-choose-us {
     background-color: $main-color;
     color: white;
-    font-weight: 400;
-    font-size: 14px;
     text-align: center;
     padding: 40px 15px;
-
-    .img-fluid {
-      width: 100%;
-    }
 
     .reasons-choose-us {
       justify-content: center;
       li {
-        box-shadow: $shadow;
-        border-radius: 5px;
-        font-weight: 700;
         padding: 0;
         max-width: 45%;
-        display: flex;
         align-items: center;
         justify-content: center;
-        p {
+        .li-head {
           margin: 0;
         }
       }
@@ -285,35 +284,16 @@ main {
   }
 
   .working-process {
-    p {
-      text-align: center;
-    }
     .processes {
       justify-content: center;
       li {
-        box-shadow: $shadow;
         background: linear-gradient(172.29deg, #ffffff -10.79%, #ffffff 94.04%);
-        box-shadow: $shadow;
-        border-radius: 10px;
-        display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        margin: 10px auto;
-        padding: 20px;
-        gap: 5px;
 
         img {
           margin: 10px;
-        }
-        h4 {
-          font-size: 16px;
-          font-weight: 700;
-        }
-
-        p {
-          font-size: 14px;
-          text-align: left;
         }
       }
     }
@@ -335,29 +315,10 @@ main {
       margin: 0 auto;
       padding: 40px 0;
       width: 75%;
-
-      .call-button {
-        button {
-          width: 120px;
-          height: 40px;
-          display: flex;
-          justify-content: space-evenly;
-          align-items: center;
-          font-size: 14px;
-          color: white;
-          border-radius: 5px;
-
-          img {
-            margin: 0;
-          }
-        }
-      }
     }
   }
 
   .staff {
-    text-align: center;
-
     img {
       border-radius: 5px;
       margin: 40px auto;
@@ -368,6 +329,22 @@ main {
 // __________________________________________________________________________________________________________________________________________________________________
 // tablet md
 @media (min-width: 768px) {
+  .container {
+    padding: 0 50px;
+  }
+  .section-p,
+  .li-p {
+    font-size: 16px;
+  }
+
+  .section-title {
+    font-size: 36px;
+  }
+
+  .li-head {
+    font-size: 18px;
+  }
+
   .green-btn {
     width: 50%;
   }
@@ -388,8 +365,10 @@ main {
           }
         }
         .our-values {
+          justify-content: center;
+          gap: 20px;
           li {
-            max-width: 35%;
+            max-width: 33%;
           }
         }
       }
@@ -402,8 +381,11 @@ main {
     }
 
     .working-process {
-      .processes li {
-        width: 45%;
+      .processes {
+        gap: 20px;
+        li {
+          width: 45%;
+        }
       }
     }
 
@@ -414,10 +396,24 @@ main {
     }
   }
 }
+
 // laptop lg
 @media (min-width: 992px) {
+  .container {
+    padding: 0 100px;
+  }
+
   .section-title {
     font-size: 40px;
+  }
+
+  .section-p,
+  .li-p {
+    font-size: 18px;
+  }
+
+  .li-head {
+    font-size: 20px;
   }
 
   header {
@@ -444,7 +440,7 @@ main {
         }
       }
       .language {
-        font-size: 14px;
+        font-size: 16px;
       }
     }
 
@@ -454,47 +450,39 @@ main {
       .call-button span {
         display: block;
       }
+
+      .navbar {
+        .drop-down {
+          padding: 0;
+          display: flex;
+          justify-content: center;
+          gap: 25px;
+          margin: 0;
+          font-weight: 700;
+          li {
+            box-shadow: none;
+            gap: 10px;
+            padding: 0;
+          }
+        }
+      }
       .menu-button {
         display: none;
-      }
-
-      .call-button button {
-        width: 120px;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 18px;
-        font-weight: 700;
-        color: white;
-        gap: 5px;
-      }
-      .drop-down {
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 25px;
-        font-size: 16px;
-        font-weight: 700;
-        margin: 0;
       }
     }
   }
   main {
     .main-section {
       .img-fluid {
-        width: 100%;
+        width: 125%;
         align-self: end;
       }
       .main-content {
         display: flex;
         justify-content: flex-end;
         .bg-div {
-          width: 95%;
-
-          h1 {
-            font-size: 42px;
+          .section-title {
+            font-size: 40px;
           }
 
           .main-btns {
@@ -506,18 +494,12 @@ main {
     }
 
     .services {
-      p {
-        font-size: 16px;
-      }
       .services-list {
         li {
           flex-direction: column;
-          align-items: center;
-          padding: 10px;
           width: 27%;
           .services-text {
             text-align: center;
-            font-size: 14px;
             p {
               text-align: center;
             }
@@ -537,16 +519,11 @@ main {
             left: 37%;
           }
         }
-
         .our-values {
           li {
             flex-direction: row;
-            max-width: none;
             justify-content: space-around;
-
-            p {
-              font-size: 20px;
-            }
+            max-width: 45%;
           }
         }
         .green-btn {
@@ -561,7 +538,9 @@ main {
       justify-content: center;
       gap: 20px;
       padding: 20px 100px;
-      text-align: left;
+      .section-p {
+        text-align: left;
+      }
       div {
         display: flex;
         flex-direction: column;
@@ -570,6 +549,9 @@ main {
         .reasons-choose-us {
           li {
             justify-content: flex-start;
+            .li-head {
+              font-size: 16px;
+            }
           }
         }
 
@@ -580,13 +562,9 @@ main {
     }
 
     .working-process {
-      p {
-        font-size: 18px;
-      }
       .processes {
         li {
           width: 200px;
-          margin: 15px;
         }
       }
     }
@@ -595,7 +573,7 @@ main {
       .img-text {
         flex-direction: row;
         justify-content: flex-end;
-        gap: 15px;
+        gap: 45px;
         p {
           width: 50%;
           text-align: end;
@@ -608,6 +586,18 @@ main {
 
 // laptop xxl
 @media (min-width: 1440px) {
+  .section-title {
+    font-size: 42px;
+  }
+
+  .section-p,
+  .li-p {
+    font-size: 20px;
+  }
+
+  .li-head {
+    font-size: 22px;
+  }
   main {
     .main-section {
       .main-content {
@@ -616,7 +606,7 @@ main {
 
           .main-link {
             a {
-              font-size: 18px;
+              font-size: 20px;
             }
           }
 
@@ -634,7 +624,7 @@ main {
     .services {
       .services-list {
         li {
-          width: 21%;
+          width: 22%;
         }
       }
     }
@@ -653,7 +643,7 @@ main {
     .working-process {
       .processes {
         li {
-          width: 250px;
+          width: 300px;
         }
       }
     }
