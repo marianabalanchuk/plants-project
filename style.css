@@ -86,13 +86,15 @@ li {
 }
 
 .section-p,
-.staff-position {
+.staff-position,
+.client-position {
   font-size: 14px;
   text-align: center;
 }
 
 .li-head,
-.staff-name {
+.staff-name,
+.client-name {
   font-size: 16px;
   font-weight: 700;
 }
@@ -100,6 +102,13 @@ li {
 .li-p {
   font-size: 14px;
   text-align: left;
+  margin: 0;
+}
+
+.staff-name,
+.staff-position,
+.client-name,
+.client-position {
   margin: 0;
 }
 
@@ -341,9 +350,6 @@ main .staff .staff-data {
   padding: 10px;
   border-radius: 0 0 5px 5px;
 }
-main .staff .staff-data p {
-  margin: 0;
-}
 main .staff .staff-data .social-media {
   display: none;
 }
@@ -370,6 +376,17 @@ main .staff .staff-data:hover .staff-card {
 main .clients-saying {
   padding: 40px 8vw;
   background-color: #e3f2e7;
+}
+main .clients-saying .client-card {
+  background-color: white;
+  padding: 20px;
+}
+main .clients-saying .client-card .review {
+  padding-top: 30px;
+}
+main .clients-saying .client-card .review .client-data {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (min-width: 768px) {
@@ -444,7 +461,7 @@ header .top-header .contact-us .find-us a {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 12px;
     margin: 0;
     font-weight: 700;
   }

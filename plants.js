@@ -26,3 +26,29 @@ const swiper = new Swiper(".swiper", {
     },
   },
 });
+
+const swiper2 = new Swiper(".swiper2", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  keyboard: {
+    enabled: true,
+  },
+
+  pagination: {
+    el: ".swiper-dots2",
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: ".swiper-next2",
+    prevEl: ".swiper-prev2",
+  },
+
+  breakpoints: {
+    992: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+  },
+});

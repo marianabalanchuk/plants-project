@@ -89,13 +89,15 @@ li {
 }
 
 .section-p,
-.staff-position {
+.staff-position,
+.client-position {
   font-size: 14px;
   text-align: center;
 }
 
 .li-head,
-.staff-name {
+.staff-name,
+.client-name {
   font-size: 16px;
   font-weight: 700;
 }
@@ -103,6 +105,12 @@ li {
 .li-p {
   font-size: 14px;
   text-align: left;
+  margin: 0;
+}
+.staff-name,
+.staff-position,
+.client-name,
+.client-position {
   margin: 0;
 }
 
@@ -385,9 +393,6 @@ main {
       align-items: center;
       padding: 10px;
       border-radius: 0 0 5px 5px;
-      p {
-        margin: 0;
-      }
 
       .social-media {
         display: none;
@@ -422,6 +427,18 @@ main {
   .clients-saying {
     padding: 40px 8vw;
     background-color: #e3f2e7;
+    .client-card {
+      background-color: white;
+      padding: 20px;
+
+      .review {
+        padding-top: 30px;
+        .client-data {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
   }
 }
 
@@ -532,7 +549,7 @@ main {
           padding: 0;
           display: flex;
           justify-content: center;
-          gap: 25px;
+          gap: 12px;
           margin: 0;
           font-weight: 700;
           li {
