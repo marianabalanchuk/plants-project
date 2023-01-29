@@ -483,6 +483,17 @@ main .articles li .article-data {
 main .articles li .article-data .author-date {
   font-weight: bold;
 }
+main .articles .article-card:nth-of-type(even) {
+  background-image: url("images/photos/article_photo.png");
+}
+main .articles .article-card:nth-of-type(even) .article-data,
+main .articles .article-card:nth-of-type(even) .li-head,
+main .articles .article-card:nth-of-type(even) .li-p {
+  color: white;
+}
+main .articles .article-card:nth-of-type(even) hr {
+  border: 1px solid white;
+}
 
 @media (min-width: 768px) {
   .section-title {

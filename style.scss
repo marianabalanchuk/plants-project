@@ -511,6 +511,7 @@ main {
 
   .articles {
     padding: 40px 8vw;
+
     .article-tag {
       background-color: #d9f1e0;
       box-shadow: $shadow;
@@ -535,6 +536,18 @@ main {
         .author-date {
           font-weight: bold;
         }
+      }
+    }
+
+    .article-card:nth-of-type(even) {
+      background-image: url("images/photos/article_photo.png");
+      .article-data,
+      .li-head,
+      .li-p {
+        color: white;
+      }
+      hr {
+        border: 1px solid white;
       }
     }
   }
