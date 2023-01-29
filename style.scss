@@ -480,17 +480,18 @@ main {
     }
   }
   .faq {
+    padding: 40px 8vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 15px;
     img {
       display: none;
-      width: 450px;
-      height: 550px;
-      margin: 30px;
     }
+
     ol {
       padding: 0;
+
       li {
         display: flex;
         flex-direction: column;
@@ -835,32 +836,9 @@ main {
       flex-direction: row-reverse;
       img {
         display: block;
-      }
-      ol {
-        padding: 0;
-        li {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-
-          background-color: #fff8f1;
-          margin: 15px auto;
-          box-shadow: none;
-          .li-head {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            margin: 0;
-            p {
-              margin: 0;
-            }
-          }
-          .li-p {
-            background-color: white;
-            display: none;
-          }
-        }
+        margin: 30px;
+        width: 325px;
+        height: 460px;
       }
     }
   }
@@ -977,6 +955,13 @@ main {
         .review {
           padding: 30px;
         }
+      }
+    }
+
+    .faq {
+      img {
+        width: 400px;
+        height: 510px;
       }
     }
   }

@@ -424,15 +424,14 @@ main .clients-saying .client-card .review .client-data p {
   text-align: left;
 }
 main .faq {
+  padding: 40px 8vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 15px;
 }
 main .faq img {
   display: none;
-  width: 450px;
-  height: 550px;
-  margin: 30px;
 }
 main .faq ol {
   padding: 0;
@@ -688,31 +687,9 @@ main .staff .staff-text div .section-title {
   }
   main .faq img {
     display: block;
-  }
-  main .faq ol {
-    padding: 0;
-  }
-  main .faq ol li {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: #fff8f1;
-    margin: 15px auto;
-    box-shadow: none;
-  }
-  main .faq ol li .li-head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin: 0;
-  }
-  main .faq ol li .li-head p {
-    margin: 0;
-  }
-  main .faq ol li .li-p {
-    background-color: white;
-    display: none;
+    margin: 30px;
+    width: 325px;
+    height: 460px;
   }
 }
 @media (min-width: 1440px) {
@@ -796,5 +773,9 @@ main .main-section .main-content .bg-div .main-link a {
   }
   main .clients-saying .client-card .review {
     padding: 30px;
+  }
+  main .faq img {
+    width: 400px;
+    height: 510px;
   }
 }/*# sourceMappingURL=style.css.map */
