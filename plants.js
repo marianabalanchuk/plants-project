@@ -79,9 +79,9 @@ const swiper3 = new Swiper(".swiper3", {
 });
 
 const swiper4 = new Swiper(".swiper4", {
-  slidesPerView: 1,
+  slidesPerView: 2,
   spaceBetween: 20,
-  loop: true,
+  loop: false,
   keyboard: {
     enabled: true,
   },
@@ -89,17 +89,5 @@ const swiper4 = new Swiper(".swiper4", {
   pagination: {
     el: ".swiper-dots4",
     clickable: true,
-  },
-
-  breakpoints: {
-    768: {
-      slidesPerView: 3,
-    },
-    992: {
-      slidesPerView: 4,
-    },
-    1440: {
-      slidesPerView: 6,
-    },
   },
 });

@@ -279,36 +279,37 @@ main .services .services-list li img {
   height: 50px;
   width: 50px;
 }
-main .about-us .row {
-  justify-content: center;
-  align-items: center;
+main .about-us {
+  padding: 40px 8vw;
 }
-main .about-us .row .value-img-container {
+main .about-us .value-img-container {
   background-image: url("images/icons/green-background-image.svg");
   background-position: top left;
   background-repeat: no-repeat;
   position: relative;
   padding: 0;
 }
-main .about-us .row .value-img-container .value-img {
+main .about-us .value-img-container .value-img {
   margin: 15px;
+  width: 250px;
+  height: 330px;
 }
-main .about-us .row .value-img-container .small-value-img {
+main .about-us .value-img-container .small-value-img {
   position: absolute;
-  top: 75%;
-  left: 30%;
+  width: 200px;
+  height: 130px;
+  top: 280px;
+  left: 90px;
 }
-main .about-us .row div {
-  padding: 60px 8vw 40px;
+main .about-us .about-text {
+  padding-top: 55px;
 }
-main .about-us .row div .our-values li {
-  box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
-  max-width: 45%;
+main .about-us .about-text .our-values li {
   justify-content: center;
-  align-items: center;
   flex-direction: column;
+  max-width: 45%;
 }
-main .about-us .row div .our-values .li-head {
+main .about-us .about-text .our-values .li-head {
   margin: 0;
 }
 main .why-choose-us {
@@ -502,16 +503,6 @@ main .articles li .article-data .author-date {
   main .services .services-list li {
     width: 48%;
   }
-  main .about-us .row .value-img-container .value-img {
-    width: 45%;
-  }
-  main .about-us .row .our-values {
-    justify-content: center;
-    gap: 20px;
-  }
-  main .about-us .row .our-values li {
-    max-width: 33%;
-  }
   main .why-choose-us .img-fluid {
     width: 75%;
   }
@@ -545,6 +536,9 @@ main .clients-saying .section-p {
   .swiper2 .swiper-button-next {
     left: 96%;
   }
+  header .top-header {
+    padding: 0 10vw;
+  }
   header .top-header .contact-us .email-us,
 header .top-header .contact-us .call-us,
 header .top-header .contact-us .find-us {
@@ -572,6 +566,7 @@ header .top-header .contact-us .find-us a {
   }
   header .bottom-header {
     height: 80px;
+    padding: 0 10vw;
   }
   header .bottom-header .navbar {
     display: block;
@@ -607,7 +602,7 @@ header .bottom-header .call-button-small {
     justify-content: flex-end;
   }
   main .main-section .main-content .bg-div {
-    padding: 40px 4vw;
+    padding: 40px 10vw;
   }
   main .main-section .main-content .bg-div .section-title {
     font-size: 40px;
@@ -615,6 +610,9 @@ header .bottom-header .call-button-small {
   main .main-section .main-content .bg-div .main-btns {
     justify-content: center;
     gap: 15px;
+  }
+  main .services {
+    padding: 40px 10vw;
   }
   main .services .services-list li {
     flex-direction: column;
@@ -626,33 +624,43 @@ header .bottom-header .call-button-small {
   main .services .services-list li .services-text p {
     text-align: center;
   }
-  main .about-us .row .value-img-container {
-    width: 40%;
+  main .about-us {
+    padding: 20px 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
   }
-  main .about-us .row .value-img-container .value-img {
-    width: auto;
+  main .about-us .value-img-container .value-img {
+    width: 300px;
+    height: 410px;
   }
-  main .about-us .row .value-img-container .small-value-img {
-    left: 37%;
+  main .about-us .value-img-container .small-value-img {
+    width: 240px;
+    height: 160px;
+    top: 320px;
+    left: 115px;
   }
-  main .about-us .row div {
-    padding: 0px 4vw 40px;
-    margin-top: 0;
+  main .about-us .about-text {
+    padding: 0;
   }
-  main .about-us .row div .our-values li {
+  main .about-us .about-text .section-p,
+main .about-us .about-text .section-title {
+    text-align: left;
+  }
+  main .about-us .about-text .our-values li {
     flex-direction: row;
     justify-content: space-around;
-    max-width: 45%;
   }
-  main .about-us .row div .green-btn {
-    margin: 0;
+  main .about-us .about-text .green-btn {
+    margin-left: 0;
   }
   main .why-choose-us {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     gap: 20px;
-    padding: 20px 100px;
+    padding: 20px 10vw;
   }
   main .why-choose-us .img-fluid {
     width: 175%;
@@ -671,6 +679,9 @@ header .bottom-header .call-button-small {
   main .why-choose-us div .green-btn {
     margin: 0;
   }
+  main .working-process {
+    padding: 40px 10vw;
+  }
   main .working-process .processes li {
     margin: 0;
     width: 23%;
@@ -685,6 +696,9 @@ header .bottom-header .call-button-small {
     text-align: end;
     margin: 0;
   }
+  main .staff {
+    padding: 40px 10vw;
+  }
   main .staff .staff-text {
     display: flex;
     justify-content: space-between;
@@ -697,6 +711,9 @@ header .bottom-header .call-button-small {
   main .staff .staff-text div .section-p,
 main .staff .staff-text div .section-title {
     text-align: left;
+  }
+  main .clients-saying {
+    padding: 40px 10vw;
   }
   main .clients-saying .client-card {
     display: flex;
@@ -712,12 +729,16 @@ main .staff .staff-text div .section-title {
     align-items: center;
     gap: 15px;
     flex-direction: row-reverse;
+    padding: 40px 10vw;
   }
   main .faq img {
     display: block;
     margin: 30px;
     width: 325px;
     height: 460px;
+  }
+  main .articles {
+    padding: 40px 10vw;
   }
 }
 @media (min-width: 1440px) {
@@ -769,12 +790,14 @@ main .main-section .main-content .bg-div .main-link a {
   main .services .services-list li {
     width: 23%;
   }
-  main .about-us .row .value-img-container .value-img {
-    width: 75%;
+  main .about-us .value-img-container .value-img {
+    width: 350px;
+    height: 490px;
   }
-  main .about-us .row .value-img-container .small-value-img {
-    top: 85%;
-    left: 60%;
+  main .about-us .value-img-container .small-value-img {
+    width: 250px;
+    top: 420px;
+    left: 170px;
   }
   main .why-choose-us {
     padding: 40px 10vw;
