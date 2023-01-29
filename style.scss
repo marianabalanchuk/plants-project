@@ -23,6 +23,33 @@
   }
 }
 
+.swiper2 {
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 22px;
+    color: $secondary-color;
+    font-weight: bold;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 0;
+    border: 1px solid $secondary-color;
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+  .swiper-button-next {
+    left: 88%;
+  }
+  .swiper-button-prev {
+    left: 75%;
+  }
+}
+
 .active {
   color: $secondary-color;
 }
@@ -439,6 +466,9 @@ main {
 
       .review {
         padding-top: 30px;
+        .li-p {
+          margin-bottom: 1rem;
+        }
         .client-data {
           display: flex;
           justify-content: space-between;
@@ -495,6 +525,15 @@ main {
     font-size: 32px;
   }
 
+  .swiper2 {
+    .swiper-button-next {
+      left: 94%;
+    }
+    .swiper-button-prev {
+      left: 87%;
+    }
+  }
+
   main {
     .main-section {
       display: flex;
@@ -549,6 +588,12 @@ main {
     }
 
     .clients-saying {
+      .section-title,
+      .section-p {
+        text-align: left;
+        width: 75%;
+      }
+
       .client-card {
         display: flex;
         justify-content: space-between;
@@ -565,6 +610,15 @@ main {
 @media (min-width: 992px) {
   .section-title {
     font-size: 34px;
+  }
+
+  .swiper2 {
+    .swiper-button-prev {
+      left: 91%;
+    }
+    .swiper-button-next {
+      left: 96%;
+    }
   }
 
   header {
@@ -818,12 +872,20 @@ main {
     font-size: 40px;
   }
 
+  .swiper2 {
+    .swiper-button-prev {
+      left: 92%;
+    }
+  }
+
   .section-p,
-  .li-p {
+  .li-p,
+  .client-position {
     font-size: 20px;
   }
 
-  .li-head {
+  .li-head,
+  .client-name {
     font-size: 22px;
   }
 
