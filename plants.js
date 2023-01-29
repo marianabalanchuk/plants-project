@@ -52,3 +52,54 @@ const swiper2 = new Swiper(".swiper2", {
     },
   },
 });
+
+const swiper3 = new Swiper(".swiper3", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  keyboard: {
+    enabled: true,
+  },
+
+  pagination: {
+    el: ".swiper-dots3",
+    clickable: true,
+  },
+
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
+});
+
+const swiper4 = new Swiper(".swiper4", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  keyboard: {
+    enabled: true,
+  },
+
+  pagination: {
+    el: ".swiper-dots4",
+    clickable: true,
+  },
+
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+    },
+    992: {
+      slidesPerView: 4,
+    },
+    1440: {
+      slidesPerView: 6,
+    },
+  },
+});

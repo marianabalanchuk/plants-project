@@ -481,22 +481,15 @@ main {
   }
   .faq {
     padding: 40px 8vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
     img {
       display: none;
     }
-
     ol {
       padding: 0;
-
       li {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-
         background-color: #fff8f1;
         margin: 15px auto;
         box-shadow: none;
@@ -513,6 +506,36 @@ main {
         .li-p {
           background-color: white;
           display: none;
+        }
+      }
+    }
+  }
+
+  .articles {
+    padding: 40px 8vw;
+    .article-tag {
+      background-color: #d9f1e0;
+      box-shadow: $shadow;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    li {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 20px;
+
+      hr {
+        width: 100%;
+        border: 1px solid grey;
+      }
+      .article-data {
+        display: flex;
+        width: 100%;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        .author-date {
+          font-weight: bold;
         }
       }
     }
@@ -833,6 +856,10 @@ main {
     }
 
     .faq {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
       flex-direction: row-reverse;
       img {
         display: block;
