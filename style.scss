@@ -428,6 +428,12 @@ main {
     padding: 40px 8vw;
     background-color: #e3f2e7;
     .client-card {
+      .client-photo {
+        width: 135px;
+        margin-bottom: 20px;
+        height: 185px;
+      }
+
       background-color: white;
       padding: 20px;
 
@@ -436,6 +442,46 @@ main {
         .client-data {
           display: flex;
           justify-content: space-between;
+          p {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+  .faq {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      display: none;
+      width: 450px;
+      height: 550px;
+      margin: 30px;
+    }
+    ol {
+      padding: 0;
+      li {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        background-color: #fff8f1;
+        margin: 15px auto;
+        box-shadow: none;
+        .li-head {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          margin: 0;
+          p {
+            margin: 0;
+          }
+        }
+        .li-p {
+          background-color: white;
+          display: none;
         }
       }
     }
@@ -499,6 +545,17 @@ main {
     .reach-out {
       .img-text {
         font-size: 25px;
+      }
+    }
+
+    .clients-saying {
+      .client-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .review {
+          padding: 30px;
+        }
       }
     }
   }
@@ -708,6 +765,50 @@ main {
         }
       }
     }
+
+    .clients-saying {
+      .client-card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .review {
+          padding: 30px 0;
+        }
+      }
+    }
+
+    .faq {
+      flex-direction: row-reverse;
+      img {
+        display: block;
+      }
+      ol {
+        padding: 0;
+        li {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          background-color: #fff8f1;
+          margin: 15px auto;
+          box-shadow: none;
+          .li-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin: 0;
+            p {
+              margin: 0;
+            }
+          }
+          .li-p {
+            background-color: white;
+            display: none;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -798,6 +899,23 @@ main {
 
     .staff {
       padding: 40px 10vw;
+    }
+
+    .clients-saying {
+      .client-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .client-photo {
+          width: 160px;
+          margin-bottom: 20px;
+          height: 210px;
+        }
+        .review {
+          padding: 30px;
+        }
+      }
     }
   }
 }

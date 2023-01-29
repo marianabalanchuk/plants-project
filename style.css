@@ -381,12 +381,56 @@ main .clients-saying .client-card {
   background-color: white;
   padding: 20px;
 }
+main .clients-saying .client-card .client-photo {
+  width: 135px;
+  margin-bottom: 20px;
+  height: 185px;
+}
 main .clients-saying .client-card .review {
   padding-top: 30px;
 }
 main .clients-saying .client-card .review .client-data {
   display: flex;
   justify-content: space-between;
+}
+main .clients-saying .client-card .review .client-data p {
+  text-align: left;
+}
+main .faq {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .faq img {
+  display: none;
+  width: 450px;
+  height: 550px;
+  margin: 30px;
+}
+main .faq ol {
+  padding: 0;
+}
+main .faq ol li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #fff8f1;
+  margin: 15px auto;
+  box-shadow: none;
+}
+main .faq ol li .li-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+}
+main .faq ol li .li-head p {
+  margin: 0;
+}
+main .faq ol li .li-p {
+  background-color: white;
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -420,6 +464,14 @@ main .clients-saying .client-card .review .client-data {
   }
   main .reach-out .img-text {
     font-size: 25px;
+  }
+  main .clients-saying .client-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main .clients-saying .client-card .review {
+    padding: 30px;
   }
 }
 @media (min-width: 992px) {
@@ -579,6 +631,45 @@ header .bottom-header .call-button-small {
 main .staff .staff-text div .section-title {
     text-align: left;
   }
+  main .clients-saying .client-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  main .clients-saying .client-card .review {
+    padding: 30px 0;
+  }
+  main .faq {
+    flex-direction: row-reverse;
+  }
+  main .faq img {
+    display: block;
+  }
+  main .faq ol {
+    padding: 0;
+  }
+  main .faq ol li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fff8f1;
+    margin: 15px auto;
+    box-shadow: none;
+  }
+  main .faq ol li .li-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+  main .faq ol li .li-head p {
+    margin: 0;
+  }
+  main .faq ol li .li-p {
+    background-color: white;
+    display: none;
+  }
 }
 @media (min-width: 1440px) {
   .section-title {
@@ -642,5 +733,19 @@ main .main-section .main-content .bg-div .main-link a {
   }
   main .staff {
     padding: 40px 10vw;
+  }
+  main .clients-saying .client-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main .clients-saying .client-card .client-photo {
+    width: 160px;
+    margin-bottom: 20px;
+    height: 210px;
+  }
+  main .clients-saying .client-card .review {
+    padding: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
