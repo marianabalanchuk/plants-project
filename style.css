@@ -145,6 +145,9 @@ header .bottom-header .navbar-toggler {
 header .bottom-header .navbar-collapse {
   justify-content: space-evenly;
 }
+header .bottom-header .navbar-collapse .nav-link:hover {
+  color: #00730c;
+}
 header .bottom-header .navbar-collapse .navbar-nav {
   display: flex;
   gap: 20px;
@@ -155,12 +158,12 @@ header .bottom-header .navbar-collapse a {
   font-weight: 700;
   font-size: 16px;
 }
-header .bottom-header .navbar-collapse .dropdown-menu .dropdown-item {
+header .bottom-header .dropdown-menu .dropdown-item {
   color: white;
   background-color: #0c4b35;
   padding: 15px;
 }
-header .bottom-header .navbar-collapse .dropdown-menu .dropdown-item:hover {
+header .bottom-header .dropdown-menu .dropdown-item:hover {
   color: #0c4b35;
   background-color: white;
 }
@@ -565,9 +568,6 @@ header .top-header .contact-us .find-us a {
   header .top-header .language .btn {
     font-size: 16px;
   }
-  header .bottom-header {
-    padding: 0 10vw;
-  }
   header .bottom-header .call-menu {
     order: 3;
   }
@@ -750,9 +750,6 @@ main .staff .staff-text div .section-title {
   }
   header .bottom-header {
     padding: 0 10vw;
-  }
-  main .main-section .main-content .bg-div {
-    padding: 40px 8vw;
   }
   main .main-section .main-content .bg-div h3,
 main .main-section .main-content .bg-div .main-link a {

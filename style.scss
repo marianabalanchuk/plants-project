@@ -159,6 +159,9 @@ header {
     .navbar-collapse {
       justify-content: space-evenly;
 
+      .nav-link:hover {
+        color: $secondary-color;
+      }
       .navbar-nav {
         display: flex;
         gap: 20px;
@@ -170,17 +173,17 @@ header {
         font-weight: 700;
         font-size: 16px;
       }
+    }
 
-      .dropdown-menu {
-        .dropdown-item {
-          color: white;
-          background-color: $main-color;
-          padding: 15px;
-        }
-        .dropdown-item:hover {
-          color: $main-color;
-          background-color: white;
-        }
+    .dropdown-menu {
+      .dropdown-item {
+        color: white;
+        background-color: $main-color;
+        padding: 15px;
+      }
+      .dropdown-item:hover {
+        color: $main-color;
+        background-color: white;
       }
     }
   }
@@ -670,7 +673,6 @@ main {
     }
 
     .bottom-header {
-      padding: 0 10vw;
       .call-menu {
         order: 3;
         .call-button-big {
@@ -903,7 +905,6 @@ main {
     .main-section {
       .main-content {
         .bg-div {
-          padding: 40px 8vw;
           h3,
           .main-link a {
             font-size: 20px;
