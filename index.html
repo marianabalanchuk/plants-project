@@ -44,53 +44,82 @@
                 </div>
             </div>
 
-            <div class="language">
-                <p>English <i class="fa-solid fa-chevron-down"></i></p>
+            <div class="dropdown language">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    English
+                </button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">English</li>
+                    <li class="dropdown-item">Ukrainian</li>
+                    <li class="dropdown-item">Spanish</li>
+                </ul>
             </div>
         </div>
 
 
-        <div class="bottom-header container-fluid">
-            <div class="logo">
-                <img src="images/header/plants-logo.svg">
-            </div>
-            <nav class="navbar">
-                <ul class="navigation">
-                    <li><a href="#">Home <i class="fa-solid fa-chevron-down"></i></a></li>
-                    <li class="drop-down"><a href="#">Company <i class="fa-solid fa-chevron-down"></i></a>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bottom-header container-fluid">
 
-                        <ul class="dropdown-items">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Thank You</a></li>
-                            <li><a href="#">Terms & Conditions</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Site Map</a></li>
-                            <li><a href="#">Disclaimer</a></li>
-                            <li><a href="#">404 Error</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Services <i class="fa-solid fa-chevron-down"></i></a></li>
-                    <li><a href="#">Project <i class="fa-solid fa-chevron-down"></i></a></li>
-                    <li><a href="#">Blog <i class="fa-solid fa-chevron-down"></i></a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+            <a class="navbar-brand logo" href="#"><img src="images/header/plants-logo.svg"></a>
 
             <div class="call-menu">
-                <div>
-                    <button class="call-button-small">
-                        <img src="images/header/phone-call.svg" alt="">
-                    </button>
-                    <button class="call-button-big">
-                        <img src="images/header/phone-call.svg" alt="">
-                        <span> Call Us</span>
-                    </button>
-                </div>
-                <div class="menu-button">
+                <button class="call-button-small">
+                    <img src="images/header/phone-call.svg" alt="">
+                </button>
+                <button class="call-button-big">
+                    <img src="images/header/phone-call.svg" alt="">
+                    <span> Call Us</span>
+                </button>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <img src="images/header/menu.svg" alt="">
-                </div>
+                </button>
             </div>
-        </div>
+
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home <i class="fa-solid fa-chevron-down"></i></a>
+                    </li>
+                    <li class="nav-item dropdown-center">
+                        <a class="nav-link " data-bs-toggle="dropdown" aria-expanded="false" href="#"
+                            role="button">Company <i class="fa-solid fa-chevron-down"></i></a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">About Us</a></li>
+                            <li><a class="dropdown-item" href="#">Thank You</a></li>
+                            <li><a class="dropdown-item" href="#">Terms & Conditions</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
+                            <li><a class="dropdown-item" href="#">Site Map</a></li>
+                            <li><a class="dropdown-item" href="#">Disclaimer</a></li>
+                            <li><a class="dropdown-item" href="#">404 Error</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services <i class="fa-solid fa-chevron-down"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Project <i class="fa-solid fa-chevron-down"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog <i class="fa-solid fa-chevron-down"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact </a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+
+
+
+
+        </nav>
     </header>
 
 
@@ -372,8 +401,8 @@
                         <img src="images/photos/gardeners-with-plants-beautiful-garden-center.png"
                             class="staff-photo img-fluid">
                         <div class="staff-data">
-                            <p class="staff-name">Doris Jordan1</p>
-                            <p class="staff-position">Design Expert</p>
+                            <p class="li-head">Doris Jordan1</p>
+                            <p class="li-p">Design Expert</p>
                             <div class="social-media">
                                 <a href="https://www.google.com/" target="_blank"><img src="images/icons/google.svg"
                                         alt=""></a>
@@ -393,8 +422,8 @@
                         <img src="images/photos/gardeners-with-plants-beautiful-garden-center.png"
                             class="staff-photo img-fluid">
                         <div class="staff-data">
-                            <p class="staff-name">Doris Jordan2</p>
-                            <p class="staff-position">Design Expert</p>
+                            <p class="li-head">Doris Jordan2</p>
+                            <p class="li-p">Design Expert</p>
                             <div class="social-media">
                                 <a href="https://www.google.com/" target="_blank"><img src="images/icons/google.svg"
                                         alt=""></a>
@@ -413,8 +442,8 @@
                         <img src="images/photos/gardeners-with-plants-beautiful-garden-center.png"
                             class="staff-photo img-fluid">
                         <div class="staff-data staff-card">
-                            <p class="staff-name">Doris Jordan3</p>
-                            <p class="staff-position">Design Expert</p>
+                            <p class="li-head">Doris Jordan3</p>
+                            <p class="li-p">Design Expert</p>
                             <div class="social-media">
                                 <a href="https://www.google.com/" target="_blank"><img src="images/icons/google.svg"
                                         alt=""></a>
@@ -433,8 +462,8 @@
                         <img src="images/photos/gardeners-with-plants-beautiful-garden-center.png"
                             class="staff-photo img-fluid">
                         <div class="staff-data">
-                            <p class="staff-name">Doris Jordan4</p>
-                            <p class="staff-position">Design Expert</p>
+                            <p class="li-head">Doris Jordan4</p>
+                            <p class="li-p">Design Expert</p>
                             <div class="social-media">
                                 <a href="https://www.google.com/" target="_blank"><img src="images/icons/google.svg"
                                         alt=""></a>
@@ -453,8 +482,8 @@
                         <img src="images/photos/gardeners-with-plants-beautiful-garden-center.png"
                             class="staff-photo img-fluid">
                         <div class="staff-data">
-                            <p class="staff-name">Doris Jordan5</p>
-                            <p class="staff-position">Design Expert</p>
+                            <p class="li-head">Doris Jordan5</p>
+                            <p class="li-p">Design Expert</p>
                             <div class="social-media">
                                 <a href="https://www.google.com/" target="_blank"><img src="images/icons/google.svg"
                                         alt=""></a>
@@ -474,8 +503,8 @@
                         <img src="images/photos/gardeners-with-plants-beautiful-garden-center.png"
                             class="staff-photo img-fluid">
                         <div class="staff-data">
-                            <p class="staff-name">Doris Jordan6</p>
-                            <p class="staff-position">Design Expert</p>
+                            <p class="li-head">Doris Jordan6</p>
+                            <p class="li-p">Design Expert</p>
                             <div class="social-media">
                                 <a href="https://www.google.com/" target="_blank"><img src="images/icons/google.svg"
                                         alt=""></a>
@@ -517,8 +546,8 @@
                                 type and scrambled it to make.</p>
                             <div class="client-data">
                                 <div>
-                                    <p class="client-name">Jane Smith1</p>
-                                    <p class="client-position">Manager</p>
+                                    <p class="li-head">Jane Smith1</p>
+                                    <p class="li-p">Manager</p>
                                 </div>
 
                                 <img src="/images/icons/stars-icon.svg" alt="">
@@ -536,8 +565,8 @@
                                 type and scrambled it to make.</p>
                             <div class="client-data">
                                 <div>
-                                    <p class="client-name">Jane Smith2</p>
-                                    <p class="client-position">Manager</p>
+                                    <p class="li-head">Jane Smith2</p>
+                                    <p class="li-p">Manager</p>
                                 </div>
 
                                 <img src="/images/icons/stars-icon.svg" alt="">
@@ -555,8 +584,8 @@
                                 type and scrambled it to make.</p>
                             <div class="client-data">
                                 <div>
-                                    <p class="client-name">Jane Smith3</p>
-                                    <p class="client-position">Manager</p>
+                                    <p class="li-head">Jane Smith3</p>
+                                    <p class="li-p">Manager</p>
                                 </div>
 
                                 <img src="/images/icons/stars-icon.svg" alt="">
@@ -573,8 +602,8 @@
                                 type and scrambled it to make.</p>
                             <div class="client-data">
                                 <div>
-                                    <p class="client-name">Jane Smith4</p>
-                                    <p class="client-position">Manager</p>
+                                    <p class="li-head">Jane Smith4</p>
+                                    <p class="li-p">Manager</p>
                                 </div>
 
                                 <img src="/images/icons/stars-icon.svg" alt="">
@@ -592,8 +621,8 @@
                                 type and scrambled it to make.</p>
                             <div class="client-data">
                                 <div>
-                                    <p class="client-name">Jane Smith5</p>
-                                    <p class="client-position">Manager</p>
+                                    <p class="li-head">Jane Smith5</p>
+                                    <p class="li-p">Manager</p>
                                 </div>
 
                                 <img src="/images/icons/stars-icon.svg" alt="">
