@@ -558,6 +558,8 @@ main {
 
     .article-card:nth-of-type(even) {
       background-image: url("images/photos/article_photo.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
       .article-data,
       .li-head,
       .li-p {
@@ -869,8 +871,8 @@ main {
       img {
         display: block;
         margin: 30px;
-        width: 325px;
-        height: 460px;
+        width: 450px;
+        height: 560px;
       }
     }
     .articles {
@@ -994,8 +996,8 @@ main {
 
     .faq {
       img {
-        width: 400px;
-        height: 510px;
+        width: 500px;
+        height: 610px;
       }
     }
   }

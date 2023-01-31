@@ -487,6 +487,8 @@ main .articles li .article-data .author-date {
 }
 main .articles .article-card:nth-of-type(even) {
   background-image: url("images/photos/article_photo.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 main .articles .article-card:nth-of-type(even) .article-data,
 main .articles .article-card:nth-of-type(even) .li-head,
@@ -727,8 +729,8 @@ main .staff .staff-text div .section-title {
   main .faq img {
     display: block;
     margin: 30px;
-    width: 325px;
-    height: 460px;
+    width: 450px;
+    height: 560px;
   }
   main .articles {
     padding: 40px 10vw;
@@ -816,7 +818,7 @@ main .main-section .main-content .bg-div .main-link a {
     padding: 30px;
   }
   main .faq img {
-    width: 400px;
-    height: 510px;
+    width: 500px;
+    height: 610px;
   }
 }/*# sourceMappingURL=style.css.map */
