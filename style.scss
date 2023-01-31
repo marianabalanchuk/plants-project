@@ -27,8 +27,6 @@
   .swiper-button-next::after,
   .swiper-button-prev::after {
     font-size: 22px;
-    color: $secondary-color;
-    font-weight: bold;
   }
 
   .swiper-button-next,
@@ -40,13 +38,21 @@
     margin: 0;
     width: 30px;
     height: 30px;
-    line-height: 30px;
+
+    color: $secondary-color;
+    font-weight: bold;
   }
   .swiper-button-next {
     left: 88%;
   }
   .swiper-button-prev {
     left: 75%;
+  }
+
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    background-color: $secondary-color;
+    color: white;
   }
 }
 

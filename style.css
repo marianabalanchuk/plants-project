@@ -23,8 +23,6 @@
 .swiper2 .swiper-button-next::after,
 .swiper2 .swiper-button-prev::after {
   font-size: 22px;
-  color: #00730c;
-  font-weight: bold;
 }
 .swiper2 .swiper-button-next,
 .swiper2 .swiper-button-prev {
@@ -35,13 +33,19 @@
   margin: 0;
   width: 30px;
   height: 30px;
-  line-height: 30px;
+  color: #00730c;
+  font-weight: bold;
 }
 .swiper2 .swiper-button-next {
   left: 88%;
 }
 .swiper2 .swiper-button-prev {
   left: 75%;
+}
+.swiper2 .swiper-button-next:hover,
+.swiper2 .swiper-button-prev:hover {
+  background-color: #00730c;
+  color: white;
 }
 
 .active {
