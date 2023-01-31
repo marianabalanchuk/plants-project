@@ -499,29 +499,29 @@ main {
     img {
       display: none;
     }
-    ol {
-      padding: 0;
-      li {
+
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0 auto;
+      box-shadow: none;
+      padding: 10px;
+      .li-head {
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 0;
         background-color: #fff8f1;
-        margin: 15px auto;
-        box-shadow: none;
-        .li-head {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          width: 100%;
+        padding: 15px;
+        p {
           margin: 0;
-          p {
-            margin: 0;
-          }
         }
-        .li-p {
-          background-color: white;
-          display: none;
-        }
+      }
+      .li-p {
+        background-color: white;
+        margin: 10px 20px;
       }
     }
   }

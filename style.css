@@ -433,30 +433,29 @@ main .faq {
 main .faq img {
   display: none;
 }
-main .faq ol {
-  padding: 0;
-}
-main .faq ol li {
+main .faq li {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: #fff8f1;
-  margin: 15px auto;
+  margin: 0 auto;
   box-shadow: none;
+  padding: 10px;
 }
-main .faq ol li .li-head {
+main .faq li .li-head {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   margin: 0;
+  background-color: #fff8f1;
+  padding: 15px;
 }
-main .faq ol li .li-head p {
+main .faq li .li-head p {
   margin: 0;
 }
-main .faq ol li .li-p {
+main .faq li .li-p {
   background-color: white;
-  display: none;
+  margin: 10px 20px;
 }
 main .articles {
   padding: 40px 8vw;
