@@ -461,8 +461,8 @@ main {
     .client-card {
       .client-photo {
         width: 135px;
-        margin-bottom: 20px;
         height: 185px;
+        padding: 0 10px 5px 0;
       }
 
       background-color: white;
@@ -482,6 +482,15 @@ main {
             margin: 0;
           }
         }
+      }
+    }
+
+    .client-card:nth-of-type(even) {
+      .client-photo {
+        background-image: url(/images/icons/feedback-background.png);
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        background-size: 100%;
       }
     }
   }

@@ -403,8 +403,8 @@ main .clients-saying .client-card {
 }
 main .clients-saying .client-card .client-photo {
   width: 135px;
-  margin-bottom: 20px;
   height: 185px;
+  padding: 0 10px 5px 0;
 }
 main .clients-saying .client-card .review {
   padding-top: 30px;
@@ -420,6 +420,12 @@ main .clients-saying .client-card .review .client-data .li-head,
 main .clients-saying .client-card .review .client-data .li-p {
   text-align: left;
   margin: 0;
+}
+main .clients-saying .client-card:nth-of-type(even) .client-photo {
+  background-image: url(/images/icons/feedback-background.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 main .faq {
   padding: 40px 8vw;
