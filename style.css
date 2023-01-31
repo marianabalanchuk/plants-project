@@ -162,6 +162,12 @@ header .bottom-header .navbar-collapse a {
   font-weight: 700;
   font-size: 16px;
 }
+header .bottom-header .burger-cross {
+  display: none;
+  font-size: 36px;
+  color: #00730c;
+  padding: 0;
+}
 header .bottom-header .dropdown-menu .dropdown-item {
   color: white;
   background-color: #0c4b35;

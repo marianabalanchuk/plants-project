@@ -181,6 +181,13 @@ header {
       }
     }
 
+    .burger-cross {
+      display: none;
+      font-size: 36px;
+      color: $secondary-color;
+      padding: 0;
+    }
+
     .dropdown-menu {
       .dropdown-item {
         color: white;

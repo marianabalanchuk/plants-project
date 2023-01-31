@@ -114,3 +114,18 @@ faqCollapse.forEach((item, i) => {
     faqCross[i].classList.remove("fa-xmark");
   });
 });
+
+let burgerCross = document.querySelector(".burger-cross");
+let burgerMenu = document.querySelector(".burger-menu");
+
+burgerMenu.addEventListener("click", (event) => {
+  event.preventDefault;
+  burgerCross.style.display = "block";
+  burgerMenu.style.display = "none";
+});
+
+burgerCross.addEventListener("click", (event) => {
+  event.preventDefault;
+  burgerCross.style.display = "none";
+  burgerMenu.style.display = "block";
+});
