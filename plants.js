@@ -91,3 +91,26 @@ const swiper4 = new Swiper(".swiper4", {
     clickable: true,
   },
 });
+
+let faqCollapse = document.querySelectorAll(".faq-collapse");
+let faqCollapseHead = document.querySelectorAll(".faq-collapse-head");
+let faqCross = document.querySelectorAll(".faq-expand-icon");
+
+faqCollapse.forEach((item, i) => {
+  item.addEventListener("show.bs.collapse", (event) => {
+    faqCollapseHead[i].style.backgroundColor = "#00730c";
+    faqCollapseHead[i].style.color = "white";
+
+    faqCross[i].classList.add("fa-xmark");
+    faqCross[i].classList.remove("fa-plus");
+  });
+});
+
+faqCollapse.forEach((item, i) => {
+  item.addEventListener("hide.bs.collapse", (event) => {
+    faqCollapseHead[i].style.backgroundColor = "#fff8f1";
+    faqCollapseHead[i].style.color = "black";
+    faqCross[i].classList.add("fa-plus");
+    faqCross[i].classList.remove("fa-xmark");
+  });
+});
