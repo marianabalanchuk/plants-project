@@ -11,9 +11,6 @@
 
   .swiper-pagination-bullet {
     background-color: #00730c;
-  }
-  .swiper-pagination-bullet-active {
-    background-color: #00730c;
     width: 15px;
     border-radius: 5px;
   }
@@ -53,6 +50,21 @@
   .swiper-button-prev:hover {
     background-color: $secondary-color;
     color: white;
+  }
+}
+
+.swiper3 {
+  padding: 40px 0;
+
+  .swiper-pagination-bullet {
+    background-color: #00730c;
+    width: 40px;
+    border-radius: 0;
+    margin: 0 10px !important;
+  }
+
+  .swiper-slide {
+    max-width: max-content;
   }
 }
 
@@ -452,7 +464,11 @@ main {
       .social-media {
         display: flex;
         justify-content: space-around;
-        gap: 10px;
+        gap: 15px;
+        font-size: 22px;
+        a {
+          color: white;
+        }
       }
 
       .staff-card {
@@ -535,11 +551,17 @@ main {
   .articles {
     padding: 40px 8vw;
 
+    .article-card {
+      width: 300px;
+      padding: 20px;
+    }
+
     .article-tag {
       background-color: #d9f1e0;
       box-shadow: $shadow;
       padding: 5px 10px;
       border-radius: 5px;
+      margin: 30px;
     }
     li {
       flex-direction: column;
@@ -564,7 +586,7 @@ main {
 
     .article-card:nth-of-type(even) {
       background-image: url("images/photos/article_photo.png");
-      background-size: 100%;
+      background-size: 200%;
       background-repeat: no-repeat;
       .article-data,
       .li-head,
@@ -578,12 +600,15 @@ main {
   }
 
   .logos {
-    li {
-      padding: 0;
-      .swiper-slide4 {
-        width: 200px;
-        height: 100px;
-      }
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+
+    img {
+      width: 140px;
+      height: 70px;
     }
   }
 }
@@ -766,6 +791,12 @@ footer {
         .review {
           padding: 0 30px;
         }
+      }
+    }
+    .logos {
+      img {
+        width: 170px;
+        height: 85px;
       }
     }
   }
@@ -1152,6 +1183,12 @@ footer {
       img {
         width: 500px;
         height: 610px;
+      }
+    }
+    .logos {
+      img {
+        width: 200px;
+        height: 100px;
       }
     }
   }

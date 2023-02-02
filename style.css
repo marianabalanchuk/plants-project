@@ -8,9 +8,6 @@
 }
 .swiper .swiper-pagination-bullet {
   background-color: #00730c;
-}
-.swiper .swiper-pagination-bullet-active {
-  background-color: #00730c;
   width: 15px;
   border-radius: 5px;
 }
@@ -46,6 +43,21 @@
 .swiper2 .swiper-button-prev:hover {
   background-color: #00730c;
   color: white;
+}
+
+.swiper3 {
+  padding: 40px 0;
+}
+.swiper3 .swiper-pagination-bullet {
+  background-color: #00730c;
+  width: 40px;
+  border-radius: 0;
+  margin: 0 10px !important;
+}
+.swiper3 .swiper-slide {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 
 .call-button-small {
@@ -394,7 +406,11 @@ main .staff .staff-data:hover {
 main .staff .staff-data:hover .social-media {
   display: flex;
   justify-content: space-around;
-  gap: 10px;
+  gap: 15px;
+  font-size: 22px;
+}
+main .staff .staff-data:hover .social-media a {
+  color: white;
 }
 main .staff .staff-data:hover .staff-card {
   position: relative;
@@ -466,11 +482,16 @@ main .faq li .li-p {
 main .articles {
   padding: 40px 8vw;
 }
+main .articles .article-card {
+  width: 300px;
+  padding: 20px;
+}
 main .articles .article-tag {
   background-color: #d9f1e0;
   box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
   padding: 5px 10px;
   border-radius: 5px;
+  margin: 30px;
 }
 main .articles li {
   flex-direction: column;
@@ -493,7 +514,7 @@ main .articles li .article-data .author-date {
 }
 main .articles .article-card:nth-of-type(even) {
   background-image: url("images/photos/article_photo.png");
-  background-size: 100%;
+  background-size: 200%;
   background-repeat: no-repeat;
 }
 main .articles .article-card:nth-of-type(even) .article-data,
@@ -504,12 +525,16 @@ main .articles .article-card:nth-of-type(even) .li-p {
 main .articles .article-card:nth-of-type(even) hr {
   border: 1px solid white;
 }
-main .logos li {
+main .logos {
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   padding: 0;
+  margin: 0;
 }
-main .logos li .swiper-slide4 {
-  width: 200px;
-  height: 100px;
+main .logos img {
+  width: 140px;
+  height: 70px;
 }
 
 footer {
@@ -654,6 +679,10 @@ main .clients-saying .section-p {
   }
   main .clients-saying .client-card .review {
     padding: 0 30px;
+  }
+  main .logos img {
+    width: 170px;
+    height: 85px;
   }
   footer .top-footer h5 {
     font-size: 20px;
@@ -952,6 +981,10 @@ main .main-section .main-content .bg-div .main-link a {
   main .faq img {
     width: 500px;
     height: 610px;
+  }
+  main .logos img {
+    width: 200px;
+    height: 100px;
   }
   footer .top-footer h5 {
     font-size: 22px;

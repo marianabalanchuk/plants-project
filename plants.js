@@ -35,11 +35,6 @@ const swiper2 = new Swiper(".swiper2", {
     enabled: true,
   },
 
-  pagination: {
-    el: ".swiper-dots2",
-    clickable: true,
-  },
-
   navigation: {
     nextEl: ".swiper-next2",
     prevEl: ".swiper-prev2",
@@ -69,32 +64,11 @@ const swiper3 = new Swiper(".swiper3", {
   breakpoints: {
     768: {
       slidesPerView: 2,
-      spaceBetween: 20,
+      spaceBetween: 30,
     },
     992: {
       slidesPerView: 3,
-      spaceBetween: 30,
-    },
-  },
-});
-
-const swiper4 = new Swiper(".swiper4", {
-  slidesPerView: 2,
-  spaceBetween: 10,
-
-  pagination: {
-    el: ".swiper-dots4",
-    clickable: true,
-  },
-
-  breakpoints: {
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 20,
-    },
-    992: {
-      slidesPerView: 6,
-      spaceBetween: 30,
+      spaceBetween: 40,
     },
   },
 });
