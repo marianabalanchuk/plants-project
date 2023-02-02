@@ -425,54 +425,49 @@ main {
 
   .staff {
     padding: 40px 8vw;
-
+    .staff-photo {
+      position: relative;
+      height: 360px;
+    }
     .staff-data {
+      position: absolute;
+      bottom: 0;
+      height: 65px;
+
       background: linear-gradient(
         6.68deg,
-        #00730c 4.95%,
+        $secondary-color 4.95%,
         rgba(251, 246, 238, 0) 264.79%
       );
+      border-radius: 5px;
+      width: 100%;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      padding: 10px;
-      border-radius: 0 0 5px 5px;
+      flex-direction: column;
 
       .li-p,
       .li-head {
         color: white;
+        text-align: center;
         margin: 0;
       }
-
       .social-media {
         display: none;
+        a {
+          color: white;
+          font-size: 22px;
+        }
       }
     }
 
     .staff-data:hover {
-      position: absolute;
-      top: 0;
-      width: 100%;
-      height: calc(100% + 65px);
-      border-radius: 5px;
-      padding: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      height: 100%;
+      transition: 0.3s ease;
       gap: 10px;
-
       .social-media {
         display: flex;
-        justify-content: space-around;
-        gap: 15px;
-        font-size: 22px;
-        a {
-          color: white;
-        }
-      }
-
-      .staff-card {
-        position: relative;
+        gap: 10px;
       }
     }
   }
@@ -609,6 +604,15 @@ main {
     img {
       width: 140px;
       height: 70px;
+    }
+  }
+
+  .summary {
+    padding: 40px 8vw;
+    div {
+      background-color: #d9f1e0;
+      border-radius: 5px;
+      padding: 30px;
     }
   }
 }
@@ -1020,22 +1024,22 @@ footer {
         }
       }
     }
-    .staff {
-      padding: 40px 10vw;
-      .staff-text {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        div {
-          width: 65%;
-          padding: 20px;
-          .section-p,
-          .section-title {
-            text-align: left;
-          }
-        }
-      }
-    }
+    // .staff {
+    //   padding: 40px 10vw;
+    //   .staff-text {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     align-items: center;
+    //     div {
+    //       width: 65%;
+    //       padding: 20px;
+    //       .section-p,
+    //       .section-title {
+    //         text-align: left;
+    //       }
+    //     }
+    //   }
+    // }
 
     .clients-saying {
       padding: 40px 10vw;
