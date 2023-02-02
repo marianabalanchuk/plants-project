@@ -174,7 +174,7 @@ header {
       }
       .navbar-nav {
         display: flex;
-        gap: 20px;
+        gap: 15px;
       }
 
       a {
@@ -597,9 +597,6 @@ footer {
   }
 
   .top-footer {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
     h5 {
       font-size: 18px;
       font-weight: 700;
@@ -613,21 +610,27 @@ footer {
     .subscribe {
       form {
         border-bottom: 1px solid white;
+        max-width: 315px;
         input {
           background-color: transparent;
           border: none;
+          color: white;
         }
         input::placeholder {
           color: white;
           font-size: 14px;
           font-weight: normal;
         }
+
+        input:focus {
+          outline: none;
+        }
         button {
           background-color: transparent;
           border: none;
           color: white;
-          font-size: 22px;
-          font-weight: 700px;
+          font-size: 18px;
+          font-weight: 700;
         }
       }
 
@@ -683,7 +686,12 @@ footer {
     div {
       display: flex;
       justify-content: center;
-      gap: 15px;
+      gap: 10px;
+      align-items: center;
+      p {
+        padding: 10px;
+        text-align: center;
+      }
     }
   }
 }
@@ -691,10 +699,6 @@ footer {
 // __________________________________________________________________________________________________________________________________________________________________
 // tablet md
 @media (min-width: 768px) {
-  .section-title {
-    font-size: 32px;
-  }
-
   .swiper2 {
     .swiper-button-next {
       left: 94%;
@@ -705,6 +709,14 @@ footer {
   }
 
   main {
+    .section-title {
+      font-size: 30px;
+    }
+
+    .section-p {
+      font-size: 16px;
+    }
+
     .main-section {
       display: flex;
       justify-content: flex-end;
@@ -736,7 +748,7 @@ footer {
 
     .reach-out {
       .img-text {
-        font-size: 25px;
+        font-size: 22px;
       }
     }
 
@@ -757,14 +769,27 @@ footer {
       }
     }
   }
+
+  footer {
+    .top-footer {
+      h5 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+
+    .bottom-footer {
+      .copyright {
+        font-size: 14px;
+      }
+    }
+  }
 }
 
 // laptop lg
 @media (min-width: 992px) {
-  .section-title {
-    font-size: 34px;
-  }
-
   .swiper2 {
     .swiper-button-prev {
       left: 91%;
@@ -821,6 +846,19 @@ footer {
     }
   }
   main {
+    .section-title {
+      font-size: 40px;
+    }
+
+    .li-head {
+      font-size: 20px;
+    }
+
+    .li-p,
+    .section-p {
+      font-size: 18px;
+    }
+
     .main-section {
       .img-fluid {
         width: 100%;
@@ -832,9 +870,6 @@ footer {
         justify-content: flex-end;
         .bg-div {
           padding: 40px 2vw 40px 10vw;
-          .section-title {
-            font-size: 40px;
-          }
 
           .main-btns {
             justify-content: center;
@@ -1117,6 +1152,33 @@ footer {
       img {
         width: 500px;
         height: 610px;
+      }
+    }
+  }
+
+  footer {
+    .top-footer {
+      h5 {
+        font-size: 22px;
+      }
+      p {
+        font-size: 18px;
+      }
+
+      .contacts {
+        .phones {
+          flex-direction: column;
+          gap: 0;
+        }
+      }
+    }
+
+    .bottom-footer {
+      display: flex;
+      justify-content: space-around;
+
+      .copyright {
+        font-size: 16px;
       }
     }
   }

@@ -159,7 +159,7 @@ header .bottom-header .navbar-collapse .nav-link:hover {
 }
 header .bottom-header .navbar-collapse .navbar-nav {
   display: flex;
-  gap: 20px;
+  gap: 15px;
 }
 header .bottom-header .navbar-collapse a {
   color: black;
@@ -520,11 +520,6 @@ footer {
 footer a {
   color: white;
 }
-footer .top-footer {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
 footer .top-footer h5 {
   font-size: 18px;
   font-weight: 700;
@@ -536,10 +531,12 @@ footer .top-footer p {
 }
 footer .top-footer .subscribe form {
   border-bottom: 1px solid white;
+  max-width: 315px;
 }
 footer .top-footer .subscribe form input {
   background-color: transparent;
   border: none;
+  color: white;
 }
 footer .top-footer .subscribe form input::-moz-placeholder {
   color: white;
@@ -556,12 +553,15 @@ footer .top-footer .subscribe form input::placeholder {
   font-size: 14px;
   font-weight: normal;
 }
+footer .top-footer .subscribe form input:focus {
+  outline: none;
+}
 footer .top-footer .subscribe form button {
   background-color: transparent;
   border: none;
   color: white;
-  font-size: 22px;
-  font-weight: 700px;
+  font-size: 18px;
+  font-weight: 700;
 }
 footer .top-footer .subscribe .social-media-footer {
   display: flex;
@@ -603,18 +603,26 @@ footer .bottom-footer .copyright {
 footer .bottom-footer div {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
+  align-items: center;
+}
+footer .bottom-footer div p {
+  padding: 10px;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
-  .section-title {
-    font-size: 32px;
-  }
   .swiper2 .swiper-button-next {
     left: 94%;
   }
   .swiper2 .swiper-button-prev {
     left: 87%;
+  }
+  main .section-title {
+    font-size: 30px;
+  }
+  main .section-p {
+    font-size: 16px;
   }
   main .main-section {
     display: flex;
@@ -632,7 +640,7 @@ footer .bottom-footer div {
     width: 48%;
   }
   main .reach-out .img-text {
-    font-size: 25px;
+    font-size: 22px;
   }
   main .clients-saying .section-title,
 main .clients-saying .section-p {
@@ -647,11 +655,17 @@ main .clients-saying .section-p {
   main .clients-saying .client-card .review {
     padding: 0 30px;
   }
+  footer .top-footer h5 {
+    font-size: 20px;
+  }
+  footer .top-footer p {
+    font-size: 16px;
+  }
+  footer .bottom-footer .copyright {
+    font-size: 14px;
+  }
 }
 @media (min-width: 992px) {
-  .section-title {
-    font-size: 34px;
-  }
   .swiper2 .swiper-button-prev {
     left: 91%;
   }
@@ -698,6 +712,16 @@ header .top-header .contact-us .find-us a {
   header .bottom-header .call-menu .call-button-small {
     display: none;
   }
+  main .section-title {
+    font-size: 40px;
+  }
+  main .li-head {
+    font-size: 20px;
+  }
+  main .li-p,
+main .section-p {
+    font-size: 18px;
+  }
   main .main-section .img-fluid {
     width: 100%;
     align-self: end;
@@ -708,9 +732,6 @@ header .top-header .contact-us .find-us a {
   }
   main .main-section .main-content .bg-div {
     padding: 40px 2vw 40px 10vw;
-  }
-  main .main-section .main-content .bg-div .section-title {
-    font-size: 40px;
   }
   main .main-section .main-content .bg-div .main-btns {
     justify-content: center;
@@ -931,5 +952,22 @@ main .main-section .main-content .bg-div .main-link a {
   main .faq img {
     width: 500px;
     height: 610px;
+  }
+  footer .top-footer h5 {
+    font-size: 22px;
+  }
+  footer .top-footer p {
+    font-size: 18px;
+  }
+  footer .top-footer .contacts .phones {
+    flex-direction: column;
+    gap: 0;
+  }
+  footer .bottom-footer {
+    display: flex;
+    justify-content: space-around;
+  }
+  footer .bottom-footer .copyright {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=style.css.map */
