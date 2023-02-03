@@ -116,14 +116,14 @@ let serviceLiItem = document.querySelectorAll(".service-li-item");
 
 serviceLiItem.forEach((item, i) => {
   item.addEventListener("mouseover", (event) => {
-    serviceImg[i].setAttribute("src", `images/icons/${i}white.svg`);
+    serviceImg[i].setAttribute("src", `./images/icons/${i}white.svg`);
     console.log(event);
   });
 });
 
 serviceLiItem.forEach((item, i) => {
   item.addEventListener("mouseleave", (event) => {
-    serviceImg[i].setAttribute("src", `images/icons/${i}green.svg`);
+    serviceImg[i].setAttribute("src", `./images/icons/${i}green.svg`);
   });
 });
 
@@ -132,13 +132,13 @@ let processLiItem = document.querySelectorAll(".process-li-item");
 
 processLiItem.forEach((item, i) => {
   item.addEventListener("mouseover", (event) => {
-    processImg[i].setAttribute("src", `images/icons/${i}-process-white.svg`);
+    processImg[i].setAttribute("src", `./images/icons/${i}-process-white.svg`);
     console.log(event);
   });
 });
 
 processLiItem.forEach((item, i) => {
   item.addEventListener("mouseleave", (event) => {
-    processImg[i].setAttribute("src", `images/icons/${i}-process-green.svg`);
+    processImg[i].setAttribute("src", `./images/icons/${i}-process-green.svg`);
   });
 });
