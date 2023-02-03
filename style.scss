@@ -553,6 +553,9 @@ main {
 
       .review {
         padding-top: 30px;
+        background-image: url(/images/icons/quotation-marks-clients.svg);
+        background-position: top left 30px;
+        background-repeat: no-repeat;
         .li-p {
           margin-bottom: 1rem;
         }
@@ -664,8 +667,20 @@ main {
       .li-p {
         color: white;
       }
+      img {
+        content: url(/images/icons/admin-white.svg);
+      }
       hr {
         border: 1px solid white;
+      }
+    }
+
+    .article-card:nth-of-type(odd) {
+      background-image: url("images/icons/articles-leaf-background.svg");
+      background-repeat: no-repeat;
+      background-position: top right;
+      img {
+        content: url(/images/icons/admin-green.svg);
       }
     }
   }
@@ -1138,6 +1153,19 @@ footer {
     }
     .staff {
       padding: 40px 10vw;
+      .staff-text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        div {
+          max-width: 70%;
+          .section-p,
+          .section-title {
+            text-align: left;
+          }
+        }
+      }
     }
 
     .clients-saying {
@@ -1277,10 +1305,6 @@ footer {
       .img-text {
         font-size: 33px;
       }
-    }
-
-    .staff {
-      padding: 40px 10vw;
     }
 
     .clients-saying {

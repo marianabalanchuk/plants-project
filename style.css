@@ -486,6 +486,9 @@ main .clients-saying .client-card .client-photo {
 }
 main .clients-saying .client-card .review {
   padding-top: 30px;
+  background-image: url(/images/icons/quotation-marks-clients.svg);
+  background-position: top left 30px;
+  background-repeat: no-repeat;
 }
 main .clients-saying .client-card .review .li-p {
   margin-bottom: 1rem;
@@ -584,8 +587,19 @@ main .articles .article-card:nth-of-type(even) .li-head,
 main .articles .article-card:nth-of-type(even) .li-p {
   color: white;
 }
+main .articles .article-card:nth-of-type(even) img {
+  content: url(/images/icons/admin-white.svg);
+}
 main .articles .article-card:nth-of-type(even) hr {
   border: 1px solid white;
+}
+main .articles .article-card:nth-of-type(odd) {
+  background-image: url("images/icons/articles-leaf-background.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+main .articles .article-card:nth-of-type(odd) img {
+  content: url(/images/icons/admin-green.svg);
 }
 main .logos {
   position: relative;
@@ -958,6 +972,18 @@ main .about-us .about-text .section-title {
   main .staff {
     padding: 40px 10vw;
   }
+  main .staff .staff-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  main .staff .staff-text div {
+    max-width: 70%;
+  }
+  main .staff .staff-text div .section-p,
+main .staff .staff-text div .section-title {
+    text-align: left;
+  }
   main .clients-saying {
     padding: 40px 10vw;
   }
@@ -1058,9 +1084,6 @@ main .main-section .main-content .bg-div .main-link a {
   }
   main .reach-out .img-text {
     font-size: 33px;
-  }
-  main .staff {
-    padding: 40px 10vw;
   }
   main .clients-saying .client-card {
     display: flex;
