@@ -280,20 +280,22 @@ main .services .services-list li {
   justify-content: space-between;
   align-items: center;
 }
-main .services .services-list li .service-img-container {
-  background-image: url(/images/icons/services-background-leaf.svg);
-  background-size: contain;
-  width: 70px;
-  height: 70px;
-}
 main .services .services-list li .service-img-container img {
   height: 50px;
   width: 50px;
-  margin: 10px;
+  margin: 15px auto;
+  display: block;
+}
+main .services .services-list li .services-text .li-p {
+  font-size: 16px;
 }
 main .services .services-list li:hover {
   background: #00730c;
   color: white;
+  background-image: url(/images/icons/services-background-leaf.svg);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: left center;
 }
 main .services .services-list li:hover .li-p {
   color: white;
@@ -842,6 +844,10 @@ main .section-p {
   }
   main .services .services-list li .services-text p {
     text-align: center;
+  }
+  main .services .services-list li:hover {
+    background-position: top center;
+    background-size: 120px;
   }
   main .about-us {
     padding: 20px 10vw;
