@@ -524,28 +524,45 @@ main .articles .article-card:nth-of-type(even) hr {
   border: 1px solid white;
 }
 main .logos {
+  position: relative;
   justify-content: center;
   align-items: center;
   gap: 10px;
   padding: 0;
-  margin: 0;
+  margin: 0 0 120px 0;
 }
 main .logos img {
   width: 140px;
   height: 70px;
 }
-main .summary {
+main .logos .summary {
   padding: 40px 8vw;
+  position: absolute;
+  top: 75px;
 }
-main .summary div {
+main .logos .summary div {
   background-color: #d9f1e0;
   border-radius: 5px;
-  padding: 30px;
+  padding: 30px 50px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+main .logos .summary div .summary-title {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+main .logos .summary div .green-btn {
+  width: 100%;
+  max-width: 275px;
+  margin: 0;
 }
 
 footer {
   background-color: #0c4b35;
-  padding: 40px 8vw;
+  padding: 100px 8vw 40px;
   color: white;
 }
 footer a {
@@ -686,9 +703,18 @@ main .clients-saying .section-p {
   main .clients-saying .client-card .review {
     padding: 0 30px;
   }
+  main .logos {
+    margin: 0 0 95px 0;
+  }
   main .logos img {
-    width: 170px;
-    height: 85px;
+    width: 156px;
+    height: 78px;
+  }
+  main .logos .summary div {
+    gap: 10px;
+  }
+  main .logos .summary div .summary-title {
+    font-size: 22px;
   }
   footer .top-footer h5 {
     font-size: 20px;
@@ -851,14 +877,15 @@ main .about-us .about-text .section-title {
     flex-direction: row;
     justify-content: flex-end;
     gap: 45px;
+    font-size: 30px;
   }
   main .reach-out .img-text p {
     width: 50%;
     text-align: end;
     margin: 0;
   }
-  main .reach-out .img-text a {
-    text-decoration: none;
+  main .staff {
+    padding: 40px 10vw;
   }
   main .clients-saying {
     padding: 40px 10vw;
@@ -887,6 +914,16 @@ main .about-us .about-text .section-title {
   }
   main .articles {
     padding: 40px 10vw;
+  }
+  main .logos .summary {
+    padding: 40px 10vw;
+  }
+  main .logos .summary div {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  main .logos .summary div .summary-title {
+    font-size: 30px;
   }
 }
 @media (min-width: 1440px) {
@@ -951,6 +988,9 @@ main .main-section .main-content .bg-div .main-link a {
   main .reach-out {
     padding: 40px 10vw;
   }
+  main .reach-out .img-text {
+    font-size: 33px;
+  }
   main .staff {
     padding: 40px 10vw;
   }
@@ -971,6 +1011,15 @@ main .main-section .main-content .bg-div .main-link a {
   main .faq img {
     width: 500px;
     height: 610px;
+  }
+  main .logos {
+    margin: 0 0 100px 0;
+  }
+  main .logos .summary {
+    top: 100px;
+  }
+  main .logos .summary div .summary-title {
+    font-size: 32px;
   }
   main .logos img {
     width: 200px;
