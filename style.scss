@@ -532,10 +532,16 @@ main {
         margin: 0;
         background-color: #fff8f1;
         padding: 15px;
+
         p {
           margin: 0;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          padding: 5px;
         }
       }
+
       .li-p {
         background-color: white;
         margin: 10px 20px;
@@ -827,7 +833,7 @@ footer {
 
       .summary {
         div {
-          gap: 10px;
+          gap: 15px;
 
           .summary-title {
             font-size: 22px;

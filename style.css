@@ -472,6 +472,10 @@ main .faq li .li-head {
 }
 main .faq li .li-head p {
   margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 5px;
 }
 main .faq li .li-p {
   background-color: white;
@@ -711,7 +715,7 @@ main .clients-saying .section-p {
     height: 78px;
   }
   main .logos .summary div {
-    gap: 10px;
+    gap: 15px;
   }
   main .logos .summary div .summary-title {
     font-size: 22px;
