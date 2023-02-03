@@ -186,7 +186,7 @@ header {
       }
       .navbar-nav {
         display: flex;
-        gap: 15px;
+        gap: 10px;
       }
 
       a {
@@ -747,7 +747,7 @@ main {
 
 footer {
   background-color: $main-color;
-  padding: 100px 8vw 40px;
+  padding: 115px 8vw 40px;
   color: white;
   a {
     color: white;
@@ -977,7 +977,6 @@ footer {
 
   header {
     .top-header {
-      padding: 0 10vw;
       .contact-us {
         .email-us,
         .call-us,
@@ -1164,7 +1163,7 @@ footer {
         gap: 45px;
         font-size: 30px;
         p {
-          width: 50%;
+          width: 65%;
           text-align: end;
           margin: 0;
         }
@@ -1209,8 +1208,8 @@ footer {
       img {
         display: block;
         margin: 30px;
-        width: 450px;
-        height: 560px;
+        width: 400px;
+        height: 510px;
       }
       li {
         .li-head {
@@ -1258,6 +1257,12 @@ footer {
     }
     .bottom-header {
       padding: 0 10vw;
+
+      .navbar-collapse {
+        .navbar-nav {
+          gap: 15px;
+        }
+      }
     }
   }
 

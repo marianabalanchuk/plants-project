@@ -50,7 +50,7 @@ const swiper2 = new Swiper(".swiper2", {
 
 const swiper3 = new Swiper(".swiper3", {
   slidesPerView: 1,
-  spaceBetween: 20,
+  spaceBetween: 10,
   loop: true,
   keyboard: {
     enabled: true,
@@ -64,11 +64,11 @@ const swiper3 = new Swiper(".swiper3", {
   breakpoints: {
     768: {
       slidesPerView: 2,
-      spaceBetween: 30,
+      spaceBetween: 20,
     },
     992: {
       slidesPerView: 3,
-      spaceBetween: 40,
+      spaceBetween: 30,
     },
   },
 });

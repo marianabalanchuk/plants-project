@@ -171,7 +171,7 @@ header .bottom-header .navbar-collapse .nav-link:hover {
 }
 header .bottom-header .navbar-collapse .navbar-nav {
   display: flex;
-  gap: 15px;
+  gap: 10px;
 }
 header .bottom-header .navbar-collapse a {
   color: black;
@@ -653,7 +653,7 @@ main .logos .summary div .green-btn {
 
 footer {
   background-color: #0c4b35;
-  padding: 100px 8vw 40px;
+  padding: 115px 8vw 40px;
   color: white;
 }
 footer a {
@@ -827,9 +827,6 @@ main .clients-saying .section-p {
   .swiper2 .swiper-button-next {
     left: 96%;
   }
-  header .top-header {
-    padding: 0 10vw;
-  }
   header .top-header .contact-us .email-us,
 header .top-header .contact-us .call-us,
 header .top-header .contact-us .find-us {
@@ -982,7 +979,7 @@ main .about-us .about-text .section-title {
     font-size: 30px;
   }
   main .reach-out .img-text p {
-    width: 50%;
+    width: 65%;
     text-align: end;
     margin: 0;
   }
@@ -1023,8 +1020,8 @@ main .staff .staff-text div .section-title {
   main .faq img {
     display: block;
     margin: 30px;
-    width: 450px;
-    height: 560px;
+    width: 400px;
+    height: 510px;
   }
   main .faq li .li-head .faq-question {
     white-space: normal;
@@ -1056,6 +1053,9 @@ main .staff .staff-text div .section-title {
   }
   header .bottom-header {
     padding: 0 10vw;
+  }
+  header .bottom-header .navbar-collapse .navbar-nav {
+    gap: 15px;
   }
   main .section-p,
 main .li-p {
