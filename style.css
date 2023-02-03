@@ -229,7 +229,7 @@ main .main-section {
   background: linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
 }
 main .main-section .main-content {
-  background-image: url("images/icons/background-flower.svg");
+  background-image: url("./images/icons/background-flower.svg");
   background-position: left bottom;
   background-repeat: no-repeat;
   background-size: 15%;
@@ -292,7 +292,7 @@ main .services .services-list li .services-text .li-p {
 main .services .services-list li:hover {
   background: #00730c;
   color: white;
-  background-image: url(/images/icons/services-background-leaf.svg);
+  background-image: url("./images/icons/services-background-leaf.svg");
   background-size: 100px;
   background-repeat: no-repeat;
   background-position: left center;
@@ -304,7 +304,7 @@ main .about-us {
   padding: 40px 8vw;
 }
 main .about-us .value-img-container {
-  background-image: url("images/icons/green-background-image.svg");
+  background-image: url("./images/icons/green-background-image.svg");
   background-position: top left;
   background-repeat: no-repeat;
   position: relative;
@@ -350,7 +350,7 @@ main .why-choose-us {
   color: white;
   text-align: center;
   padding: 40px 8vw;
-  background-image: url(/images/icons/choose-us-bg-leaf-left.png), url(/images/icons/choose-us-bg-leaf-right.png);
+  background-image: url("./images/icons/choose-us-bg-leaf-left.png"), url("./images/icons/choose-us-bg-leaf-right.png");
   background-position: left center, top right;
   background-repeat: no-repeat, no-repeat;
   background-size: 150px, 150px;
@@ -383,7 +383,7 @@ main .working-process .processes li {
   align-items: flex-start;
 }
 main .working-process .processes li .process-bg-div {
-  background-image: url(/images/icons/process-background-image-green.svg);
+  background-image: url("./images/icons/process-background-image-green.svg");
   background-repeat: no-repeat;
   background-position: right center;
 }
@@ -408,7 +408,7 @@ main .working-process .processes li:hover {
   background: #00730c;
 }
 main .working-process .processes li:hover .process-bg-div {
-  background-image: url(/images/icons/process-background-image-white.svg);
+  background-image: url("./images/icons/process-background-image-white.svg");
 }
 main .working-process .processes li:hover .li-p,
 main .working-process .processes li:hover .li-head {
@@ -420,7 +420,7 @@ main .working-process .processes li:hover .process-number {
 }
 main .reach-out {
   color: white;
-  background-image: url("images/photos/hand-holding-small-tree-planting.png");
+  background-image: url("./images/photos/hand-holding-small-tree-planting.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -479,7 +479,7 @@ main .staff .staff-data:hover .social-media {
 }
 main .clients-saying {
   padding: 40px 8vw 0;
-  background: url(/images/photos/clients-background.png);
+  background: url("./images/photos/clients-background.png");
   background-size: 100% 75%;
   background-repeat: no-repeat;
 }
@@ -495,7 +495,7 @@ main .clients-saying .client-card .client-photo {
 }
 main .clients-saying .client-card .review {
   padding-top: 30px;
-  background-image: url(/images/icons/quotation-marks-clients.svg);
+  background-image: url("./images/icons/quotation-marks-clients.svg");
   background-position: top left 30px;
   background-repeat: no-repeat;
 }
@@ -512,7 +512,7 @@ main .clients-saying .client-card .review .client-data .li-p {
   margin: 0;
 }
 main .clients-saying .client-card:nth-of-type(even) .client-photo {
-  background-image: url(/images/icons/feedback-background.png);
+  background-image: url("./images/icons/feedback-background.png");
   background-position: bottom right;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -587,7 +587,7 @@ main .articles li .article-data .author-date {
   font-weight: bold;
 }
 main .articles .article-card:nth-of-type(even) {
-  background-image: url("images/photos/article_photo.png");
+  background-image: url("./images/photos/article_photo.png");
   background-size: 200%;
   background-repeat: no-repeat;
 }
@@ -597,18 +597,18 @@ main .articles .article-card:nth-of-type(even) .li-p {
   color: white;
 }
 main .articles .article-card:nth-of-type(even) img {
-  content: url(/images/icons/admin-white.svg);
+  content: url("./images/icons/admin-white.svg");
 }
 main .articles .article-card:nth-of-type(even) hr {
   border: 1px solid white;
 }
 main .articles .article-card:nth-of-type(odd) {
-  background-image: url("images/icons/articles-leaf-background.svg");
+  background-image: url("./images/icons/articles-leaf-background.svg");
   background-repeat: no-repeat;
   background-position: top right;
 }
 main .articles .article-card:nth-of-type(odd) img {
-  content: url(/images/icons/admin-green.svg);
+  content: url("./images/icons/admin-green.svg");
 }
 main .logos {
   position: relative;
