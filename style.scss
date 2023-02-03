@@ -257,7 +257,7 @@ main {
     padding: 0;
     background: $background-gradient;
     .main-content {
-      background-image: url("./images/icons/background-flower.svg");
+      background-image: url(./images/icons/background-flower.svg);
       background-position: left bottom;
       background-repeat: no-repeat;
       background-size: 15%;
@@ -338,7 +338,7 @@ main {
           color: white;
         }
 
-        background-image: url("./images/icons/services-background-leaf.svg");
+        background-image: url(./images/icons/services-background-leaf.svg);
         background-size: 100px;
         background-repeat: no-repeat;
         background-position: left center;
@@ -349,7 +349,7 @@ main {
   .about-us {
     padding: 40px 8vw;
     .value-img-container {
-      background-image: url("./images/icons/green-background-image.svg");
+      background-image: url(./images/icons/green-background-image.svg);
       background-position: top left;
       background-repeat: no-repeat;
       position: relative;
@@ -403,8 +403,8 @@ main {
     text-align: center;
     padding: 40px 8vw;
 
-    background-image: url("./images/icons/choose-us-bg-leaf-left.png"),
-      url("./images/icons/choose-us-bg-leaf-right.png");
+    background-image: url(./images/icons/choose-us-bg-leaf-left.png),
+      url(./images/icons/choose-us-bg-leaf-right.png);
     background-position: left center, top right;
     background-repeat: no-repeat, no-repeat;
     background-size: 150px, 150px;
@@ -438,7 +438,7 @@ main {
         align-items: flex-start;
 
         .process-bg-div {
-          background-image: url("./images/icons/process-background-image-green.svg");
+          background-image: url(./images/icons/process-background-image-green.svg);
           background-repeat: no-repeat;
           background-position: right center;
         }
@@ -466,7 +466,7 @@ main {
         background: $secondary-color;
 
         .process-bg-div {
-          background-image: url("./images/icons/process-background-image-white.svg");
+          background-image: url(./images/icons/process-background-image-white.svg);
         }
         .li-p,
         .li-head {
@@ -482,7 +482,7 @@ main {
 
   .reach-out {
     color: white;
-    background-image: url("./images/photos/hand-holding-small-tree-planting.png");
+    background-image: url(./images/photos/hand-holding-small-tree-planting.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -550,7 +550,7 @@ main {
 
   .clients-saying {
     padding: 40px 8vw 0;
-    background: url("./images/photos/clients-background.png");
+    background: url(./images/photos/clients-background.png);
     background-size: 100% 75%;
     background-repeat: no-repeat;
 
@@ -566,7 +566,7 @@ main {
 
       .review {
         padding-top: 30px;
-        background-image: url("./images/icons/quotation-marks-clients.svg");
+        background-image: url(./images/icons/quotation-marks-clients.svg);
         background-position: top left 30px;
         background-repeat: no-repeat;
         .li-p {
@@ -586,7 +586,7 @@ main {
 
     .client-card:nth-of-type(even) {
       .client-photo {
-        background-image: url("./images/icons/feedback-background.png");
+        background-image: url(./images/icons/feedback-background.png);
         background-position: bottom right;
         background-repeat: no-repeat;
         background-size: 100%;
@@ -672,7 +672,7 @@ main {
     }
 
     .article-card:nth-of-type(even) {
-      background-image: url("./images/photos/article_photo.png");
+      background-image: url(./images/photos/article_photo.png);
       background-size: 200%;
       background-repeat: no-repeat;
       .article-data,
@@ -681,7 +681,7 @@ main {
         color: white;
       }
       img {
-        content: url("./images/icons/admin-white.svg");
+        content: url(./images/icons/admin-white.svg);
       }
       hr {
         border: 1px solid white;
@@ -689,11 +689,11 @@ main {
     }
 
     .article-card:nth-of-type(odd) {
-      background-image: url("./images/icons/articles-leaf-background.svg");
+      background-image: url(./images/icons/articles-leaf-background.svg);
       background-repeat: no-repeat;
       background-position: top right;
       img {
-        content: url("./images/icons/admin-green.svg");
+        content: url(./images/icons/admin-green.svg);
       }
     }
   }
