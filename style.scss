@@ -348,6 +348,10 @@ main {
 
   .about-us {
     padding: 40px 8vw;
+    background-image: url(/images/icons/about-us-bg-img.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 50%;
     .value-img-container {
       background-image: url("images/icons/green-background-image.svg");
       background-position: top left;
@@ -403,6 +407,12 @@ main {
     text-align: center;
     padding: 40px 8vw;
 
+    background-image: url(/images/icons/choose-us-bg-leaf-left.png),
+      url(/images/icons/choose-us-bg-leaf-right.png);
+    background-position: left center, top right;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 150px, 150px;
+
     .section-p {
       color: white;
     }
@@ -432,7 +442,7 @@ main {
         align-items: flex-start;
 
         .process-bg-div {
-          background-image: url(/images/icons/process-background-image.svg);
+          background-image: url(/images/icons/process-background-image-green.svg);
           background-repeat: no-repeat;
           background-position: right center;
         }
@@ -458,6 +468,10 @@ main {
 
       li:hover {
         background: $secondary-color;
+
+        .process-bg-div {
+          background-image: url(/images/icons/process-background-image-white.svg);
+        }
         .li-p,
         .li-head {
           color: white;
@@ -539,8 +553,11 @@ main {
   }
 
   .clients-saying {
-    padding: 40px 8vw;
-    background-color: #e3f2e7;
+    padding: 40px 8vw 0;
+    background: url(/images/photos/clients-background.png);
+    background-size: 100% 75%;
+    background-repeat: no-repeat;
+
     .client-card {
       box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
       background-color: white;
@@ -873,6 +890,7 @@ footer {
     }
 
     .why-choose-us {
+      background-size: 200px, 200px;
       .img-fluid {
         width: 75%;
       }
@@ -1103,6 +1121,7 @@ footer {
       justify-content: center;
       gap: 20px;
       padding: 20px 10vw;
+      background-size: 250px, 250px;
 
       .img-fluid {
         width: 175%;
@@ -1169,7 +1188,7 @@ footer {
     }
 
     .clients-saying {
-      padding: 40px 10vw;
+      padding: 40px 10vw 0;
       .client-card {
         display: flex;
         flex-direction: column;
