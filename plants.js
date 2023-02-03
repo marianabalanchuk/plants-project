@@ -112,8 +112,8 @@ burgerCross.addEventListener("click", (event) => {
 });
 
 let serviceImg = document.querySelectorAll(".service-img");
-
 let serviceLiItem = document.querySelectorAll(".service-li-item");
+
 serviceLiItem.forEach((item, i) => {
   item.addEventListener("mouseover", (event) => {
     serviceImg[i].setAttribute("src", `/images/icons/${i}white.svg`);
@@ -124,5 +124,21 @@ serviceLiItem.forEach((item, i) => {
 serviceLiItem.forEach((item, i) => {
   item.addEventListener("mouseleave", (event) => {
     serviceImg[i].setAttribute("src", `/images/icons/${i}green.svg`);
+  });
+});
+
+let processImg = document.querySelectorAll(".process-img");
+let processLiItem = document.querySelectorAll(".process-li-item");
+
+processLiItem.forEach((item, i) => {
+  item.addEventListener("mouseover", (event) => {
+    processImg[i].setAttribute("src", `/images/icons/${i}-process-white.svg`);
+    console.log(event);
+  });
+});
+
+processLiItem.forEach((item, i) => {
+  item.addEventListener("mouseleave", (event) => {
+    processImg[i].setAttribute("src", `/images/icons/${i}-process-green.svg`);
   });
 });

@@ -378,8 +378,38 @@ main .working-process .processes li {
   justify-content: space-between;
   align-items: flex-start;
 }
-main .working-process .processes li img {
+main .working-process .processes li .process-bg-div {
+  background-image: url(/images/icons/process-background-image.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+main .working-process .processes li .process-imgs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+main .working-process .processes li .process-imgs img {
   margin: 10px;
+  width: 70px;
+  height: 70px;
+}
+main .working-process .processes li .process-imgs .process-number {
+  font-size: 60px;
+  font-weight: 800;
+  color: #e3e3e3;
+  margin: 10px;
+}
+main .working-process .processes li:hover {
+  background: #00730c;
+}
+main .working-process .processes li:hover .li-p,
+main .working-process .processes li:hover .li-head {
+  color: white;
+}
+main .working-process .processes li:hover .process-number {
+  color: white;
+  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.15);
 }
 main .reach-out {
   color: white;
@@ -911,6 +941,9 @@ main .about-us .about-text .section-title {
     margin: 0;
     width: 23%;
   }
+  main .reach-out {
+    padding: 40px 10vw;
+  }
   main .reach-out .img-text {
     flex-direction: row;
     justify-content: flex-end;
@@ -1021,12 +1054,6 @@ main .main-section .main-content .bg-div .main-link a {
     left: 170px;
   }
   main .why-choose-us {
-    padding: 40px 10vw;
-  }
-  main .working-process {
-    padding: 40px 10vw;
-  }
-  main .reach-out {
     padding: 40px 10vw;
   }
   main .reach-out .img-text {
