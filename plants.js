@@ -110,3 +110,19 @@ burgerCross.addEventListener("click", (event) => {
   burgerCross.style.display = "none";
   burgerMenu.style.display = "block";
 });
+
+let serviceImg = document.querySelectorAll(".service-img");
+
+let serviceLiItem = document.querySelectorAll(".service-li-item");
+serviceLiItem.forEach((item, i) => {
+  item.addEventListener("mouseover", (event) => {
+    serviceImg[i].setAttribute("src", `/images/icons/${i}white.svg`);
+    console.log(event);
+  });
+});
+
+serviceLiItem.forEach((item, i) => {
+  item.addEventListener("mouseleave", (event) => {
+    serviceImg[i].setAttribute("src", `/images/icons/${i}green.svg`);
+  });
+});

@@ -280,10 +280,23 @@ main .services .services-list li {
   justify-content: space-between;
   align-items: center;
 }
-main .services .services-list li img {
-  margin: 10px;
+main .services .services-list li .service-img-container {
+  background-image: url(/images/icons/services-background-leaf.svg);
+  background-size: contain;
+  width: 70px;
+  height: 70px;
+}
+main .services .services-list li .service-img-container img {
   height: 50px;
   width: 50px;
+  margin: 10px;
+}
+main .services .services-list li:hover {
+  background: #00730c;
+  color: white;
+}
+main .services .services-list li:hover .li-p {
+  color: white;
 }
 main .about-us {
   padding: 40px 8vw;
