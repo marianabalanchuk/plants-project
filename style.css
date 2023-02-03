@@ -318,6 +318,18 @@ main .about-us .about-text .our-values li {
 main .about-us .about-text .our-values .li-head {
   margin: 0;
 }
+main .about-us .about-text .our-values img {
+  width: 50px;
+  height: 50px;
+}
+main .about-us .about-text .our-values li:hover {
+  background-color: #00730c;
+  color: white;
+}
+main .about-us .about-text .our-values li:hover img {
+  border: 1px solid white;
+  border-radius: 50%;
+}
 main .why-choose-us {
   background-color: #0c4b35;
   color: white;
@@ -472,10 +484,13 @@ main .faq li .li-head {
 }
 main .faq li .li-head p {
   margin: 0;
+  padding: 5px;
+}
+main .faq li .li-head .faq-question {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  padding: 5px;
+  width: 90%;
 }
 main .faq li .li-p {
   background-color: white;
@@ -915,6 +930,9 @@ main .about-us .about-text .section-title {
     margin: 30px;
     width: 450px;
     height: 560px;
+  }
+  main .faq li .li-head .faq-question {
+    white-space: normal;
   }
   main .articles {
     padding: 40px 10vw;

@@ -359,6 +359,18 @@ main {
         .li-head {
           margin: 0;
         }
+        img {
+          width: 50px;
+          height: 50px;
+        }
+        li:hover {
+          background-color: $secondary-color;
+          color: white;
+          img {
+            border: 1px solid white;
+            border-radius: 50%;
+          }
+        }
       }
     }
   }
@@ -535,10 +547,14 @@ main {
 
         p {
           margin: 0;
+          padding: 5px;
+        }
+
+        .faq-question {
           overflow: hidden;
           white-space: nowrap;
           text-overflow: ellipsis;
-          padding: 5px;
+          width: 90%;
         }
       }
 
@@ -1088,6 +1104,13 @@ footer {
         margin: 30px;
         width: 450px;
         height: 560px;
+      }
+      li {
+        .li-head {
+          .faq-question {
+            white-space: normal;
+          }
+        }
       }
     }
     .articles {
