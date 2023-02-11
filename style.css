@@ -12,7 +12,6 @@
   border-radius: 5px;
 }
 .swiper .swiper-slide {
-  max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
 }
@@ -55,7 +54,6 @@
   margin: 0 10px !important;
 }
 .swiper3 .swiper-slide {
-  max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
 }
@@ -122,28 +120,28 @@ header .top-header {
   margin: 0 auto;
   padding: 0 8vw;
 }
-header .top-header .contact-us {
+header .contact-us {
   display: flex;
   gap: 20px;
   align-items: center;
 }
-header .top-header .contact-us .email-us p,
-header .top-header .contact-us .call-us p,
-header .top-header .contact-us .find-us p {
+header .email-us p,
+header .call-us p,
+header .find-us p {
   display: none;
 }
-header .top-header .language .btn {
+header .language .btn {
   color: white;
   font-size: 12px;
   background: none;
   border: none;
 }
-header .top-header .language .dropdown-item {
+header .language .dropdown-item {
   color: white;
   background-color: #0c4b35;
   padding: 15px;
 }
-header .top-header .language .dropdown-item:hover {
+header .language .dropdown-item:hover {
   color: #0c4b35;
   background-color: white;
   font-weight: 600;
@@ -152,44 +150,44 @@ header .bottom-header {
   justify-content: space-between;
   padding: 0 8vw;
 }
-header .bottom-header .call-menu {
+header .call-menu {
   display: flex;
   justify-content: space-between;
   gap: 10px;
 }
-header .bottom-header .call-menu .call-button-big {
+header .call-button-big {
   display: none;
 }
-header .bottom-header .navbar-toggler {
+header .navbar-toggler {
   border: none;
 }
-header .bottom-header .navbar-collapse {
+header .navbar-collapse {
   justify-content: space-evenly;
 }
-header .bottom-header .navbar-collapse .nav-link:hover {
+header .navbar-collapse .nav-link:hover {
   color: #00730c;
 }
-header .bottom-header .navbar-collapse .navbar-nav {
+header .navbar-collapse .navbar-nav {
   display: flex;
   gap: 10px;
 }
-header .bottom-header .navbar-collapse a {
+header .navbar-collapse a {
   color: black;
   font-weight: 700;
   font-size: 16px;
 }
-header .bottom-header .burger-cross {
+header .burger-cross {
   display: none;
   font-size: 36px;
   color: #00730c;
   padding: 0;
 }
-header .bottom-header .dropdown-menu .dropdown-item {
+header .dropdown-menu .dropdown-item {
   color: white;
   background-color: #0c4b35;
   padding: 15px;
 }
-header .bottom-header .dropdown-menu .dropdown-item:hover {
+header .dropdown-menu .dropdown-item:hover {
   color: #0c4b35;
   background-color: white;
 }
@@ -234,33 +232,33 @@ main .main-section .main-content {
   background-repeat: no-repeat;
   background-size: 15%;
 }
-main .main-section .main-content .bg-div {
+main .main-section .bg-div {
   padding: 40px 8vw;
 }
-main .main-section .main-content .bg-div h3 {
+main .main-section h3 {
   font-size: 14px;
   font-weight: 700;
 }
-main .main-section .main-content .bg-div .section-title {
+main .main-section .section-title {
   font-weight: 800;
   text-align: left;
 }
-main .main-section .main-content .bg-div .section-p {
+main .main-section .section-p {
   margin-bottom: 40px;
   text-align: left;
 }
-main .main-section .main-content .bg-div .main-link {
+main .main-section .main-link {
   text-align: center;
   margin: 25px auto;
   font-size: 16px;
   font-weight: 600;
 }
-main .main-section .main-content .bg-div .main-btns {
+main .main-section .main-btns {
   display: flex;
   justify-content: flex-end;
   gap: 10px;
 }
-main .main-section .main-content .bg-div .main-btns .grey-btn {
+main .main-section .grey-btn {
   background: linear-gradient(180deg, #fff8f1 0%, #cbe5ce 100%);
   border-radius: 32px;
   border: none;
@@ -274,22 +272,19 @@ main .main-section .main-content .bg-div .main-btns .grey-btn {
 main .services {
   padding: 40px 8vw;
 }
-main .services .services-list li {
+main .services li {
   background: linear-gradient(172.29deg, #ffffff -10.79%, #ffffff 94.04%);
   box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
   justify-content: space-between;
   align-items: center;
 }
-main .services .services-list li .service-img-container img {
+main .services li img {
   height: 50px;
   width: 50px;
   margin: 15px auto;
   display: block;
 }
-main .services .services-list li .services-text .li-p {
-  font-size: 16px;
-}
-main .services .services-list li:hover {
+main .services li:hover {
   background: #00730c;
   color: white;
   background-image: url(./images/icons/services-background-leaf.svg);
@@ -297,7 +292,7 @@ main .services .services-list li:hover {
   background-repeat: no-repeat;
   background-position: left center;
 }
-main .services .services-list li:hover .li-p {
+main .services li:hover .li-p {
   color: white;
 }
 main .about-us {
@@ -310,12 +305,12 @@ main .about-us .value-img-container {
   position: relative;
   padding: 0;
 }
-main .about-us .value-img-container .value-img {
+main .about-us .value-img {
   margin: 15px;
   width: 250px;
   height: 330px;
 }
-main .about-us .value-img-container .small-value-img {
+main .about-us .small-value-img {
   position: absolute;
   width: 200px;
   height: 130px;
@@ -325,23 +320,23 @@ main .about-us .value-img-container .small-value-img {
 main .about-us .about-text {
   padding-top: 55px;
 }
-main .about-us .about-text .our-values li {
+main .about-us li {
   justify-content: center;
   flex-direction: column;
   max-width: 45%;
 }
-main .about-us .about-text .our-values .li-head {
+main .about-us .li-head {
   margin: 0;
 }
-main .about-us .about-text .our-values img {
+main .about-us img {
   width: 50px;
   height: 50px;
 }
-main .about-us .about-text .our-values li:hover {
+main .about-us li:hover {
   background-color: #00730c;
   color: white;
 }
-main .about-us .about-text .our-values li:hover img {
+main .about-us li:hover img {
   border: 1px solid white;
   border-radius: 50%;
 }
@@ -361,13 +356,13 @@ main .why-choose-us .section-p {
 main .why-choose-us .reasons-choose-us {
   justify-content: center;
 }
-main .why-choose-us .reasons-choose-us li {
+main .why-choose-us li {
   padding: 0;
   max-width: 45%;
   align-items: center;
   justify-content: center;
 }
-main .why-choose-us .reasons-choose-us li .li-head {
+main .why-choose-us .li-head {
   margin: 0;
 }
 main .working-process {
@@ -376,45 +371,45 @@ main .working-process {
 main .working-process .processes {
   justify-content: space-evenly;
 }
-main .working-process .processes li {
+main .working-process li {
   background: linear-gradient(172.29deg, #ffffff -10.79%, #ffffff 94.04%);
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
 }
-main .working-process .processes li .process-bg-div {
+main .working-process .process-bg-div {
   background-image: url(./images/icons/process-background-image-green.svg);
   background-repeat: no-repeat;
   background-position: right center;
 }
-main .working-process .processes li .process-imgs {
+main .working-process .process-imgs {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
-main .working-process .processes li .process-imgs img {
+main .working-process .process-imgs img {
   margin: 10px;
   width: 70px;
   height: 70px;
 }
-main .working-process .processes li .process-imgs .process-number {
+main .working-process .process-number {
   font-size: 60px;
   font-weight: 800;
   color: #e3e3e3;
   margin: 10px;
 }
-main .working-process .processes li:hover {
+main .working-process li:hover {
   background: #00730c;
 }
-main .working-process .processes li:hover .process-bg-div {
+main .working-process li:hover .process-bg-div {
   background-image: url(./images/icons/process-background-image-white.svg);
 }
-main .working-process .processes li:hover .li-p,
-main .working-process .processes li:hover .li-head {
+main .working-process li:hover .li-p,
+main .working-process li:hover .li-head {
   color: white;
 }
-main .working-process .processes li:hover .process-number {
+main .working-process li:hover .process-number {
   color: white;
   text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -425,7 +420,7 @@ main .reach-out {
   background-position: center;
   background-size: 100%;
 }
-main .reach-out .img-text {
+main .img-text {
   font-size: 20px;
   font-weight: 700;
   text-align: center;
@@ -455,16 +450,16 @@ main .staff .staff-data {
   align-items: center;
   flex-direction: column;
 }
-main .staff .staff-data .li-p,
-main .staff .staff-data .li-head {
+main .staff .li-p,
+main .staff .li-head {
   color: white;
   text-align: center;
   margin: 0;
 }
-main .staff .staff-data .social-media {
+main .staff .social-media {
   display: none;
 }
-main .staff .staff-data .social-media a {
+main .staff a {
   color: white;
   font-size: 22px;
 }
@@ -488,26 +483,26 @@ main .clients-saying .client-card {
   background-color: white;
   padding: 20px;
 }
-main .clients-saying .client-card .client-photo {
+main .clients-saying .client-photo {
   width: 135px;
   height: 185px;
   padding: 0 10px 5px 0;
 }
-main .clients-saying .client-card .review {
+main .clients-saying .review {
   padding-top: 30px;
   background-image: url(./images/icons/quotation-marks-clients.svg);
   background-position: top left 30px;
   background-repeat: no-repeat;
 }
-main .clients-saying .client-card .review .li-p {
+main .clients-saying .li-p {
   margin-bottom: 1rem;
 }
-main .clients-saying .client-card .review .client-data {
+main .clients-saying .client-data {
   display: flex;
   justify-content: space-between;
 }
-main .clients-saying .client-card .review .client-data .li-head,
-main .clients-saying .client-card .review .client-data .li-p {
+main .clients-saying .client-data .li-head,
+main .clients-saying .client-data .li-p {
   text-align: left;
   margin: 0;
 }
@@ -530,7 +525,7 @@ main .faq li {
   box-shadow: none;
   padding: 10px;
 }
-main .faq li .li-head {
+main .faq .li-head {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -539,19 +534,19 @@ main .faq li .li-head {
   background-color: #fff8f1;
   padding: 15px;
 }
-main .faq li .li-head p {
-  margin: 0;
-  padding: 5px;
-}
-main .faq li .li-head .faq-question {
+main .faq .faq-question {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   width: 90%;
+  margin: 0;
+  padding: 5px;
 }
-main .faq li .li-p {
+main .faq .li-p {
   background-color: white;
   margin: 10px 20px;
+  margin: 0;
+  padding: 5px;
 }
 main .articles {
   padding: 40px 8vw;
@@ -573,17 +568,17 @@ main .articles li {
   justify-content: center;
   gap: 20px;
 }
-main .articles li hr {
+main .articles hr {
   width: 100%;
   border: 1px solid grey;
 }
-main .articles li .article-data {
+main .articles .article-data {
   display: flex;
   width: 100%;
   flex-direction: row-reverse;
   justify-content: space-between;
 }
-main .articles li .article-data .author-date {
+main .articles .author-date {
   font-weight: bold;
 }
 main .articles .article-card:nth-of-type(even) {
@@ -636,12 +631,12 @@ main .logos .summary div {
   flex-direction: column;
   display: flex;
 }
-main .logos .summary div .summary-title {
+main .logos .summary-title {
   font-size: 20px;
   font-weight: 700;
   text-align: center;
 }
-main .logos .summary div .green-btn {
+main .logos .green-btn {
   width: 100%;
   max-width: 275px;
   margin: 0;
@@ -655,55 +650,50 @@ footer {
 footer a {
   color: white;
 }
-footer .top-footer h5 {
+footer h5 {
   font-size: 18px;
   font-weight: 700;
   margin: 20px 0;
 }
-footer .top-footer p {
+footer p {
   font-size: 14px;
   font-weight: normal;
 }
-footer .top-footer .subscribe form {
+footer form {
   border-bottom: 1px solid white;
   max-width: 315px;
 }
-footer .top-footer .subscribe form input {
+footer form input {
   background-color: transparent;
   border: none;
   color: white;
 }
-footer .top-footer .subscribe form input::-moz-placeholder {
+footer form input::-moz-placeholder {
   color: white;
   font-size: 14px;
   font-weight: normal;
 }
-footer .top-footer .subscribe form input:-ms-input-placeholder {
+footer form input::placeholder {
   color: white;
   font-size: 14px;
   font-weight: normal;
 }
-footer .top-footer .subscribe form input::placeholder {
-  color: white;
-  font-size: 14px;
-  font-weight: normal;
-}
-footer .top-footer .subscribe form input:focus {
+footer form input:focus {
   outline: none;
 }
-footer .top-footer .subscribe form button {
+footer form button {
   background-color: transparent;
   border: none;
   color: white;
   font-size: 18px;
   font-weight: 700;
 }
-footer .top-footer .subscribe .social-media-footer {
+footer .social-media-footer {
   display: flex;
   text-align: left;
   justify-content: flex-start;
 }
-footer .top-footer .subscribe .social-media-footer div {
+footer .social-media-footer div {
   border: 1px solid white;
   background: none;
   width: 30px;
@@ -713,25 +703,25 @@ footer .top-footer .subscribe .social-media-footer div {
   margin: 15px;
   line-height: 30px;
 }
-footer .top-footer .subscribe .social-media-footer div:hover {
+footer .social-media-footer div:hover {
   background-color: white;
 }
-footer .top-footer .subscribe .social-media-footer div:hover a {
+footer .social-media-footer div:hover a {
   color: #0c4b35;
 }
-footer .top-footer .contacts .phones {
+footer .phones {
   display: flex;
   gap: 15px;
 }
-footer .top-footer .links .links-list {
+footer .links-list {
   margin: 20px 0;
   align-items: center;
 }
-footer .top-footer .links .links-list p {
+footer .links-list p {
   margin: 0;
   padding: 10px 0;
 }
-footer .bottom-footer .copyright {
+footer .copyright {
   text-align: center;
   font-size: 12px;
 }
@@ -765,7 +755,7 @@ footer .bottom-footer div p {
     flex-direction: row-reverse;
     align-items: flex-start;
   }
-  main .services .services-list li {
+  main .services-list li {
     width: 48%;
   }
   main .why-choose-us {
@@ -774,14 +764,14 @@ footer .bottom-footer div p {
   main .why-choose-us .img-fluid {
     width: 75%;
   }
-  main .working-process .processes li {
+  main .processes li {
     width: 48%;
   }
-  main .reach-out .img-text {
+  main .img-text {
     font-size: 22px;
   }
   main .clients-saying .section-title,
-main .clients-saying .section-p {
+  main .clients-saying .section-p {
     text-align: left;
     width: 75%;
   }
@@ -790,7 +780,7 @@ main .clients-saying .section-p {
     justify-content: space-between;
     align-items: center;
   }
-  main .clients-saying .client-card .review {
+  main .clients-saying .review {
     padding: 0 30px;
   }
   main .logos {
@@ -803,16 +793,16 @@ main .clients-saying .section-p {
   main .logos .summary div {
     gap: 15px;
   }
-  main .logos .summary div .summary-title {
+  main .logos .summary-title {
     font-size: 22px;
   }
-  footer .top-footer h5 {
+  footer h5 {
     font-size: 20px;
   }
-  footer .top-footer p {
+  footer p {
     font-size: 16px;
   }
-  footer .bottom-footer .copyright {
+  footer .copyright {
     font-size: 14px;
   }
 }
@@ -823,41 +813,41 @@ main .clients-saying .section-p {
   .swiper2 .swiper-button-next {
     left: 96%;
   }
-  header .top-header .contact-us .email-us,
-header .top-header .contact-us .call-us,
-header .top-header .contact-us .find-us {
+  header .email-us,
+  header .call-us,
+  header .find-us {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
   }
-  header .top-header .contact-us .email-us p,
-header .top-header .contact-us .call-us p,
-header .top-header .contact-us .find-us p {
+  header .email-us p,
+  header .call-us p,
+  header .find-us p {
     display: block;
     margin-bottom: 0;
     font-weight: 700;
     color: white;
   }
-  header .top-header .contact-us .email-us a,
-header .top-header .contact-us .call-us a,
-header .top-header .contact-us .find-us a {
+  header .email-us a,
+  header .call-us a,
+  header .find-us a {
     text-decoration: none;
     color: white;
   }
-  header .top-header .language .btn {
+  header .language .btn {
     font-size: 16px;
   }
-  header .bottom-header .call-menu {
+  header .call-menu {
     order: 3;
   }
-  header .bottom-header .call-menu a {
+  header .call-menu a {
     text-decoration: none;
   }
-  header .bottom-header .call-menu .call-button-big {
+  header .call-button-big {
     display: block;
   }
-  header .bottom-header .call-menu .call-button-small {
+  header .call-button-small {
     display: none;
   }
   main .section-title {
@@ -867,7 +857,7 @@ header .top-header .contact-us .find-us a {
     font-size: 20px;
   }
   main .li-p,
-main .section-p {
+  main .section-p {
     font-size: 18px;
   }
   main .main-section .img-fluid {
@@ -881,24 +871,24 @@ main .section-p {
   main .main-section .main-content .bg-div {
     padding: 40px 2vw 40px 10vw;
   }
-  main .main-section .main-content .bg-div .main-btns {
+  main .main-section .main-btns {
     justify-content: center;
     gap: 15px;
   }
   main .services {
     padding: 40px 10vw;
   }
-  main .services .services-list li {
+  main .services li {
     flex-direction: column;
     max-width: 32%;
   }
-  main .services .services-list li .services-text {
+  main .services li .services-text {
     text-align: center;
   }
-  main .services .services-list li .services-text p {
+  main .services li .services-text p {
     text-align: center;
   }
-  main .services .services-list li:hover {
+  main .services li:hover {
     background-position: top center;
     background-size: 120px;
   }
@@ -909,11 +899,11 @@ main .section-p {
     align-items: center;
     gap: 60px;
   }
-  main .about-us .value-img-container .value-img {
+  main .about-us .value-img {
     width: 300px;
     height: 410px;
   }
-  main .about-us .value-img-container .small-value-img {
+  main .about-us .small-value-img {
     width: 240px;
     height: 160px;
     top: 320px;
@@ -922,15 +912,15 @@ main .section-p {
   main .about-us .about-text {
     padding: 0;
   }
-  main .about-us .about-text .section-p,
-main .about-us .about-text .section-title {
+  main .about-us .section-p,
+  main .about-us .section-title {
     text-align: left;
   }
-  main .about-us .about-text .our-values li {
+  main .about-us .our-values li {
     flex-direction: row;
     justify-content: space-around;
   }
-  main .about-us .about-text .green-btn {
+  main .about-us .green-btn {
     margin-left: 0;
   }
   main .why-choose-us {
@@ -952,16 +942,16 @@ main .about-us .about-text .section-title {
     flex-direction: column;
     align-items: flex-start;
   }
-  main .why-choose-us div .reasons-choose-us li {
+  main .why-choose-us li {
     justify-content: flex-start;
   }
-  main .why-choose-us div .green-btn {
+  main .why-choose-us .green-btn {
     margin: 0;
   }
   main .working-process {
     padding: 40px 10vw;
   }
-  main .working-process .processes li {
+  main .working-process li {
     margin: 0;
     width: 23%;
   }
@@ -974,7 +964,7 @@ main .about-us .about-text .section-title {
     gap: 45px;
     font-size: 30px;
   }
-  main .reach-out .img-text p {
+  main .reach-out p {
     width: 65%;
     text-align: end;
     margin: 0;
@@ -990,8 +980,8 @@ main .about-us .about-text .section-title {
   main .staff .staff-text div {
     max-width: 70%;
   }
-  main .staff .staff-text div .section-p,
-main .staff .staff-text div .section-title {
+  main .staff .section-p,
+  main .staff .section-title {
     text-align: left;
   }
   main .clients-saying {
@@ -1019,7 +1009,7 @@ main .staff .staff-text div .section-title {
     width: 400px;
     height: 510px;
   }
-  main .faq li .li-head .faq-question {
+  main .faq .faq-question {
     white-space: normal;
   }
   main .articles {
@@ -1032,7 +1022,7 @@ main .staff .staff-text div .section-title {
     flex-direction: row;
     justify-content: space-between;
   }
-  main .logos .summary div .summary-title {
+  main .logos .summary-title {
     font-size: 30px;
   }
 }
@@ -1041,20 +1031,17 @@ main .staff .staff-text div .section-title {
     left: 92%;
   }
   .green-btn,
-.call-button-big {
+  .call-button-big {
     font-size: 20px;
   }
-  header .top-header {
+  header {
     padding: 0 10vw;
   }
-  header .bottom-header {
-    padding: 0 10vw;
-  }
-  header .bottom-header .navbar-collapse .navbar-nav {
+  header .navbar-collapse .navbar-nav {
     gap: 15px;
   }
   main .section-p,
-main .li-p {
+  main .li-p {
     font-size: 18px;
   }
   main .section-title {
@@ -1063,16 +1050,15 @@ main .li-p {
   main .li-head {
     font-size: 24px;
   }
-  main .main-section .main-content .bg-div h3,
-main .main-section .main-content .bg-div .main-link a {
+  main h3,
+  main .main-link a {
     font-size: 20px;
   }
-  main .main-section .main-content .bg-div .main-btns {
+  main .main-btns {
     gap: 20px;
   }
-  main .main-section .main-content .bg-div .main-btns .grey-btn {
+  main .grey-btn {
     font-size: 14px;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     height: auto;
@@ -1080,14 +1066,14 @@ main .main-section .main-content .bg-div .main-link a {
   main .services {
     padding: 40px 10vw;
   }
-  main .services .services-list li {
+  main .services li {
     width: 23%;
   }
-  main .about-us .value-img-container .value-img {
+  main .about-us .value-img {
     width: 350px;
     height: 490px;
   }
-  main .about-us .value-img-container .small-value-img {
+  main .about-us .small-value-img {
     width: 250px;
     top: 420px;
     left: 170px;
@@ -1104,12 +1090,12 @@ main .main-section .main-content .bg-div .main-link a {
     justify-content: space-between;
     align-items: center;
   }
-  main .clients-saying .client-card .client-photo {
+  main .clients-saying .client-photo {
     width: 160px;
     margin-bottom: 20px;
     height: 210px;
   }
-  main .clients-saying .client-card .review {
+  main .clients-saying .review {
     padding: 30px;
   }
   main .faq img {
@@ -1122,20 +1108,20 @@ main .main-section .main-content .bg-div .main-link a {
   main .logos .summary {
     top: 100px;
   }
-  main .logos .summary div .summary-title {
+  main .logos .summary-title {
     font-size: 32px;
   }
   main .logos img {
     width: 200px;
     height: 100px;
   }
-  footer .top-footer h5 {
+  footer h5 {
     font-size: 22px;
   }
-  footer .top-footer p {
+  footer p {
     font-size: 18px;
   }
-  footer .top-footer .contacts .phones {
+  footer .phones {
     flex-direction: column;
     gap: 0;
   }
@@ -1143,7 +1129,7 @@ main .main-section .main-content .bg-div .main-link a {
     display: flex;
     justify-content: space-around;
   }
-  footer .bottom-footer .copyright {
+  footer .copyright {
     font-size: 16px;
   }
 }/*# sourceMappingURL=style.css.map */
