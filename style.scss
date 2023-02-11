@@ -597,13 +597,18 @@ main {
 
   .faq {
     padding: 40px 8vw;
+
+    .faq-text {
+      min-width: 0;
+    }
+
     img {
       display: none;
     }
 
     li {
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
       margin: 0 auto;
       box-shadow: none;
       padding: 10px;
@@ -619,12 +624,17 @@ main {
     }
 
     .faq-question {
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      width: 90%;
-      margin: 0;
       padding: 5px;
+      white-space: nowrap;
+      width: 96%;
+    }
+
+    .question-text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: inline-block;
+      max-width: 95%;
+      vertical-align: top;
     }
 
     .li-p {
@@ -1173,10 +1183,6 @@ footer {
         margin: 30px;
         width: 400px;
         height: 510px;
-      }
-
-      .faq-question {
-        white-space: normal;
       }
     }
     .articles {
