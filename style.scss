@@ -1184,6 +1184,15 @@ footer {
         width: 400px;
         height: 510px;
       }
+
+      .faq-question {
+        white-space: normal;
+      }
+
+      .question-text {
+        overflow: visible;
+        display: inline;
+      }
     }
     .articles {
       padding: 40px 10vw;

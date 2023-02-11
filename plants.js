@@ -76,14 +76,22 @@ const swiper3 = new Swiper(".swiper3", {
 let faqCollapse = document.querySelectorAll(".faq-collapse");
 let faqCollapseHead = document.querySelectorAll(".faq-collapse-head");
 let faqCross = document.querySelectorAll(".faq-expand-icon");
+let faqQuestion = document.querySelectorAll(".faq-question");
+let faqQuestionText = document.querySelectorAll(".question-text");
+const mediaQuery = window.matchMedia("(max-width: 991px)");
 
 faqCollapse.forEach((item, i) => {
   item.addEventListener("show.bs.collapse", (event) => {
     faqCollapseHead[i].style.backgroundColor = "#00730c";
     faqCollapseHead[i].style.color = "white";
-
     faqCross[i].classList.add("fa-xmark");
     faqCross[i].classList.remove("fa-plus");
+
+    if (mediaQuery.matches) {
+      faqQuestionText[i].style.overflow = "visible";
+      faqQuestionText[i].style.display = "inline";
+      faqQuestion[i].style["white-space"] = "normal";
+    }
   });
 });
 
@@ -93,6 +101,12 @@ faqCollapse.forEach((item, i) => {
     faqCollapseHead[i].style.color = "black";
     faqCross[i].classList.add("fa-plus");
     faqCross[i].classList.remove("fa-xmark");
+
+    if (mediaQuery.matches) {
+      faqQuestionText[i].style.overflow = "hidden";
+      faqQuestionText[i].style.display = "inline-block";
+      faqQuestion[i].style["white-space"] = "nowrap";
+    }
   });
 });
 

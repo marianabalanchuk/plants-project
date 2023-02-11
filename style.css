@@ -1027,6 +1027,13 @@ footer .bottom-footer div p {
     width: 400px;
     height: 510px;
   }
+  main .faq .faq-question {
+    white-space: normal;
+  }
+  main .faq .question-text {
+    overflow: visible;
+    display: inline;
+  }
   main .articles {
     padding: 40px 10vw;
   }
