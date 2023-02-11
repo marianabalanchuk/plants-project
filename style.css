@@ -84,6 +84,13 @@
   margin: 0;
 }
 
+.call-button-small:hover,
+.call-button-big:hover,
+.green-btn:hover {
+  background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
+  box-shadow: 0px 0px 20px 10px rgba(63, 164, 68, 0.4);
+}
+
 .green-btn {
   width: 275px;
   text-align: center;
