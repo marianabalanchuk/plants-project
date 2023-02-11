@@ -313,6 +313,10 @@ main {
       padding: 10px 8px;
       text-align: center;
     }
+    .grey-btn:hover {
+      background: linear-gradient(180deg, #cbe5ce 0%, #5fa067 100%);
+      box-shadow: 0px 0px 20px 10px rgba(63, 164, 68, 0.4);
+    }
   }
 
   .services {
@@ -1207,7 +1211,11 @@ footer {
   }
 
   header {
-    padding: 0 10vw;
+    .top-header,
+    .bottom-header {
+      padding: 0 10vw;
+    }
+
     .navbar-collapse {
       .navbar-nav {
         gap: 15px;
